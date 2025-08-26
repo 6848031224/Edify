@@ -8,24 +8,26 @@
 
   /* Light Theme */
   body.light { background: #f5f5f7; color: #1c1c1e; }
-  body.light .toolbar, body.light header { background: rgba(245,245,248,0.9); border-bottom: 1px solid #d1d1d6; }
+  body.light header, body.light .toolbar { background: rgba(245,245,248,0.95); border-bottom: 1px solid #d1d1d6; }
   body.light .column { background: #ffffff; border-right: 1px solid #d1d1d6; }
 
   /* Dark Theme */
   body.dark { background: #1c1c1e; color: #f5f5f7; }
-  body.dark .toolbar, body.dark header { background: rgba(28,28,30,0.95); border-bottom: 1px solid #3a3a3c; }
+  body.dark header, body.dark .toolbar { background: rgba(28,28,30,0.95); border-bottom: 1px solid #3a3a3c; }
   body.dark .column { background: #2c2c2e; border-right: 1px solid #3a3a3c; }
 
-  header { padding: 1em; position: sticky; top: 0; backdrop-filter: blur(8px); z-index: 10; }
-  h1 { margin: 0; font-size: 1.2em; font-weight: 500; display: inline-block; }
+  header { padding: 1em; position: sticky; top: 0; backdrop-filter: blur(8px); z-index: 10; display: flex; flex-direction: column; }
+  h1 { margin: 0; font-size: 1.2em; font-weight: 500; }
   #breadcrumbs { font-size: 0.9em; color: #555; margin-top: 0.4em; }
   #breadcrumbs span { cursor: pointer; color: #0366d6; }
   #breadcrumbs span:hover { text-decoration: underline; }
 
-  .toolbar { display: flex; align-items: center; gap: 1em; padding: 0.5em 1em; backdrop-filter: blur(8px); position: sticky; top: 70px; z-index: 9; }
-  .toolbar input { padding: 0.4em; border-radius: 6px; border: 1px solid #ccc; }
-  .toolbar button { padding: 0.4em 0.8em; border-radius: 6px; border: 1px solid #ccc; cursor: pointer; background: #fff; }
-  .toolbar button:hover { background: #e5e5ea; }
+  .toolbar { display: flex; align-items: center; gap: 1em; padding: 0.5em 1em; backdrop-filter: blur(8px); position: sticky; top: 70px; z-index: 9; border-radius: 0 0 12px 12px; }
+  .toolbar input { padding: 0.4em; border-radius: 6px; border: 1px solid #aaa; flex: 1; }
+  .toolbar button { padding: 0.4em 0.8em; border-radius: 8px; border: 1px solid #aaa; cursor: pointer; background: #f0f0f5; color: #1c1c1e; font-weight: 500; transition: background 0.2s, transform 0.2s; }
+  .toolbar button:hover { background: #e0e0e5; transform: translateY(-1px); }
+  body.dark .toolbar button { background: #3a3a3c; color: #f5f5f7; border: 1px solid #555; }
+  body.dark .toolbar button:hover { background: #4a4a4c; }
 
   .container { display: flex; height: calc(100vh - 120px); overflow-x: auto; }
   .column { width: 240px; flex-shrink: 0; overflow-y: auto; border-right: 1px solid #d1d1d6; transition: transform 0.2s; }
@@ -47,14 +49,14 @@
 </header>
 <div class="toolbar">
   <input type="text" id="search" placeholder="Search..." />
-  <button id="toggle-view">List View</button>
-  <button id="toggle-theme">Dark Mode</button>
+  <button id="toggle-view">📝 List View</button>
+  <button id="toggle-theme">🌗 Dark Mode</button>
 </div>
 <div class="container" id="container"></div>
 
 <script>
 const GH_USERNAME = "6848031224";
-const GH_REPO = "Politic-and-Global-Studies-06";
+const GH_REPO = "Politics-and-Global-Studies-06";
 const GH_BRANCH = "main";
 
 let allData = {};
@@ -90,7 +92,6 @@ function buildColumns(){
   container.innerHTML = '';
   const paths = activePath.split('/').filter(Boolean);
   let currPath = '';
-  const columns = [];
 
   for(let i=0;i<=paths.length;i++){
     const col = document.createElement('div');
@@ -137,14 +138,18 @@ function updateBreadcrumbs(path){
   });
 }
 
-document.getElementById('toggle-theme').onclick = ()=>{
+// Toolbar actions
+const toggleThemeBtn = document.getElementById('toggle-theme');
+toggleThemeBtn.onclick = ()=>{
   document.body.classList.toggle('dark');
   document.body.classList.toggle('light');
+  toggleThemeBtn.textContent = document.body.classList.contains('dark') ? '🌞 Light Mode' : '🌗 Dark Mode';
 };
 
-document.getElementById('toggle-view').onclick = ()=>{
+const toggleViewBtn = document.getElementById('toggle-view');
+toggleViewBtn.onclick = ()=>{
   document.body.classList.toggle('list-view');
-  document.getElementById('toggle-view').textContent = document.body.classList.contains('list-view') ? 'Column View' : 'List View';
+  toggleViewBtn.textContent = document.body.classList.contains('list-view') ? '📂 Column View' : '📝 List View';
 };
 
 document.getElementById('search').addEventListener('input',(e)=>{
