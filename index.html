@@ -41,9 +41,8 @@
   <ul id="file-tree"></ul>
 
   <script>
-    // CONFIG
-    const GH_USERNAME = "6848031224"; // replace with your GitHub username
-    const GH_REPO = "Politic-and-Global-Studies-06";
+    const GH_USERNAME = "6848031224";
+    const GH_REPO = "Politics-and-Global-Studies-06";
 
     function getIcon(name, type) {
       if (type === "dir") return "📁";
@@ -62,10 +61,11 @@
 
     async function fetchContents(path = "") {
       try {
-        const res = await fetch("./file-tree.json"); // local static JSON
+        const res = await fetch("./file-tree.json");
         const data = await res.json();
 
         function findPath(arr, targetPath) {
+          if (!targetPath || targetPath === "") return arr;
           for (const item of arr) {
             if (item.path === targetPath) return item.children || [];
             if (item.type === "dir" && item.children) {
@@ -76,7 +76,7 @@
           return [];
         }
 
-        return path ? findPath(data, path) : data;
+        return findPath(data, path);
       } catch (err) {
         console.error("Error loading JSON:", err);
         return [];
@@ -104,7 +104,38 @@
           li.addEventListener("click", async (e) => {
             e.stopPropagation();
             if (nestedUl.childElementCount === 0) {
-              await buildTree(nestedUl, item.path);
+              const children = await fetchContents(item.path);
+              for (const child of children) {
+                const childLi = document.createElement("li");
+                const childIcon = document.createElement("span");
+                childIcon.className = "icon";
+                childIcon.textContent = getIcon(child.name, child.type);
+                childLi.appendChild(childIcon);
+
+                if (child.type === "dir") {
+                  const childText = document.createElement("span");
+                  childText.textContent = child.name;
+                  childText.classList.add("folder");
+                  const childNested = document.createElement("ul");
+                  childNested.classList.add("nested");
+                  childLi.appendChild(childText);
+                  childLi.appendChild(childNested);
+
+                  childText.addEventListener("click", (ev) => {
+                    ev.stopPropagation();
+                    childNested.classList.toggle("active");
+                    buildTree(childNested, child.path);
+                    updateBreadcrumbs(child.path);
+                  });
+                } else {
+                  const link = document.createElement("a");
+                  link.href = `https://raw.githubusercontent.com/${GH_USERNAME}/${GH_REPO}/main/${child.path}`;
+                  link.textContent = child.name;
+                  childLi.appendChild(link);
+                }
+
+                nestedUl.appendChild(childLi);
+              }
             }
             nestedUl.classList.toggle("active");
             updateBreadcrumbs(item.path);
