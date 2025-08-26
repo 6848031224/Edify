@@ -1,11 +1,3 @@
 # Politic-and-Global-Studies-06
 
-Webpage:
-
-https://6848031224.github.io/Politic-and-Global-Studies-06/
-
-
-For generating json files:
-
-node generate-file-tree.js
-
+https://github.com/6848031224/Politic-and-Global-Studies-06
