@@ -12,7 +12,7 @@
     #breadcrumbs span:hover { text-decoration: underline; }
 
     .toolbar { padding: 0.5em 1em; background: #f9f9fa; border-bottom: 1px solid #d1d1d6; display: flex; gap: 1em; align-items: center; }
-    input[type="text"] { padding: 0.4em; border: 1px solid #ccc; border-radius: 6px; }
+    input[type="text"] { padding: 0.4em; border: 1px solid #ccc; border-radius: 6px; flex: 1; }
     button { padding: 0.4em 0.8em; border: 1px solid #ccc; border-radius: 6px; background: #fff; cursor: pointer; }
     button:hover { background: #f0f0f5; }
 
@@ -44,7 +44,6 @@
     // CONFIG
     const GH_USERNAME = "6848031224"; // replace with your GitHub username
     const GH_REPO = "Politic-and-Global-Studies-06";
-    const GH_BRANCH = "main";
 
     function getIcon(name, type) {
       if (type === "dir") return "📁";
@@ -62,9 +61,26 @@
     }
 
     async function fetchContents(path = "") {
-      const url = `https://api.github.com/repos/${GH_USERNAME}/${GH_REPO}/contents/${path}?ref=${GH_BRANCH}`;
-      const res = await fetch(url);
-      return await res.json();
+      try {
+        const res = await fetch("./file-tree.json"); // local static JSON
+        const data = await res.json();
+
+        function findPath(arr, targetPath) {
+          for (const item of arr) {
+            if (item.path === targetPath) return item.children || [];
+            if (item.type === "dir" && item.children) {
+              const found = findPath(item.children, targetPath);
+              if (found) return found;
+            }
+          }
+          return [];
+        }
+
+        return path ? findPath(data, path) : data;
+      } catch (err) {
+        console.error("Error loading JSON:", err);
+        return [];
+      }
     }
 
     async function buildTree(container, path = "") {
@@ -98,7 +114,7 @@
           li.appendChild(nestedUl);
         } else {
           const link = document.createElement("a");
-          link.href = `https://raw.githubusercontent.com/${GH_USERNAME}/${GH_REPO}/${GH_BRANCH}/${item.path}`;
+          link.href = `https://raw.githubusercontent.com/${GH_USERNAME}/${GH_REPO}/main/${item.path}`;
           link.textContent = item.name;
           li.appendChild(link);
         }
@@ -126,7 +142,6 @@
       });
     }
 
-    // Toolbar actions
     document.getElementById("search").addEventListener("input", (e) => {
       const term = e.target.value.toLowerCase();
       document.querySelectorAll("li").forEach(li => {
