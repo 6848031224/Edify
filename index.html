@@ -43,6 +43,7 @@
   <script>
     const GH_USERNAME = "6848031224";
     const GH_REPO = "Politics-and-Global-Studies-06";
+    let FILE_TREE = [];
 
     function getIcon(name, type) {
       if (type === "dir") return "📁";
@@ -59,92 +60,45 @@
       }
     }
 
-    async function fetchContents(path = "") {
+    async function loadFileTree() {
       try {
-        const res = await fetch("./file-tree.json");
-        const data = await res.json();
-
-        function findPath(arr, targetPath) {
-          if (!targetPath || targetPath === "") return arr;
-          for (const item of arr) {
-            if (item.path === targetPath) return item.children || [];
-            if (item.type === "dir" && item.children) {
-              const found = findPath(item.children, targetPath);
-              if (found) return found;
-            }
-          }
-          return [];
-        }
-
-        return findPath(data, path);
+        const res = await fetch('./file-tree.json');
+        FILE_TREE = await res.json();
+        buildTree(document.getElementById('file-tree'), FILE_TREE);
       } catch (err) {
-        console.error("Error loading JSON:", err);
-        return [];
+        console.error('Failed to load file-tree.json', err);
       }
     }
 
-    async function buildTree(container, path = "") {
-      const items = await fetchContents(path);
-
+    function buildTree(container, items) {
+      container.innerHTML = '';
       for (const item of items) {
-        const li = document.createElement("li");
-        const iconSpan = document.createElement("span");
-        iconSpan.className = "icon";
-        iconSpan.textContent = getIcon(item.name, item.type);
-        li.appendChild(iconSpan);
+        const li = document.createElement('li');
+        const icon = document.createElement('span');
+        icon.className = 'icon';
+        icon.textContent = getIcon(item.name, item.type);
+        li.appendChild(icon);
 
-        if (item.type === "dir") {
-          const text = document.createElement("span");
+        if (item.type === 'dir') {
+          const text = document.createElement('span');
           text.textContent = item.name;
-          text.classList.add("folder");
+          text.className = 'folder';
+          li.appendChild(text);
 
-          const nestedUl = document.createElement("ul");
-          nestedUl.classList.add("nested");
+          const nested = document.createElement('ul');
+          nested.className = 'nested';
+          li.appendChild(nested);
 
-          li.addEventListener("click", async (e) => {
+          buildTree(nested, item.children || []);
+
+          text.addEventListener('click', (e) => {
             e.stopPropagation();
-            if (nestedUl.childElementCount === 0) {
-              const children = await fetchContents(item.path);
-              for (const child of children) {
-                const childLi = document.createElement("li");
-                const childIcon = document.createElement("span");
-                childIcon.className = "icon";
-                childIcon.textContent = getIcon(child.name, child.type);
-                childLi.appendChild(childIcon);
-
-                if (child.type === "dir") {
-                  const childText = document.createElement("span");
-                  childText.textContent = child.name;
-                  childText.classList.add("folder");
-                  const childNested = document.createElement("ul");
-                  childNested.classList.add("nested");
-                  childLi.appendChild(childText);
-                  childLi.appendChild(childNested);
-
-                  childText.addEventListener("click", (ev) => {
-                    ev.stopPropagation();
-                    childNested.classList.toggle("active");
-                    buildTree(childNested, child.path);
-                    updateBreadcrumbs(child.path);
-                  });
-                } else {
-                  const link = document.createElement("a");
-                  link.href = `https://raw.githubusercontent.com/${GH_USERNAME}/${GH_REPO}/main/${child.path}`;
-                  link.textContent = child.name;
-                  childLi.appendChild(link);
-                }
-
-                nestedUl.appendChild(childLi);
-              }
-            }
-            nestedUl.classList.toggle("active");
+            nested.classList.toggle('active');
             updateBreadcrumbs(item.path);
           });
 
-          li.appendChild(text);
-          li.appendChild(nestedUl);
         } else {
-          const link = document.createElement("a");
+          const link = document.createElement('a');
           link.href = `https://raw.githubusercontent.com/${GH_USERNAME}/${GH_REPO}/main/${item.path}`;
           link.textContent = item.name;
           li.appendChild(link);
@@ -155,44 +109,53 @@
     }
 
     function updateBreadcrumbs(path) {
-      const bc = document.getElementById("breadcrumbs");
-      bc.innerHTML = "";
-      const parts = path.split("/");
-      let accum = "";
+      const bc = document.getElementById('breadcrumbs');
+      bc.innerHTML = '';
+      const parts = path.split('/');
+      let accum = '';
       parts.forEach((part, i) => {
-        if (i > 0) accum += "/";
+        if (i > 0) accum += '/';
         accum += part;
-        const span = document.createElement("span");
+        const span = document.createElement('span');
         span.textContent = part;
-        span.addEventListener("click", () => {
-          document.getElementById("file-tree").innerHTML = "";
-          buildTree(document.getElementById("file-tree"), accum);
+        span.addEventListener('click', () => {
+          const item = findItemByPath(accum, FILE_TREE);
+          if (item && item.children) {
+            buildTree(document.getElementById('file-tree'), [item]);
+          }
         });
         bc.appendChild(span);
-        if (i < parts.length - 1) bc.append(" / ");
+        if (i < parts.length - 1) bc.append(' / ');
       });
     }
 
-    document.getElementById("search").addEventListener("input", (e) => {
+    function findItemByPath(path, arr) {
+      for (const item of arr) {
+        if (item.path === path) return item;
+        if (item.type === 'dir' && item.children) {
+          const found = findItemByPath(path, item.children);
+          if (found) return found;
+        }
+      }
+      return null;
+    }
+
+    document.getElementById('search').addEventListener('input', (e) => {
       const term = e.target.value.toLowerCase();
-      document.querySelectorAll("li").forEach(li => {
-        li.style.display = li.textContent.toLowerCase().includes(term) ? "" : "none";
+      document.querySelectorAll('li').forEach(li => {
+        li.style.display = li.textContent.toLowerCase().includes(term) ? '' : 'none';
       });
     });
 
-    document.getElementById("expand-all").addEventListener("click", () => {
-      document.querySelectorAll(".nested").forEach(ul => ul.classList.add("active"));
+    document.getElementById('expand-all').addEventListener('click', () => {
+      document.querySelectorAll('.nested').forEach(ul => ul.classList.add('active'));
     });
 
-    document.getElementById("collapse-all").addEventListener("click", () => {
-      document.querySelectorAll(".nested").forEach(ul => ul.classList.remove("active"));
+    document.getElementById('collapse-all').addEventListener('click', () => {
+      document.querySelectorAll('.nested').forEach(ul => ul.classList.remove('active'));
     });
 
-    // Init
-    const urlParams = new URLSearchParams(window.location.search);
-    const startPath = urlParams.get("path") || "";
-    buildTree(document.getElementById("file-tree"), startPath);
-    if (startPath) updateBreadcrumbs(startPath);
+    loadFileTree();
   </script>
 </body>
 </html>
