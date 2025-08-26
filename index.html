@@ -1,170 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>📂 PGS Finder</title>
-<style>
-  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; transition: background 0.3s, color 0.3s; }
+  <meta charset="UTF-8">
+  <title>📂 PGS Finder</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background: #f5f5f7; color: #333; }
+    header { padding: 1em; background: #e5e5ea; border-bottom: 1px solid #d1d1d6; }
+    h1 { margin: 0; font-size: 1.2em; font-weight: 500; }
+    #breadcrumbs { margin: 0.5em 0 0; font-size: 0.9em; color: #555; }
+    #breadcrumbs span { cursor: pointer; color: #0366d6; }
+    #breadcrumbs span:hover { text-decoration: underline; }
 
-  /* Light Theme */
-  body.light { background: #f5f5f7; color: #1c1c1e; }
-  body.light header, body.light .toolbar { background: rgba(245,245,248,0.95); border-bottom: 1px solid #d1d1d6; }
-  body.light .column { background: #ffffff; border-right: 1px solid #d1d1d6; }
+    .toolbar { padding: 0.5em 1em; background: #f9f9fa; border-bottom: 1px solid #d1d1d6; display: flex; gap: 1em; align-items: center; }
+    input[type="text"] { padding: 0.4em; border: 1px solid #ccc; border-radius: 6px; }
+    button { padding: 0.4em 0.8em; border: 1px solid #ccc; border-radius: 6px; background: #fff; cursor: pointer; }
+    button:hover { background: #f0f0f5; }
 
-  /* Dark Theme */
-  body.dark { background: #1c1c1e; color: #f5f5f7; }
-  body.dark header, body.dark .toolbar { background: rgba(28,28,30,0.95); border-bottom: 1px solid #3a3a3c; }
-  body.dark .column { background: #2c2c2e; border-right: 1px solid #3a3a3c; }
+    ul { list-style: none; padding-left: 1em; margin: 0; }
+    li { margin: 0.2em 0; cursor: pointer; padding: 0.3em 0.4em; border-radius: 6px; display: flex; align-items: center; gap: 0.5em; }
+    li:hover { background: #e5e5ea; }
+    a { text-decoration: none; color: #0366d6; flex: 1; }
+    a:hover { text-decoration: underline; }
+    .folder { font-weight: 500; }
+    .nested { display: none; margin-left: 1em; }
+    .active { display: block; }
 
-  header { padding: 1em; position: sticky; top: 0; backdrop-filter: blur(8px); z-index: 10; display: flex; flex-direction: column; }
-  h1 { margin: 0; font-size: 1.2em; font-weight: 500; }
-  #breadcrumbs { font-size: 0.9em; color: #555; margin-top: 0.4em; }
-  #breadcrumbs span { cursor: pointer; color: #0366d6; }
-  #breadcrumbs span:hover { text-decoration: underline; }
-
-  .toolbar { display: flex; align-items: center; gap: 1em; padding: 0.5em 1em; backdrop-filter: blur(8px); position: sticky; top: 70px; z-index: 9; border-radius: 0 0 12px 12px; }
-  .toolbar input { padding: 0.4em; border-radius: 6px; border: 1px solid #aaa; flex: 1; }
-  .toolbar button { padding: 0.4em 0.8em; border-radius: 8px; border: 1px solid #aaa; cursor: pointer; background: #f0f0f5; color: #1c1c1e; font-weight: 500; transition: background 0.2s, transform 0.2s; }
-  .toolbar button:hover { background: #e0e0e5; transform: translateY(-1px); }
-  body.dark .toolbar button { background: #3a3a3c; color: #f5f5f7; border: 1px solid #555; }
-  body.dark .toolbar button:hover { background: #4a4a4c; }
-
-  .container { display: flex; height: calc(100vh - 120px); overflow-x: auto; }
-  .column { width: 240px; flex-shrink: 0; overflow-y: auto; border-right: 1px solid #d1d1d6; transition: transform 0.2s; }
-  .column ul { list-style: none; padding: 0.5em; margin: 0; }
-  .column li { padding: 0.3em 0.5em; display: flex; align-items: center; gap: 0.5em; border-radius: 6px; cursor: pointer; transition: background 0.2s, transform 0.2s; }
-  .column li:hover { background: rgba(0, 122, 255, 0.1); transform: translateX(2px); }
-  .column li.active { background: rgba(0, 122, 255, 0.2); font-weight: 500; }
-  .icon { width: 20px; text-align: center; }
-
-  /* List view */
-  .list-view .container { flex-direction: column; }
-  .list-view .column { width: 100%; border-right: none; border-bottom: 1px solid #d1d1d6; }
-</style>
+    .icon { width: 20px; display: inline-block; text-align: center; }
+  </style>
 </head>
-<body class="light">
-<header>
-  <h1>📂 PGS Finder</h1>
-  <div id="breadcrumbs"></div>
-</header>
-<div class="toolbar">
-  <input type="text" id="search" placeholder="Search..." />
-  <button id="toggle-view">📝 List View</button>
-  <button id="toggle-theme">🌗 Dark Mode</button>
-</div>
-<div class="container" id="container"></div>
+<body>
+  <header>
+    <h1>📂 PGS Finder</h1>
+    <div id="breadcrumbs"></div>
+  </header>
+  <div class="toolbar">
+    <input type="text" id="search" placeholder="Search..." />
+    <button id="expand-all">Expand All</button>
+    <button id="collapse-all">Collapse All</button>
+  </div>
+  <ul id="file-tree"></ul>
 
-<script>
-const GH_USERNAME = "6848031224";
-const GH_REPO = "Politics-and-Global-Studies-06";
-const GH_BRANCH = "main";
+  <script>
+    // CONFIG
+    const GH_USERNAME = "6848031224"; // replace with your GitHub username
+    const GH_REPO = "Politic-and-Global-Studies-06";
+    const GH_BRANCH = "main";
 
-let allData = {};
-let activePath = '/';
-
-function getIcon(name, type) {
-  if(type === 'dir') return '📁';
-  const ext = name.split('.').pop().toLowerCase();
-  switch(ext){
-    case 'pdf': return '📑';
-    case 'txt': case 'md': return '📝';
-    case 'csv': case 'xls': case 'xlsx': return '📊';
-    case 'png': case 'jpg': case 'jpeg': case 'gif': return '🖼️';
-    case 'mp3': case 'wav': return '🎵';
-    case 'mp4': case 'mov': return '🎞️';
-    case 'zip': case 'rar': return '🗂️';
-    default: return '📄';
-  }
-}
-
-async function fetchAll(path=''){
-  const url = `https://api.github.com/repos/${GH_USERNAME}/${GH_REPO}/contents/${path}?ref=${GH_BRANCH}`;
-  const res = await fetch(url);
-  const data = await res.json();
-  allData[path || '/'] = data;
-  for(const item of data){
-    if(item.type==='dir') await fetchAll(item.path);
-  }
-}
-
-function buildColumns(){
-  const container = document.getElementById('container');
-  container.innerHTML = '';
-  const paths = activePath.split('/').filter(Boolean);
-  let currPath = '';
-
-  for(let i=0;i<=paths.length;i++){
-    const col = document.createElement('div');
-    col.className = 'column';
-    const ul = document.createElement('ul');
-    const items = allData[currPath || '/'] || [];
-    items.sort((a,b)=> a.type==='dir'? -1:1 );
-
-    for(const item of items){
-      const li = document.createElement('li');
-      li.innerHTML = `<span class='icon'>${getIcon(item.name,item.type)}</span> ${item.name}`;
-      if(item.path === paths.slice(0,i+1).join('/')) li.classList.add('active');
-      li.onclick = ()=>{
-        if(item.type==='dir'){
-          activePath = item.path;
-          updateBreadcrumbs(item.path);
-          buildColumns();
-        } else window.open(`https://raw.githubusercontent.com/${GH_USERNAME}/${GH_REPO}/${GH_BRANCH}/${item.path}`,'_blank');
-      };
-      ul.appendChild(li);
+    function getIcon(name, type) {
+      if (type === "dir") return "📁";
+      const ext = name.split(".").pop().toLowerCase();
+      switch (ext) {
+        case "pdf": return "📑";
+        case "txt": case "md": return "📝";
+        case "csv": case "xls": case "xlsx": return "📊";
+        case "png": case "jpg": case "jpeg": case "gif": return "🖼️";
+        case "mp3": case "wav": return "🎵";
+        case "mp4": case "mov": return "🎞️";
+        case "zip": case "rar": return "🗂️";
+        default: return "📄";
+      }
     }
-    col.appendChild(ul);
-    container.appendChild(col);
-    if(i<paths.length) currPath += (currPath?'':'') + paths[i];
-  }
-}
 
-function updateBreadcrumbs(path){
-  const bc = document.getElementById('breadcrumbs');
-  bc.innerHTML = '';
-  const parts = path.split('/').filter(Boolean);
-  let accum='';
-  parts.forEach((part,i)=>{
-    if(i>0) bc.append(' / ');
-    accum += (accum?'':'') + part;
-    const span = document.createElement('span');
-    span.textContent = part;
-    span.onclick = ()=>{
-      activePath = accum;
-      buildColumns();
-      updateBreadcrumbs(accum);
-    };
-    bc.appendChild(span);
-  });
-}
+    async function fetchContents(path = "") {
+      const url = `https://api.github.com/repos/${GH_USERNAME}/${GH_REPO}/contents/${path}?ref=${GH_BRANCH}`;
+      const res = await fetch(url);
+      return await res.json();
+    }
 
-// Toolbar actions
-const toggleThemeBtn = document.getElementById('toggle-theme');
-toggleThemeBtn.onclick = ()=>{
-  document.body.classList.toggle('dark');
-  document.body.classList.toggle('light');
-  toggleThemeBtn.textContent = document.body.classList.contains('dark') ? '🌞 Light Mode' : '🌗 Dark Mode';
-};
+    async function buildTree(container, path = "") {
+      const items = await fetchContents(path);
 
-const toggleViewBtn = document.getElementById('toggle-view');
-toggleViewBtn.onclick = ()=>{
-  document.body.classList.toggle('list-view');
-  toggleViewBtn.textContent = document.body.classList.contains('list-view') ? '📂 Column View' : '📝 List View';
-};
+      for (const item of items) {
+        const li = document.createElement("li");
+        const iconSpan = document.createElement("span");
+        iconSpan.className = "icon";
+        iconSpan.textContent = getIcon(item.name, item.type);
+        li.appendChild(iconSpan);
 
-document.getElementById('search').addEventListener('input',(e)=>{
-  const term = e.target.value.toLowerCase();
-  document.querySelectorAll('li').forEach(li=>{
-    li.style.display = li.textContent.toLowerCase().includes(term)?'':'none';
-  });
-});
+        if (item.type === "dir") {
+          const text = document.createElement("span");
+          text.textContent = item.name;
+          text.classList.add("folder");
 
-async function init(){
-  await fetchAll();
-  buildColumns();
-}
+          const nestedUl = document.createElement("ul");
+          nestedUl.classList.add("nested");
 
-init();
-</script>
+          li.addEventListener("click", async (e) => {
+            e.stopPropagation();
+            if (nestedUl.childElementCount === 0) {
+              await buildTree(nestedUl, item.path);
+            }
+            nestedUl.classList.toggle("active");
+            updateBreadcrumbs(item.path);
+          });
+
+          li.appendChild(text);
+          li.appendChild(nestedUl);
+        } else {
+          const link = document.createElement("a");
+          link.href = `https://raw.githubusercontent.com/${GH_USERNAME}/${GH_REPO}/${GH_BRANCH}/${item.path}`;
+          link.textContent = item.name;
+          li.appendChild(link);
+        }
+
+        container.appendChild(li);
+      }
+    }
+
+    function updateBreadcrumbs(path) {
+      const bc = document.getElementById("breadcrumbs");
+      bc.innerHTML = "";
+      const parts = path.split("/");
+      let accum = "";
+      parts.forEach((part, i) => {
+        if (i > 0) accum += "/";
+        accum += part;
+        const span = document.createElement("span");
+        span.textContent = part;
+        span.addEventListener("click", () => {
+          document.getElementById("file-tree").innerHTML = "";
+          buildTree(document.getElementById("file-tree"), accum);
+        });
+        bc.appendChild(span);
+        if (i < parts.length - 1) bc.append(" / ");
+      });
+    }
+
+    // Toolbar actions
+    document.getElementById("search").addEventListener("input", (e) => {
+      const term = e.target.value.toLowerCase();
+      document.querySelectorAll("li").forEach(li => {
+        li.style.display = li.textContent.toLowerCase().includes(term) ? "" : "none";
+      });
+    });
+
+    document.getElementById("expand-all").addEventListener("click", () => {
+      document.querySelectorAll(".nested").forEach(ul => ul.classList.add("active"));
+    });
+
+    document.getElementById("collapse-all").addEventListener("click", () => {
+      document.querySelectorAll(".nested").forEach(ul => ul.classList.remove("active"));
+    });
+
+    // Init
+    const urlParams = new URLSearchParams(window.location.search);
+    const startPath = urlParams.get("path") || "";
+    buildTree(document.getElementById("file-tree"), startPath);
+    if (startPath) updateBreadcrumbs(startPath);
+  </script>
 </body>
 </html>
