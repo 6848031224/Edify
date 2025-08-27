@@ -2,7 +2,6 @@
 // Finder Pro - script.js
 // -----------------------
 
-// Config
 let files = [];
 let currentPath = "";
 let viewMode = "list";
@@ -11,7 +10,7 @@ let searchTerm = "";
 let selectedItems = new Set();
 let renamingItem = null;
 
-// Recursively walk the tree and return a flat array of all entries
+// Recursively flatten the nested tree into a single array with paths
 function flattenTree(node, parentPath = "") {
   const currentPath = parentPath ? `${parentPath}/${node.name}` : node.name;
   const entry = {
@@ -31,19 +30,16 @@ function flattenTree(node, parentPath = "") {
   return list;
 }
 
-// Utility: fetch & sort files
+// Load files for a given path
 async function loadFiles(path = "") {
   try {
     const res = await fetch("files.json");
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const root = await res.json();
 
-    // Flatten the hierarchy into a simple list
     const allFiles = flattenTree(root);
-
     currentPath = path;
 
-    // Show only the items directly inside the current path
     const depth = path ? path.split("/").filter(Boolean).length + 1 : 1;
     files = allFiles.filter(
       (f) =>
@@ -60,18 +56,17 @@ async function loadFiles(path = "") {
 }
 
 function sortFiles(a, b) {
-  // folders-first
   if (a.type !== b.type) return a.type === "folder" ? -1 : 1;
   if (sortMode === "name") return (a.name || "").localeCompare(b.name || "");
   if (sortMode === "date") return new Date(b.modified) - new Date(a.modified);
   return 0;
 }
 
-// Render file list/grid
 function render() {
   const view = document.getElementById("file-view");
   if (!view) return;
   view.innerHTML = "";
+
   let filtered = (files || [])
     .filter((f) => (f.name || "").toLowerCase().includes(searchTerm))
     .sort(sortFiles);
@@ -108,7 +103,6 @@ function render() {
       setTimeout(() => input.focus(), 0);
     }
 
-    // selection
     item.addEventListener("click", (e) => {
       if (e.ctrlKey || e.metaKey) {
         toggleSelect(file.name);
@@ -118,7 +112,6 @@ function render() {
       }
     });
 
-    // double-click navigation / quick look
     item.addEventListener("dblclick", () => {
       if (file.type === "folder") {
         loadFiles(file.path);
@@ -139,8 +132,21 @@ function render() {
 function updateBreadcrumb() {
   const bc = document.getElementById("breadcrumb");
   if (!bc) return;
-  const parts = currentPath.split("/").filter(Boolean);
   bc.innerHTML = "";
+
+  const upBtn = document.createElement("span");
+  upBtn.textContent = "⬆️ Up";
+  upBtn.style.cursor = "pointer";
+  upBtn.style.marginRight = "8px";
+  upBtn.addEventListener("click", () => {
+    if (!currentPath) return;
+    const parts = currentPath.split("/").filter(Boolean);
+    parts.pop();
+    loadFiles(parts.join("/"));
+  });
+  bc.appendChild(upBtn);
+
+  const parts = currentPath.split("/").filter(Boolean);
   let accum = "";
   const home = document.createElement("span");
   home.textContent = "🏠";
@@ -156,7 +162,6 @@ function updateBreadcrumb() {
   });
 }
 
-// Selection helpers
 function toggleSelect(name) {
   if (selectedItems.has(name)) {
     selectedItems.delete(name);
@@ -170,7 +175,6 @@ function clearSelection() {
   selectedItems.clear();
 }
 
-// Quick Look
 function quickLook(file) {
   if (file.url) {
     window.open(file.url, "_blank");
@@ -179,7 +183,6 @@ function quickLook(file) {
   }
 }
 
-// Inline rename
 document.addEventListener("keydown", (e) => {
   if (e.key === "F2" && selectedItems.size === 1) {
     renamingItem = [...selectedItems][0];
@@ -187,7 +190,6 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-// Search + Sort bindings
 document.getElementById("search")?.addEventListener("input", (e) => {
   searchTerm = e.target.value.toLowerCase();
   render();
@@ -198,7 +200,6 @@ document.getElementById("sort")?.addEventListener("change", (e) => {
   render();
 });
 
-// View toggle
 document.getElementById("view-toggle")?.addEventListener("click", () => {
   viewMode = viewMode === "list" ? "icon" : "list";
   document.getElementById("file-view").className = viewMode;
@@ -207,5 +208,4 @@ document.getElementById("view-toggle")?.addEventListener("click", () => {
   render();
 });
 
-// Initial load
 loadFiles();
