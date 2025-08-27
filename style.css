@@ -1,135 +1,199 @@
+/*──────────────────────────────────────────────────────────
+      Visual Foundation: macOS Finder–inspired palette & layout
+    ──────────────────────────────────────────────────────────*/
 :root {
-    --bg: #f5f5f7;
-    --fg: #000;
-    --card-bg: #fff;
+    --bg: #f2f2f5;
+    --toolbar-bg: rgba(242, 242, 245, 0.85);
+    --card-bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #8e8e93;
+    --border: #d1d1d6;
+    --accent: #007aff;
+    --hover-bg: rgba(0, 0, 0, 0.05);
+
+    --gap: 8px;
+    --pad-sm: 4px;
+    --pad-md: 12px;
+    --radius: 6px;
+
+    --font-base: 13px;
+    --font-small: 11px;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+/* Global & Toolbar */
 body {
+    margin: 0;
     background: var(--bg);
     color: var(--fg);
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    margin: 0;
+    font: var(--font-base) / 1.4 var(--font-family);
 }
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background: #e1e4e8;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+    background: var(--toolbar-bg);
+    backdrop-filter: blur(20px);
+    padding: var(--pad-md);
+    border-bottom: 1px solid var(--border);
 }
 
 .toolbar {
     display: flex;
-    gap: 10px;
+    gap: var(--gap);
 }
 
-#breadcrumb {
-    padding: 10px 20px;
-    font-size: 14px;
+.toolbar input,
+.toolbar select,
+.toolbar button {
+    padding: var(--pad-sm) var(--pad-md);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: #fff;
+    font-size: var(--font-base);
+    transition:
+        background 0.2s,
+        border-color 0.2s,
+        transform 0.1s;
 }
 
-#breadcrumb span {
+.toolbar input:focus,
+.toolbar select:focus {
+    border-color: var(--accent);
+    outline: none;
+}
+
+.toolbar button {
     cursor: pointer;
 }
 
-/* Container modes */
-#file-view.list {
-    display: block; /* default list flow */
+.toolbar button:hover {
+    background: var(--hover-bg);
 }
 
-#file-view.icon {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 12px;
-    align-content: start;
+.toolbar button:active {
+    transform: scale(0.96);
 }
 
-/* List view items (aligned to JS item class) */
-.item.list {
+/* Breadcrumb & Status Bar */
+#breadcrumb {
+    display: flex;
+    gap: var(--pad-sm);
+    align-items: center;
+    padding: var(--pad-sm) var(--pad-md);
+    font-size: var(--font-small);
+    color: var(--muted);
+}
+
+#breadcrumb span {
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: background 0.15s;
+    cursor: pointer;
+}
+
+#breadcrumb span:hover {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+#status-bar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 8px 20px;
-    border-bottom: 1px solid #ddd;
+    padding: var(--pad-sm) var(--pad-md);
+    font-size: var(--font-small);
+    color: var(--muted);
     background: var(--card-bg);
+    border-top: 1px solid var(--border);
+}
+
+/* List View */
+#file-view.list .item {
+    display: flex;
+    align-items: center;
+    padding: var(--pad-sm) var(--pad-md);
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border);
     transition: background 0.2s;
+    font-size: var(--font-base);
 }
 
-.item.list:hover {
-    background: rgba(0, 0, 0, 0.05);
+#file-view.list .item:hover {
+    background: var(--hover-bg);
 }
 
-.item.list .filename {
+#file-view.list .item.selected {
+    background: var(--accent);
+    color: #fff;
+}
+
+#file-view.list .item.selected .details {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.item .filename {
     flex: 2;
 }
 
-.item.list .details {
+.item .details {
     flex: 1;
     text-align: right;
-    font-size: 12px;
-    color: #555;
+    font-size: var(--font-small);
+    color: var(--muted);
 }
 
-/* Base file icon (list view size) */
 .file-icon {
     width: 16px;
     height: 16px;
-    margin-right: 6px;
-    vertical-align: middle;
+    margin-right: var(--pad-sm);
 }
 
-/* Icon view items */
-.item.icon {
-    width: 100%; /* fill grid cell */
+/* Icon View */
+#file-view.icon {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: var(--gap);
+    padding: var(--pad-md);
+}
+
+#file-view.icon .item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding: 10px;
-    border: none;
-    background: transparent;
-    border-radius: 8px; /* pairs with hover/selected */
-    transition: background 0.15s ease;
+    padding: var(--pad-sm);
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    transition:
+        transform 0.15s,
+        box-shadow 0.15s;
 }
 
-/* Hover feedback in icon view */
-.item.icon:hover {
-    background: rgba(0, 0, 0, 0.04);
+#file-view.icon .item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
-.item.icon img.file-icon {
+#file-view.icon .item.selected {
+    background: var(--accent);
+    color: #fff;
+}
+
+#file-view.icon img.file-icon {
     width: 48px;
     height: 48px;
-    margin-bottom: 6px;
+    margin-bottom: var(--pad-sm);
 }
 
-.item.icon .filename {
-    margin-top: 4px;
-    width: 100%;
-    text-align: center;
-    font-size: 12px;
+#file-view.icon .filename {
+    font-size: var(--font-small);
     line-height: 1.2;
-    word-break: break-word;
-    display: -webkit-box; /* optional: clamp to two lines */
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 
-/* Selection */
-.selected {
-    background: rgba(0, 128, 255, 0.1);
-    outline: 1px solid rgba(0, 128, 255, 0.4);
-}
-
-.item.icon.selected {
-    background: rgba(0, 128, 255, 0.08);
-    outline: 1px solid rgba(0, 128, 255, 0.4);
-}
-
-/* (Optional) Quick Look styles can remain or be removed if you’ve dropped it */
+/* Quick Look Overlay */
 #quicklook {
     position: fixed;
     top: 0;
@@ -141,15 +205,16 @@ header {
     align-items: center;
     justify-content: center;
 }
+
 #quicklook.hidden {
     display: none;
 }
 
 .ql-content {
-    background: white;
-    padding: 20px;
+    background: var(--card-bg);
+    padding: var(--pad-md);
     max-width: 80%;
     max-height: 80%;
     overflow: auto;
-    border-radius: 8px;
+    border-radius: var(--radius);
 }
