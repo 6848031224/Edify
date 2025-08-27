@@ -12,7 +12,7 @@ let renamingItem = null;
 
 // Keyboard nav state
 let visibleFiles = [];
-let focusedIndex = -1; // index within visibleFiles or -1 when none
+let focusedIndex = -1; // index in visibleFiles or -1 when none
 
 // Recursively flatten the nested tree into a single array with paths
 function flattenTree(node, parentPath = "") {
@@ -193,10 +193,7 @@ function render() {
     item.addEventListener("click", (e) => {
       if (e.ctrlKey || e.metaKey) {
         toggleSelect(file.name);
-        // Keep focus aligned if single selection remains
-        if (selectedItems.size === 1) {
-          focusedIndex = idx;
-        }
+        if (selectedItems.size === 1) focusedIndex = idx;
       } else {
         clearSelection();
         toggleSelect(file.name);
@@ -276,6 +273,32 @@ function openEntry(file) {
   }
 }
 
+// Helpers
+function setActiveIndex(next) {
+  if (!visibleFiles.length) return;
+  const clamped = Math.max(0, Math.min(next, visibleFiles.length - 1));
+  focusedIndex = clamped;
+  selectedItems.clear();
+  selectedItems.add(visibleFiles[focusedIndex].name);
+  render();
+}
+
+// Detect number of columns in the current icon grid by measuring the first row
+function getIconGridColumns() {
+  if (viewMode !== "icon") return 1;
+  const view = document.getElementById("file-view");
+  if (!view) return 1;
+  const items = view.querySelectorAll(".item.icon");
+  if (!items.length) return 1;
+  const firstTop = items[0].offsetTop;
+  let cols = 0;
+  for (let i = 0; i < items.length; i++) {
+    if (items[i].offsetTop !== firstTop) break;
+    cols++;
+  }
+  return Math.max(1, cols);
+}
+
 // Keyboard shortcuts
 document.addEventListener("keydown", (e) => {
   // Avoid interfering with typing/renaming
@@ -292,13 +315,22 @@ document.addEventListener("keydown", (e) => {
   // Navigation only when we have files visible
   if (!visibleFiles || visibleFiles.length === 0) return;
 
-  // Arrow navigation (linear). In icon view, Left/Right also move by ±1 for now.
   if (e.key === "ArrowDown") {
     e.preventDefault();
-    setActiveIndex(focusedIndex === -1 ? 0 : focusedIndex + 1);
+    if (viewMode === "icon") {
+      const cols = getIconGridColumns();
+      setActiveIndex(focusedIndex === -1 ? 0 : focusedIndex + cols);
+    } else {
+      setActiveIndex(focusedIndex === -1 ? 0 : focusedIndex + 1);
+    }
   } else if (e.key === "ArrowUp") {
     e.preventDefault();
-    setActiveIndex(focusedIndex === -1 ? 0 : focusedIndex - 1);
+    if (viewMode === "icon") {
+      const cols = getIconGridColumns();
+      setActiveIndex(focusedIndex === -1 ? 0 : focusedIndex - cols);
+    } else {
+      setActiveIndex(focusedIndex === -1 ? 0 : focusedIndex - 1);
+    }
   } else if (e.key === "ArrowRight" && viewMode === "icon") {
     e.preventDefault();
     setActiveIndex(focusedIndex === -1 ? 0 : focusedIndex + 1);
@@ -336,15 +368,5 @@ document.getElementById("view-toggle")?.addEventListener("click", () => {
     viewMode === "list" ? "📃" : "🗂️";
   render();
 });
-
-// Helpers
-function setActiveIndex(next) {
-  if (!visibleFiles.length) return;
-  const clamped = Math.max(0, Math.min(next, visibleFiles.length - 1));
-  focusedIndex = clamped;
-  selectedItems.clear();
-  selectedItems.add(visibleFiles[focusedIndex].name);
-  render();
-}
 
 loadFiles();
