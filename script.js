@@ -14,6 +14,9 @@ let renamingItem = null;
 let visibleFiles = [];
 let focusedIndex = -1; // index in visibleFiles or -1 when none
 
+// Touch-device detection
+const isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
 // Recursively flatten the nested tree into a single array with paths
 function flattenTree(node, parentPath = "") {
   const currentPath = parentPath ? `${parentPath}/${node.name}` : node.name;
@@ -202,8 +205,15 @@ function render() {
       setTimeout(() => input.focus(), 0);
     }
 
-    // Selection click
+    // Selection / open on click or tap
     item.addEventListener("click", (e) => {
+      // On touch devices, single tap should open directly
+      if (isTouchDevice) {
+        openEntry(file);
+        return;
+      }
+
+      // Desktop: ctrl/cmd to multi-select
       if (e.ctrlKey || e.metaKey) {
         toggleSelect(file.name);
         if (selectedItems.size === 1) focusedIndex = idx;
@@ -375,7 +385,6 @@ document.getElementById("sort")?.addEventListener("change", (e) => {
 });
 
 document.getElementById("sort-order")?.addEventListener("click", (e) => {
-  // toggle between 'asc' and 'desc'
   sortConfig.order = sortConfig.order === "asc" ? "desc" : "asc";
   e.target.textContent = sortConfig.order === "asc" ? "▲" : "▼";
   render();
