@@ -221,11 +221,6 @@ header {
 /*──────────────────────────────────────────────────────────
    Touch-friendly tap targets & smooth scrolling on iOS
 ──────────────────────────────────────────────────────────*/
-.item {
-    /* increase hit area on touch devices */
-    padding: calc(var(--pad-md) * 1.5) var(--pad-md);
-    touch-action: manipulation;
-}
 
 #file-view {
     /* enable momentum scrolling on iOS */
