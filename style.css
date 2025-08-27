@@ -1,0 +1,49 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f5f5f7;
+    margin: 0;
+}
+
+header {
+    background: #e1e4e8;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#breadcrumb {
+    margin: 10px 20px;
+    font-size: 14px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.filename {
+    margin-top: 8px;
+    word-break: break-word;
+    font-size: 13px;
+}

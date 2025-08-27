@@ -1,76 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Repo Finder</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="color-scheme" content="light dark" />
-</head>
-<body>
-  <div id="app">
-    <aside class="sidebar">
-      <div class="brand">
-        <span class="brand-icon">🗂️</span>
-        <span class="brand-name">Repo Finder</span>
-      </div>
-
-      <div class="sidebar-section">
-        <div class="section-title">Navigation</div>
-        <ul class="nav-list" id="nav-list">
-          <li class="nav-item active" data-target="/">Root</li>
-        </ul>
-      </div>
-
-      <div class="sidebar-section">
-        <div class="section-title">Options</div>
-        <label class="toggle">
-          <input type="checkbox" id="toggle-hidden" />
-          <span>Show hidden files</span>
-        </label>
-      </div>
-
-      <div class="sidebar-footer">
-        <small id="repo-meta">Loading...</small>
-      </div>
-    </aside>
-
-    <main class="main">
-      <header class="toolbar">
-        <nav class="breadcrumb" id="breadcrumb"></nav>
-
-        <div class="tools">
-          <input type="search" id="search" placeholder="Search files (press / to focus)" />
-          <select id="sort">
-            <option value="name-asc">Name ↑</option>
-            <option value="name-desc">Name ↓</option>
-            <option value="size-asc">Size ↑</option>
-            <option value="size-desc">Size ↓</option>
-            <option value="date-asc">Date ↑</option>
-            <option value="date-desc">Date ↓</option>
-            <option value="type-asc">Type ↑</option>
-            <option value="type-desc">Type ↓</option>
-          </select>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Finder-style File Explorer</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="app">
+            <header>
+                <h1>📂 Politic and Global Studies</h1>
+            </header>
+            <main>
+                <div id="breadcrumb"></div>
+                <div id="file-view" class="grid"></div>
+            </main>
         </div>
-      </header>
-
-      <section class="content">
-        <div class="list" id="list" role="listbox" aria-label="Files and folders"></div>
-        <div class="preview" id="preview">
-          <div class="preview-header">
-            <div class="preview-title" id="preview-title">Preview</div>
-            <div class="preview-actions" id="preview-actions"></div>
-          </div>
-          <div class="preview-body" id="preview-body">
-            <div class="empty-preview">Select a file to preview</div>
-          </div>
-        </div>
-      </section>
-
-      <footer class="statusbar" id="statusbar">Ready</footer>
-    </main>
-  </div>
-
-  <script src="app.js" type="module"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
