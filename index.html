@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Finder for GitHub Repo</title>
+  <meta name="description" content="A macOS Finder–style GitHub repo browser for GitHub Pages (no build step)." />
+  <style>
+    :root{
+      --bg: #0b0c0e;
+      --panel: #121417;
+      --panel-2: #171a1f;
+      --muted: #9aa4b2;
+      --text: #e6eaf2;
+      --accent: #3b82f6;
+      --border: #23262d;
+      --hover: rgba(255,255,255,.06);
+    }
+    .light:root{
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --panel-2: #ffffff;
+      --muted: #5a6573;
+      --text: #0b0c0e;
+      --accent: #2563eb;
+      --border: #e6e8ee;
+      --hover: rgba(0,0,0,.04);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font:14px/1.4 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji";
+      background:var(--bg); color:var(--text);
+      display:flex; flex-direction:column; gap:12px;
+    }
+    header{
+      display:flex; align-items:center; gap:10px; padding:10px 14px; background:var(--panel); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:10;
+    }
+    .brand{display:flex; align-items:center; gap:10px; font-weight:700}
+    .badge{font-size:10px; padding:2px 6px; border:1px solid var(--border); border-radius:999px; color:var(--muted)}
+    .row{display:flex; gap:10px; align-items:center}
+    .btn{padding:8px 10px; border:1px solid var(--border); background:var(--panel-2); color:var(--text); border-radius:10px; cursor:pointer; display:inline-flex; align-items:center; gap:6px}
+    .btn:disabled{opacity:.4; cursor:not-allowed}
+    .btn:hover{background:var(--hover)}
+    .btn.primary{background:var(--accent); border-color:transparent; color:white}
+    .btn.ghost{background:transparent}
+    .input{padding:8px 10px; border:1px solid var(--border); background:var(--panel-2); color:var(--text); border-radius:10px; min-width:220px}
+    .split{display:grid; grid-template-columns: 1fr 320px; gap:12px; height:calc(100% - 66px); padding:0 14px 14px}
+    .columns{
+      display:flex; gap:12px; overflow:auto; padding-bottom:8px;
+    }
+    .column{min-width:280px; max-width:340px; background:var(--panel); border:1px solid var(--border); border-radius:16px; overflow:hidden; display:flex; flex-direction:column}
+    .col-head{display:flex; align-items:center; justify-content:space-between; padding:10px 12px; border-bottom:1px solid var(--border); background:linear-gradient(180deg, rgba(255,255,255,.02), transparent)}
+    .col-title{font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+    .sort{display:flex; gap:6px}
+    .list{overflow:auto}
+    .item{display:flex; align-items:center; gap:8px; padding:8px 10px; border-bottom:1px dashed transparent; cursor:pointer}
+    .item:hover{background:var(--hover)}
+    .item.active{background:rgba(59,130,246,.18)}
+    .name{flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+    .muted{color:var(--muted)}
+    .sep{height:1px; background:var(--border); margin:6px 0}
+    .breadcrumbs{display:flex; align-items:center; gap:6px; flex-wrap:wrap}
+    .crumb{padding:4px 8px; border-radius:999px; background:var(--panel-2); border:1px solid var(--border); cursor:pointer}
+    .crumb:hover{background:var(--hover)}
+    .preview{background:var(--panel); border:1px solid var(--border); border-radius:16px; overflow:hidden; display:flex; flex-direction:column}
+    .pv-head{display:flex; align-items:center; justify-content:space-between; gap:8px; padding:10px 12px; border-bottom:1px solid var(--border)}
+    .pv-body{padding:0; overflow:auto; height:100%}
+    .pv-frame{width:100%; height:100%; border:0}
+    .pv-pad{padding:14px}
+    .readme{padding:14px}
+    .pill{display:inline-flex; gap:6px; align-items:center; padding:3px 8px; border:1px solid var(--border); border-radius:999px; background:var(--panel-2)}
+    .warn{color:#f59e0b}
+    .ok{color:#22c55e}
+    .error{color:#ef4444}
+    .footer{padding:8px 14px; color:var(--muted)}
+    .kbd{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; border:1px solid var(--border); padding:1px 6px; border-radius:6px; background:var(--panel-2)}
+    .hidden{display:none !important}
+    .grow{flex:1}
+    .nowrap{white-space:nowrap}
+  </style>
+  <!-- Markdown + code highlight (CDN, optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span style="font-size:20px">🗂️</span> Finder for GitHub
+      <span class="badge">static · no build</span>
+    </div>
+    <div class="breadcrumbs" id="breadcrumbs"></div>
+    <div class="grow"></div>
+
+    <input id="search" class="input" placeholder="Search current folder… (⌘/Ctrl+K)"/>
+
+    <button id="backBtn" class="btn ghost" title="Back (Alt+◀)">◀</button>
+    <button id="fwdBtn" class="btn ghost" title="Forward (Alt+▶)">▶</button>
+    <button id="copyLinkBtn" class="btn" title="Copy deep link">🔗 Copy</button>
+    <button id="themeBtn" class="btn" title="Toggle theme">🌗</button>
+    <button id="settingsBtn" class="btn" title="Settings">⚙️</button>
+  </header>
+
+  <div class="split">
+    <div class="columns" id="columns" aria-label="Columns"></div>
+
+    <aside class="preview" aria-label="Preview">
+      <div class="pv-head">
+        <div id="pvTitle" class="nowrap">Preview</div>
+        <div class="row">
+          <span id="rateInfo" class="pill muted">⏳ Rate: <span id="rateRemain">?</span>/<span id="rateLimit">?</span></span>
+          <button id="openOnGitHub" class="btn">🐙 Open on GitHub</button>
+          <button id="downloadBtn" class="btn">⬇️ Download</button>
+        </div>
+      </div>
+      <div class="pv-body" id="pvBody"></div>
+    </aside>
+  </div>
+
+  <div class="footer">
+    <span class="muted">Keyboard:</span>
+    <span class="kbd">↑</span><span class="kbd">↓</span> move · <span class="kbd">Enter</span> open · <span class="kbd">Backspace</span> up · <span class="kbd">Alt+◀/▶</span> history · <span class="kbd">/</span> or <span class="kbd">⌘/Ctrl+K</span> search
+  </div>
+
+  <!-- Settings modal -->
+  <dialog id="settingsModal">
+    <form method="dialog" style="min-width: 560px; background: var(--panel); color: var(--text); border:1px solid var(--border); border-radius:14px; padding:16px">
+      <h3 style="margin-top:0">Settings</h3>
+      <div style="display:grid; grid-template-columns:160px 1fr; gap:10px; align-items:center">
+        <label>Owner</label>
+        <input id="ownerInput" class="input" placeholder="e.g. 6848031224" />
+        <label>Repo</label>
+        <input id="repoInput" class="input" placeholder="e.g. Politic-and-Global-Studies" />
+        <label>Branch</label>
+        <input id="branchInput" class="input" placeholder="main" />
+        <label>GitHub Token <span class="muted">(optional)</span></label>
+        <input id="tokenInput" class="input" placeholder="ghp_… (stored locally)" />
+        <label>Start Path</label>
+        <input id="startPathInput" class="input" placeholder="(optional) e.g. docs" />
+      </div>
+      <div class="sep"></div>
+      <div class="muted" style="display:flex; gap:10px; align-items:flex-start">
+        <div>⚠️</div>
+        <div>
+          <div><b>Rate limits:</b> unauthenticated ~60 req/hr · with token ~5,000 req/hr. Your token is stored in <code>localStorage</code> only on this device.</div>
+        </div>
+      </div>
+      <div style="display:flex; gap:8px; justify-content:flex-end; margin-top:12px">
+        <button class="btn ghost" value="cancel">Cancel</button>
+        <button class="btn primary" value="save">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <template id="columnTemplate">
+    <div class="column">
+      <div class="col-head">
+        <div class="col-title"></div>
+        <div class="sort">
+          <select class="input sortSelect" style="min-width:120px">
+            <option value="type-name">Sort: Type · Name</option>
+            <option value="name">Sort: Name</option>
+            <option value="size">Sort: Size</option>
+          </select>
+        </div>
+      </div>
+      <div class="list" role="list"></div>
+    </div>
+  </template>
+
+  <template id="rowTemplate">
+    <div class="item" role="listitem">
+      <div class="icon" aria-hidden>📄</div>
+      <div class="name"></div>
+      <div class="muted size"></div>
+    </div>
+  </template>
+
+  <script>
+    // ========================
+    // Configuration & State
+    // ========================
+    const el = id => document.getElementById(id);
+    const columnsEl = el('columns');
+    const pvBody = el('pvBody');
+    const pvTitle = el('pvTitle');
+    const breadcrumbsEl = el('breadcrumbs');
+    const searchEl = el('search');
+
+    const settings = {
+      owner: '6848031224',
+      repo: 'Politic-and-Global-Studies',
+      branch: 'main',
+      token: '',
+      startPath: ''
+    };
+
+    const state = {
+      // Each level: { path, items, sort }
+      columns: [],
+      history: [],
+      historyIndex: -1,
+      selectedEntry: null,
+    };
+
+    const MIME = {
+      image: ['png','jpg','jpeg','gif','webp','svg','avif'],
+      text: ['txt','md','markdown','json','js','ts','tsx','jsx','html','css','py','rb','java','c','cpp','rs','go','sh','yml','yaml','xml','sql'],
+      pdf: ['pdf'],
+      audio: ['mp3','wav','ogg','m4a','flac'],
+      video: ['mp4','webm','ogv','mov'],
+    };
+
+    function ext(name){
+      const i = name.lastIndexOf('.');
+      return i>0 ? name.slice(i+1).toLowerCase() : '';
+    }
+
+    function isType(name, kind){
+      return MIME[kind].includes(ext(name));
+    }
+
+    function apiHeaders(){
+      const h = { 'Accept': 'application/vnd.github+json' };
+      if (settings.token) h['Authorization'] = `Bearer ${settings.token}`;
+      return h;
+    }
+
+    function api(url){
+      return fetch(url, { headers: apiHeaders() }).then(async r => {
+        // track rate limit if present
+        const rl = r.headers.get('X-RateLimit-Limit');
+        const rr = r.headers.get('X-RateLimit-Remaining');
+        if (rl && rr){
+          el('rateLimit').textContent = rl;
+          el('rateRemain').textContent = rr;
+        }
+        if (!r.ok) {
+          const t = await r.text();
+          throw new Error(`${r.status} ${r.statusText}: ${t}`);
+        }
+        return r.json();
+      });
+    }
+
+    function contentsPath(path){
+      const encoded = path ? encodeURIComponent(path).replace(/%2F/g,'/') : '';
+      return `https://api.github.com/repos/${settings.owner}/${settings.repo}/contents/${encoded}?ref=${encodeURIComponent(settings.branch)}`;
+    }
+
+    // ========================
+    // UI Helpers
+    // ========================
+    function iconFor(entry){
+      if (entry.type === 'dir') return '📁';
+      const e = ext(entry.name);
+      if (MIME.image.includes(e)) return '🖼️';
+      if (MIME.pdf.includes(e)) return '📄';
+      if (MIME.audio.includes(e)) return '🎵';
+      if (MIME.video.includes(e)) return '🎬';
+      if (['md','markdown'].includes(e)) return '📝';
+      if (['zip','tar','gz','7z','rar'].includes(e)) return '🧩';
+      return '📄';
+    }
+
+    function bytes(n){
+      if (n==null) return '';
+      if (n<1024) return n + ' B';
+      const u=['KB','MB','GB','TB'];
+      let i=-1; do { n = n/1024; i++; } while (n>=1024 && i<u.length-1);
+      return n.toFixed(1)+' '+u[i];
+    }
+
+    function setTheme(mode){
+      if (mode==='light'){ document.documentElement.classList.add('light'); }
+      else{ document.documentElement.classList.remove('light'); }
+      localStorage.setItem('finder-theme', mode);
+      el('themeBtn').textContent = mode==='light' ? '🌙' : '🌗';
+    }
+
+    // ========================
+    // Columns & Navigation
+    // ========================
+    async function openPath(path){
+      // Fetch directory or file, and render columns accordingly
+      try{
+        if (!path || path.endsWith('/')) path = path.replace(/\/$/, '');
+        const url = contentsPath(path);
+        const data = await api(url);
+        if (Array.isArray(data)){
+          pushHistory(path);
+          renderFolder(path, data);
+          selectDefault(path, data);
+          updateBreadcrumbs(path);
+          updateDeepLink(path);
+        } else {
+          // data is a file
+          pushHistory(path);
+          openFile(data);
+          updateBreadcrumbs(path.split('/').slice(0,-1).join('/'));
+          updateDeepLink(path);
+        }
+      } catch(err){
+        toastError(err.message);
+      }
+    }
+
+    function pushHistory(path){
+      // trim forward
+      state.history = state.history.slice(0, state.historyIndex+1);
+      state.history.push(path);
+      state.historyIndex++;
+      updateHistoryButtons();
+    }
+
+    function goHistory(delta){
+      const idx = state.historyIndex + delta;
+      if (idx<0 || idx>=state.history.length) return;
+      state.historyIndex = idx;
+      const path = state.history[idx];
+      // don't push again, just open
+      openPathNoHistory(path);
+      updateHistoryButtons();
+    }
+
+    async function openPathNoHistory(path){
+      try{
+        const url = contentsPath(path);
+        const data = await api(url);
+        if (Array.isArray(data)){
+          renderFolder(path, data); selectDefault(path, data); updateBreadcrumbs(path); updateDeepLink(path);
+        } else {
+          openFile(data); updateBreadcrumbs(path.split('/').slice(0,-1).join('/')); updateDeepLink(path);
+        }
+      } catch(err){ toastError(err.message); }
+    }
+
+    function renderFolder(path, entries){
+      // remove columns deeper than this path depth
+      const depth = path ? path.split('/').length : 0;
+      while (columnsEl.children.length > depth+1) columnsEl.removeChild(columnsEl.lastElementChild);
+
+      // ensure columns up to depth exist
+      for (let i=0;i<=depth;i++){
+        if (!columnsEl.children[i]) columnsEl.appendChild(createColumn(i));
+      }
+
+      // render this depth column
+      const col = columnsEl.children[depth];
+      const list = col.querySelector('.list');
+      const title = col.querySelector('.col-title');
+      const sortSel = col.querySelector('.sortSelect');
+
+      title.textContent = '/' + (path||'');
+      sortSel.onchange = () => {
+        state.columns[depth].sort = sortSel.value;
+        fillList(list, applySort(entries, sortSel.value), depth, path);
+      };
+
+      state.columns[depth] = { path, items: entries, sort: state.columns[depth]?.sort || 'type-name' };
+      sortSel.value = state.columns[depth].sort;
+      fillList(list, applySort(entries, sortSel.value), depth, path);
+    }
+
+    function applySort(items, mode){
+      const arr = items.slice();
+      const byName = (a,b)=>a.name.localeCompare(b.name);
+      if (mode==='name') return arr.sort(byName);
+      if (mode==='size') return arr.sort((a,b)=>(a.size||0)-(b.size||0));
+      // type-name: dirs first, then files by name
+      return arr.sort((a,b)=>{
+        if (a.type!==b.type) return a.type==='dir' ? -1 : 1;
+        return a.name.localeCompare(b.name);
+      });
+    }
+
+    function fillList(list, items, depth, basePath){
+      list.innerHTML='';
+      const rowTpl = document.getElementById('rowTemplate');
+      const term = searchEl.value.trim().toLowerCase();
+      const filtered = term ? items.filter(it => it.name.toLowerCase().includes(term)) : items;
+
+      filtered.forEach((entry, idx)=>{
+        const row = rowTpl.content.firstElementChild.cloneNode(true);
+        row.querySelector('.icon').textContent = iconFor(entry);
+        row.querySelector('.name').textContent = entry.name;
+        row.querySelector('.size').textContent = entry.type==='dir' ? '' : bytes(entry.size);
+        row.onclick = () => onOpen(entry, depth);
+        row.onmouseenter = () => setActiveRow(list, row);
+        row.dataset.path = entry.path;
+        row.dataset.type = entry.type;
+        list.appendChild(row);
+      });
+
+      // Keyboard navigation within this column
+      list.tabIndex = 0;
+      list.onkeydown = (ev)=>{
+        const rows = [...list.children];
+        let focused = rows.findIndex(r=>r.classList.contains('active'));
+        if (ev.key==='ArrowDown'){ ev.preventDefault(); focused = Math.min(rows.length-1, focused+1); setActiveRow(list, rows[focused]||rows[0]); }
+        if (ev.key==='ArrowUp'){ ev.preventDefault(); focused = Math.max(0, focused-1); setActiveRow(list, rows[focused]||rows[0]); }
+        if (ev.key==='Enter' && focused>=0){ rows[focused].click(); }
+        if (ev.key==='Backspace'){ ev.preventDefault(); goUp(); }
+      };
+    }
+
+    function setActiveRow(list, row){
+      [...list.children].forEach(r=>r.classList.remove('active'));
+      if (row){ row.classList.add('active'); row.scrollIntoView({block:'nearest'}); }
+    }
+
+    function selectDefault(path, items){
+      // auto-open README.md preview if present, else first item
+      const readme = items.find(x=>x.name.toLowerCase()==='readme.md');
+      if (readme) { previewReadme(readme); return; }
+      const first = items[0];
+      if (first) previewEntry(first);
+    }
+
+    function onOpen(entry, depth){
+      if (entry.type==='dir'){
+        openPath(entry.path);
+      } else {
+        openFileByPath(entry.path);
+      }
+    }
+
+    async function goUp(){
+      const cur = state.history[state.historyIndex]||'';
+      const up = cur.split('/').slice(0,-1).join('/');
+      if (up!==cur) openPath(up);
+    }
+
+    function updateBreadcrumbs(path){
+      breadcrumbsEl.innerHTML='';
+      const parts = path ? path.split('/') : [];
+      const mkCrumb = (label, p)=>{
+        const c = document.createElement('span');
+        c.className='crumb'; c.textContent=label||'/'; c.onclick=()=>openPath(p||'');
+        return c;
+      };
+      breadcrumbsEl.appendChild(mkCrumb('/', ''));
+      let acc='';
+      parts.forEach((seg,i)=>{
+        acc = acc ? acc + '/' + seg : seg;
+        breadcrumbsEl.appendChild(mkCrumb(seg, acc));
+      });
+    }
+
+    function updateHistoryButtons(){
+      el('backBtn').disabled = state.historyIndex<=0;
+      el('fwdBtn').disabled = state.historyIndex>=state.history.length-1;
+    }
+
+    function updateDeepLink(path){
+      // file and folder both map to #/path
+      location.hash = '#' + '/' + (path||'');
+    }
+
+    // ========================
+    // File Preview
+    // ========================
+    async function openFileByPath(path){
+      try{
+        const data = await api(contentsPath(path));
+        openFile(data);
+      } catch(err){ toastError(err.message); }
+    }
+
+    function previewEntry(entry){
+      pvTitle.textContent = entry.name || '(folder)';
+      pvBody.innerHTML = '<div class="pv-pad muted">Select a file to preview. README will render automatically if present.</div>';
+      if (entry.type==='dir') previewReadmeInPath(entry.path);
+      else openFileByPath(entry.path);
+    }
+
+    function previewReadme(entry){
+      previewMarkdownFrom(entry.download_url, entry.name);
+    }
+
+    async function previewReadmeInPath(path){
+      try{
+        const items = await api(contentsPath(path));
+        const rd = items.find(x=>x.name.toLowerCase()==='readme.md');
+        if (rd) previewMarkdownFrom(rd.download_url, rd.name);
+      } catch(e){ /*ignore*/ }
+    }
+
+    function setPreviewHTML(inner){
+      pvBody.innerHTML = inner;
+      // highlight code blocks when present
+      pvBody.querySelectorAll('pre code').forEach(block => { try{ hljs.highlightElement(block); }catch(e){} });
+    }
+
+    async function openFile(file){
+      state.selectedEntry = file;
+      pvTitle.textContent = file.name;
+      el('openOnGitHub').onclick = () => window.open(file.html_url, '_blank');
+      el('downloadBtn').onclick = () => window.open(file.download_url || file.html_url, '_blank');
+
+      const name = file.name.toLowerCase();
+      if (isType(name, 'image')){
+        setPreviewHTML(`<div class="pv-pad"><img alt="image" style="max-width:100%; border-radius:12px;" src="${file.download_url}" /></div>`);
+        return;
+      }
+      if (isType(name, 'pdf')){
+        setPreviewHTML(`<embed class="pv-frame" src="${file.download_url}" type="application/pdf" />`);
+        return;
+      }
+      if (isType(name, 'audio')){
+        setPreviewHTML(`<div class="pv-pad"><audio controls src="${file.download_url}"></audio></div>`);
+        return;
+      }
+      if (isType(name, 'video')){
+        setPreviewHTML(`<video class="pv-frame" controls src="${file.download_url}"></video>`);
+        return;
+      }
+      if (['md','markdown'].includes(ext(name))){
+        previewMarkdownFrom(file.download_url, file.name);
+        return;
+      }
+      if (isType(name, 'text') || file.size < 1024*1024){
+        // Fetch text and show <pre>
+        try{
+          const txt = await fetch(file.download_url, { headers: apiHeaders() }).then(r=>r.text());
+          const safe = escapeHtml(txt);
+          setPreviewHTML(`<div class="pv-pad"><pre><code>${safe}</code></pre></div>`);
+        } catch(err){ setPreviewHTML(`<div class="pv-pad error">${err.message}</div>`); }
+        return;
+      }
+      // Fallback
+      setPreviewHTML(`<div class="pv-pad">
+        <div class="muted">No inline preview available.</div>
+        <div style="margin-top:8px" class="row">
+          <a class="btn" href="${file.download_url}" target="_blank">⬇️ Download</a>
+          <a class="btn" href="${file.html_url}" target="_blank">🐙 View on GitHub</a>
+        </div>
+      </div>`);
+    }
+
+    function escapeHtml(s){
+      return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+    }
+
+    async function previewMarkdownFrom(url, title){
+      try{
+        const md = await fetch(url, { headers: apiHeaders() }).then(r=>r.text());
+        const html = marked.parse(md, { mangle:false, headerIds:true });
+        setPreviewHTML(`<div class="readme">${html}</div>`);
+      } catch(err){ setPreviewHTML(`<div class="pv-pad error">${err.message}</div>`); }
+    }
+
+    // ========================
+    // Search (current folder)
+    // ========================
+    searchEl.addEventListener('input', ()=>{
+      // re-render current column with filter
+      const cur = state.history[state.historyIndex] || '';
+      const depth = cur ? cur.split('/').length : 0;
+      const col = columnsEl.children[depth];
+      if (!col) return;
+      const list = col.querySelector('.list');
+      const { items, sort } = state.columns[depth];
+      fillList(list, applySort(items, sort), depth, cur);
+    });
+
+    window.addEventListener('keydown', (e)=>{
+      if ((e.key==='k' || e.key==='K') && (e.metaKey || e.ctrlKey)){
+        e.preventDefault(); searchEl.focus(); searchEl.select();
+      }
+      if (e.key==='/' && document.activeElement!==searchEl){ e.preventDefault(); searchEl.focus(); }
+      if (e.altKey && e.key==='ArrowLeft'){ goHistory(-1); }
+      if (e.altKey && e.key==='ArrowRight'){ goHistory(1); }
+    });
+
+    // ========================
+    // Top bar actions
+    // ========================
+    el('backBtn').onclick = ()=> goHistory(-1);
+    el('fwdBtn').onclick = ()=> goHistory(1);
+    el('copyLinkBtn').onclick = ()=>{
+      navigator.clipboard.writeText(location.href).then(()=>toast(`Link copied`)).catch(()=>toastError('Copy failed'));
+    };
+
+    // Theme toggle
+    el('themeBtn').onclick = ()=>{
+      const isLight = document.documentElement.classList.contains('light');
+      setTheme(isLight ? 'dark' : 'light');
+    };
+
+    // Settings
+    el('settingsBtn').onclick = ()=> openSettings();
+
+    function openSettings(){
+      const dlg = el('settingsModal');
+      el('ownerInput').value = settings.owner;
+      el('repoInput').value = settings.repo;
+      el('branchInput').value = settings.branch;
+      el('tokenInput').value = settings.token;
+      el('startPathInput').value = settings.startPath;
+      dlg.showModal();
+      dlg.addEventListener('close', onSettingsClose, { once:true });
+    }
+
+    function onSettingsClose(ev){
+      const dlg = el('settingsModal');
+      if (dlg.returnValue === 'save'){
+        settings.owner = el('ownerInput').value.trim() || settings.owner;
+        settings.repo = el('repoInput').value.trim() || settings.repo;
+        settings.branch = el('branchInput').value.trim() || 'main';
+        settings.token = el('tokenInput').value.trim();
+        settings.startPath = el('startPathInput').value.trim();
+        localStorage.setItem('finder-settings', JSON.stringify(settings));
+        toast('Settings saved');
+        // Reload from root or startPath
+        state.columns = []; state.history = []; state.historyIndex = -1;
+        init();
+      }
+    }
+
+    // ========================
+    // Toasts
+    // ========================
+    function toast(msg){ notify(msg, 'ok'); }
+    function toastError(msg){ notify(msg, 'error'); }
+    function notify(msg, cls){
+      const div = document.createElement('div');
+      div.textContent = msg; div.className = `pill ${cls}`;
+      div.style.position='fixed'; div.style.right='14px'; div.style.bottom='14px'; div.style.zIndex='1000';
+      div.style.background='var(--panel)'; div.style.border='1px solid var(--border)';
+      document.body.appendChild(div);
+      setTimeout(()=>div.remove(), 2200);
+    }
+
+    // ========================
+    // Deep link handling
+    // ========================
+    function parseHash(){
+      const h = location.hash.replace(/^#\/?/, '');
+      return h || settings.startPath || '';
+    }
+
+    window.addEventListener('hashchange', ()=>{
+      const target = parseHash();
+      openPathNoHistory(target);
+    });
+
+    // ========================
+    // Boot
+    // ========================
+    function init(){
+      try{
+        const saved = localStorage.getItem('finder-settings');
+        if (saved){ Object.assign(settings, JSON.parse(saved)); }
+      }catch(e){}
+      const theme = localStorage.getItem('finder-theme')||'dark';
+      setTheme(theme);
+
+      const start = parseHash();
+      openPath(start);
+    }
+
+    // Start
+    init();
+  </script>
+</body>
+</html>
