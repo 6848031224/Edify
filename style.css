@@ -1,49 +1,93 @@
+:root {
+    --bg: #f5f5f7;
+    --fg: #000;
+    --card-bg: #fff;
+}
+
 body {
+    background: var(--bg);
+    color: var(--fg);
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    background: #f5f5f7;
     margin: 0;
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: #e1e4e8;
     padding: 10px 20px;
     border-bottom: 1px solid #ccc;
 }
 
+.toolbar {
+    display: flex;
+    gap: 10px;
+}
+
 #breadcrumb {
-    margin: 10px 20px;
+    padding: 10px 20px;
     font-size: 14px;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.item {
-    background: white;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
+#breadcrumb span {
     cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    transition: transform 0.1s;
 }
 
-.item:hover {
-    transform: scale(1.05);
+.list .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    border-bottom: 1px solid #ddd;
+    background: var(--card-bg);
+    transition: background 0.2s;
 }
 
-.item img {
-    width: 64px;
-    height: 64px;
-    object-fit: contain;
+.list .item:hover {
+    background: rgba(0, 0, 0, 0.05);
 }
 
-.filename {
-    margin-top: 8px;
-    word-break: break-word;
-    font-size: 13px;
+.item .filename {
+    flex: 2;
+}
+
+.item .details {
+    flex: 1;
+    text-align: right;
+    font-size: 12px;
+    color: #555;
+}
+
+.label {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    margin-left: 8px;
+}
+
+#quicklook {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quicklook.hidden {
+    display: none;
+}
+
+.ql-content {
+    background: white;
+    padding: 20px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    border-radius: 8px;
 }

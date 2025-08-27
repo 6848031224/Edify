@@ -2,19 +2,33 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Politic and Global Studies</title>
+        <title>Finder‑Style Explorer (List View)</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div id="app">
-            <header>
-                <h1>📂 Politic and Global Studies</h1>
-            </header>
-            <main>
-                <div id="breadcrumb"></div>
-                <div id="file-view" class="grid"></div>
-            </main>
+        <header>
+            <h1>📂 Politic and Global Studies</h1>
+            <div class="toolbar">
+                <input id="search" type="text" placeholder="Search…" />
+                <select id="sort">
+                    <option value="name">Name</option>
+                    <option value="type">Type</option>
+                    <option value="size">Size</option>
+                    <option value="date">Date</option>
+                </select>
+                <button id="view-toggle">📃</button>
+            </div>
+        </header>
+
+        <nav id="breadcrumb"></nav>
+
+        <main id="file-view" class="list"></main>
+
+        <!-- Quick Look -->
+        <div id="quicklook" class="hidden" role="dialog" aria-modal="true">
+            <div class="ql-content"></div>
         </div>
+
         <script src="script.js"></script>
     </body>
 </html>
