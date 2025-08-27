@@ -142,6 +142,7 @@ function render() {
     name.textContent = file.name;
     name.className = "filename";
 
+    // Inline rename mode
     if (renamingItem === file.name) {
       const input = document.createElement("input");
       input.type = "text";
@@ -161,6 +162,7 @@ function render() {
       setTimeout(() => input.focus(), 0);
     }
 
+    // Selection click
     item.addEventListener("click", (e) => {
       if (e.ctrlKey || e.metaKey) {
         toggleSelect(file.name);
@@ -170,11 +172,12 @@ function render() {
       }
     });
 
+    // Double-click: open folder or file in new tab
     item.addEventListener("dblclick", () => {
       if (file.type === "folder") {
         loadFiles(file.path);
-      } else {
-        quickLook(file);
+      } else if (file.url) {
+        window.open(file.url, "_blank");
       }
     });
 
@@ -230,47 +233,7 @@ function clearSelection() {
   selectedItems.clear();
 }
 
-function quickLook(file) {
-  const ql = document.getElementById("quicklook");
-  const qlContent = ql.querySelector(".ql-content");
-  qlContent.innerHTML = "";
-
-  if (file.url) {
-    if (file.url.match(/\.(jpg|jpeg|png|gif)$/i)) {
-      const img = document.createElement("img");
-      img.src = file.url;
-      img.style.maxWidth = "100%";
-      qlContent.appendChild(img);
-    } else if (file.url.match(/\.pdf$/i)) {
-      const iframe = document.createElement("iframe");
-      iframe.src = file.url;
-      iframe.style.width = "80vw";
-      iframe.style.height = "80vh";
-      qlContent.appendChild(iframe);
-    } else {
-      const link = document.createElement("a");
-      link.href = file.url;
-      link.textContent = "Open file";
-      link.target = "_blank";
-      qlContent.appendChild(link);
-    }
-  } else {
-    qlContent.textContent = file.name;
-  }
-
-  ql.classList.remove("hidden");
-
-  ql.addEventListener("click", (e) => {
-    if (e.target === ql) ql.classList.add("hidden");
-  });
-  document.addEventListener(
-    "keydown",
-    (e) => {
-      if (e.key === "Escape") ql.classList.add("hidden");
-    },
-    { once: true },
-  );
-}
+// Quick Look completely removed — no longer used
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "F2" && selectedItems.size === 1) {
