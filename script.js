@@ -23,16 +23,21 @@ function navigateTo(path) {
 function render() {
   const container = document.getElementById("file-view");
   const breadcrumb = document.getElementById("breadcrumb");
+  if (!container || !breadcrumb) return;
+
   const node = getNodeByPath(currentPath) || fileTree;
   let children = node.children || [];
 
   // Search
-  const term = document.getElementById("search").value.toLowerCase();
-  if (term)
+  const searchEl = document.getElementById("search");
+  const term = searchEl ? searchEl.value.toLowerCase() : "";
+  if (term) {
     children = children.filter((f) => f.name.toLowerCase().includes(term));
+  }
 
   // Sort
-  const sortBy = document.getElementById("sort").value;
+  const sortEl = document.getElementById("sort");
+  const sortBy = sortEl ? sortEl.value : "name";
   children.sort((a, b) => {
     if (sortBy === "name") return a.name.localeCompare(b.name);
     if (sortBy === "type") return a.type.localeCompare(b.type);
@@ -80,7 +85,7 @@ function openFile(item) {
     fetch(item.url)
       .then((r) => r.text())
       .then((text) => {
-        if (ext === "md") {
+        if (ext === "md" && typeof marked !== "undefined") {
           showQuickLook(`<div>${marked.parse(text)}</div>`);
         } else {
           showQuickLook(`<pre>${escapeHtml(text)}</pre>`);
@@ -93,19 +98,25 @@ function openFile(item) {
 
 function showQuickLook(content) {
   const ql = document.getElementById("quicklook");
-  ql.querySelector(".ql-content").innerHTML = content;
+  const qlContent = ql?.querySelector(".ql-content");
+  if (!ql || !qlContent) return;
+
+  qlContent.innerHTML = content;
   ql.classList.remove("hidden");
   ql.onclick = () => ql.classList.add("hidden");
 }
 
 function escapeHtml(text) {
-  var div = document.createElement("div");
+  const div = document.createElement("div");
   div.innerText = text;
   return div.innerHTML;
 }
 
-// Events
-document.getElementById("search").addEventListener("input", render);
-document.getElementById("sort").addEventListener("change", render);
+// Events (safe attachment)
+const searchEl = document.getElementById("search");
+if (searchEl) searchEl.addEventListener("input", render);
+
+const sortEl = document.getElementById("sort");
+if (sortEl) sortEl.addEventListener("change", render);
 
 loadFiles();
