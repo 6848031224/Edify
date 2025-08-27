@@ -10,7 +10,6 @@ let searchTerm = "";
 let selectedItems = new Set();
 let renamingItem = null;
 
-// Recursively flatten the nested tree into a single array with paths
 function flattenTree(node, parentPath = "") {
   const currentPath = parentPath ? `${parentPath}/${node.name}` : node.name;
   const entry = {
@@ -18,9 +17,9 @@ function flattenTree(node, parentPath = "") {
     type: node.type,
     path: currentPath,
     modified: node.modified || null,
+    size: node.size || null,
     url: node.url || null,
   };
-
   let list = [entry];
   if (Array.isArray(node.children)) {
     for (const child of node.children) {
@@ -30,7 +29,6 @@ function flattenTree(node, parentPath = "") {
   return list;
 }
 
-// Load files for a given path
 async function loadFiles(path = "") {
   try {
     const res = await fetch("files.json");
@@ -39,8 +37,8 @@ async function loadFiles(path = "") {
 
     const allFiles = flattenTree(root);
     currentPath = path;
-
     const depth = path ? path.split("/").filter(Boolean).length + 1 : 1;
+
     files = allFiles.filter(
       (f) =>
         f.path.startsWith(path) &&
@@ -58,6 +56,8 @@ async function loadFiles(path = "") {
 function sortFiles(a, b) {
   if (a.type !== b.type) return a.type === "folder" ? -1 : 1;
   if (sortMode === "name") return (a.name || "").localeCompare(b.name || "");
+  if (sortMode === "type") return (a.type || "").localeCompare(b.type || "");
+  if (sortMode === "size") return (a.size || 0) - (b.size || 0);
   if (sortMode === "date") return new Date(b.modified) - new Date(a.modified);
   return 0;
 }
@@ -73,16 +73,16 @@ function render() {
 
   filtered.forEach((file) => {
     const item = document.createElement("div");
-    item.className = `file-item ${viewMode}`;
+    item.className = `item ${viewMode}`;
     item.dataset.name = file.name;
 
     const icon = document.createElement("span");
     icon.textContent = file.type === "folder" ? "📁" : "📄";
-    icon.className = "icon";
+    icon.className = "file-icon";
 
     const name = document.createElement("span");
     name.textContent = file.name;
-    name.className = "name";
+    name.className = "filename";
 
     if (renamingItem === file.name) {
       const input = document.createElement("input");
@@ -163,11 +163,8 @@ function updateBreadcrumb() {
 }
 
 function toggleSelect(name) {
-  if (selectedItems.has(name)) {
-    selectedItems.delete(name);
-  } else {
-    selectedItems.add(name);
-  }
+  if (selectedItems.has(name)) selectedItems.delete(name);
+  else selectedItems.add(name);
   render();
 }
 
@@ -176,11 +173,46 @@ function clearSelection() {
 }
 
 function quickLook(file) {
+  const ql = document.getElementById("quicklook");
+  const qlContent = ql.querySelector(".ql-content");
+  qlContent.innerHTML = "";
+
   if (file.url) {
-    window.open(file.url, "_blank");
+    if (file.url.match(/\.(jpg|jpeg|png|gif)$/i)) {
+      const img = document.createElement("img");
+      img.src = file.url;
+      img.style.maxWidth = "100%";
+      qlContent.appendChild(img);
+    } else if (file.url.match(/\.pdf$/i)) {
+      const iframe = document.createElement("iframe");
+      iframe.src = file.url;
+      iframe.style.width = "80vw";
+      iframe.style.height = "80vh";
+      qlContent.appendChild(iframe);
+    } else {
+      const link = document.createElement("a");
+      link.href = file.url;
+      link.textContent = "Open file";
+      link.target = "_blank";
+      qlContent.appendChild(link);
+    }
   } else {
-    alert(`Quick Look: ${file.name}`);
+    qlContent.textContent = file.name;
   }
+
+  ql.classList.remove("hidden");
+
+  // Close on click outside or Escape
+  ql.addEventListener("click", (e) => {
+    if (e.target === ql) ql.classList.add("hidden");
+  });
+  document.addEventListener(
+    "keydown",
+    (e) => {
+      if (e.key === "Escape") ql.classList.add("hidden");
+    },
+    { once: true },
+  );
 }
 
 document.addEventListener("keydown", (e) => {
