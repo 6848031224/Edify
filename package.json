@@ -1,0 +1,21 @@
+{
+  "name": "politic-and-global-studies-06",
+  "version": "1.0.0",
+  "description": "https://github.com/6848031224/Politic-and-Global-Studies",
+  "main": "generate-files-json.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6848031224/Politic-and-Global-Studies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/6848031224/Politic-and-Global-Studies/issues"
+  },
+  "homepage": "https://github.com/6848031224/Politic-and-Global-Studies#readme"
+}
