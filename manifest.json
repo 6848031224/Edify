@@ -1,0 +1,2892 @@
+{
+  "version": "baa5388273c53bdd76b97ec75b5213a1ef2f49ad",
+  "generatedAt": "2025-08-27T09:31:32.718Z",
+  "files": [
+    {
+      "path": ".DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756284651071.9092
+    },
+    {
+      "path": ".github",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756284595000
+    },
+    {
+      "path": ".github/workflows",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756284595000
+    },
+    {
+      "path": ".github/workflows/build-manifest.yml",
+      "isDir": false,
+      "size": 855,
+      "mtime": 1756284589909.9243
+    },
+    {
+      "path": ".nojekyll",
+      "isDir": false,
+      "size": 0,
+      "mtime": 1756283829013.7617
+    },
+    {
+      "path": "Gen-Ed",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "Gen-Ed/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837097.698
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/.DS_Store",
+      "isDir": false,
+      "size": 8196,
+      "mtime": 1756280837098.0002
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Assignment",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Assignment/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837098.2349
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Assignment/Aim",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Assignment/Aim/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837098.4688
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Assignment/Aim/Week 3 Globalization",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Assignment/Aim/Week 3 Globalization/Globalization.pdf",
+      "isDir": false,
+      "size": 42120,
+      "mtime": 1756280837098.7534
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Assignment/Aim/Week 3 Globalization/Globalization.tex",
+      "isDir": false,
+      "size": 2906,
+      "mtime": 1756280837098.9314
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Latex",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Latex/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837099.1174
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Latex/Management Under Different Cultures.pdf",
+      "isDir": false,
+      "size": 1487970,
+      "mtime": 1756280837102.36
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Latex/Management Under Different Cultures.tex",
+      "isDir": false,
+      "size": 1020,
+      "mtime": 1756280837102.5513
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Latex/Materials",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Latex/Materials/IOB_Arisara-155069-17544660059407.pdf",
+      "isDir": false,
+      "size": 778328,
+      "mtime": 1756280837104.6616
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Materials",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Materials/Crisis_management-888578-17558468297266.pdf",
+      "isDir": false,
+      "size": 2387264,
+      "mtime": 1756280837110.447
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Materials/IOB_Arisara-155069-17544660059407.pdf",
+      "isDir": false,
+      "size": 778328,
+      "mtime": 1756280837112.338
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Materials/Management_Functions_Handout-888578-17550743285028.pdf",
+      "isDir": false,
+      "size": 5417832,
+      "mtime": 1756280837118.1711
+    },
+    {
+      "path": "Gen-Ed/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Materials/Week_3_Globalization-888578-17556776088920.pdf",
+      "isDir": false,
+      "size": 8173792,
+      "mtime": 1756280837132.6423
+    },
+    {
+      "path": "LICENSE",
+      "isDir": false,
+      "size": 11357,
+      "mtime": 1756179423723.1262
+    },
+    {
+      "path": "PGS-1",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/.DS_Store",
+      "isDir": false,
+      "size": 10244,
+      "mtime": 1756281317432.7317
+    },
+    {
+      "path": "PGS-1/Books",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Books/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837133.4236
+    },
+    {
+      "path": "PGS-1/Books/Politics and Government of Thailand",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Books/Politics and Government of Thailand/A Siamese Tragedy_ Development and Disintegration in Modern -- Walden Bello, Shea Cunningham and Li Kheng Poh.pdf",
+      "isDir": false,
+      "size": 7676226,
+      "mtime": 1756280837147.9924
+    },
+    {
+      "path": "PGS-1/Books/Politics and Government of Thailand/Opposing Democracy in the Digital Age_ The Yellow Shirts in -- Aim Sinpeng -- 1st Edition, 2021 -- University of Michigan Press.pdf",
+      "isDir": false,
+      "size": 2274195,
+      "mtime": 1756280837151.6555
+    },
+    {
+      "path": "PGS-1/Books/Politics and Government of Thailand/Reforming Thai politics -- Duncan McCargo 1st, 2002.pdf",
+      "isDir": false,
+      "size": 2149968,
+      "mtime": 1756280837155.9622
+    },
+    {
+      "path": "PGS-1/Books/Politics and Government of Thailand/Thailand_ Economy and Politics -- Pasuk Phongpaichit, Chris Baker -- Kuala Lumpur ; Oxford, 1995 -- Oxford University Press, Incorporated.pdf",
+      "isDir": false,
+      "size": 30655104,
+      "mtime": 1756280837193.8418
+    },
+    {
+      "path": "PGS-1/Books/Politics and Government of Thailand/Thaksin_ the business of politics in Thailand -- Pasuk Phongpaichit and Chris Baker -- Copenhagen, Denmark, 2004 -- Silkworm Books.pdf",
+      "isDir": false,
+      "size": 15063795,
+      "mtime": 1756280837214.8313
+    },
+    {
+      "path": "PGS-1/Books/Politics and Government of Thailand/The Politics of Uneven Development_ Thailand's Economic -- Richard F_ Doner -- 1, 2009 -- Cambridge University Press.pdf",
+      "isDir": false,
+      "size": 1609692,
+      "mtime": 1756280837218.112
+    },
+    {
+      "path": "PGS-1/Semester-1",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/.DS_Store",
+      "isDir": false,
+      "size": 16388,
+      "mtime": 1756281317434.0366
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/.DS_Store",
+      "isDir": false,
+      "size": 8196,
+      "mtime": 1756280837219.2002
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Assignment",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Assignment/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837219.3306
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Assignment/Aim",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Assignment/Aim/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837219.4724
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Assignment/Aim/Week 3 Globalization",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Assignment/Aim/Week 3 Globalization/Globalization.pdf",
+      "isDir": false,
+      "size": 42120,
+      "mtime": 1756280837219.712
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Assignment/Aim/Week 3 Globalization/Globalization.tex",
+      "isDir": false,
+      "size": 2906,
+      "mtime": 1756280837219.7856
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Latex",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Latex/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837219.8926
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Latex/Management Under Different Cultures.pdf",
+      "isDir": false,
+      "size": 1487970,
+      "mtime": 1756280837221.7207
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Latex/Management Under Different Cultures.tex",
+      "isDir": false,
+      "size": 1020,
+      "mtime": 1756280837221.9592
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Latex/Materials",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Latex/Materials/IOB_Arisara-155069-17544660059407.pdf",
+      "isDir": false,
+      "size": 778328,
+      "mtime": 1756280837223.2825
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Materials",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Materials/Crisis_management-888578-17558468297266.pdf",
+      "isDir": false,
+      "size": 2387264,
+      "mtime": 1756280837227.043
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Materials/IOB_Arisara-155069-17544660059407.pdf",
+      "isDir": false,
+      "size": 778328,
+      "mtime": 1756280837228.3206
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Materials/Management_Functions_Handout-888578-17550743285028.pdf",
+      "isDir": false,
+      "size": 5417832,
+      "mtime": 1756280837232.8132
+    },
+    {
+      "path": "PGS-1/Semester-1/0201125_MANAGEMENT UNDER DIFFERENT CULTUR/Materials/Week_3_Globalization-888578-17556776088920.pdf",
+      "isDir": false,
+      "size": 8173792,
+      "mtime": 1756280837244.2986
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/.DS_Store",
+      "isDir": false,
+      "size": 10244,
+      "mtime": 1756280837244.5876
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Books",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Books/A Siamese Tragedy_ Development and Disintegration in Modern -- Walden Bello, Shea Cunningham and Li Kheng Poh.pdf",
+      "isDir": false,
+      "size": 7676226,
+      "mtime": 1756280837257.6484
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Books/Opposing Democracy in the Digital Age_ The Yellow Shirts in -- Aim Sinpeng -- 1st Edition, 2021 -- University of Michigan Press.pdf",
+      "isDir": false,
+      "size": 2274195,
+      "mtime": 1756280837261.0525
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Books/Reforming Thai politics -- Duncan McCargo 1st, 2002.pdf",
+      "isDir": false,
+      "size": 2149968,
+      "mtime": 1756280837265.396
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Books/Thailand_ Economy and Politics -- Pasuk Phongpaichit, Chris Baker -- Kuala Lumpur ; Oxford, 1995 -- Oxford University Press, Incorporated.pdf",
+      "isDir": false,
+      "size": 30655104,
+      "mtime": 1756280837302.404
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Books/Thaksin_ the business of politics in Thailand -- Pasuk Phongpaichit and Chris Baker -- Copenhagen, Denmark, 2004 -- Silkworm Books.pdf",
+      "isDir": false,
+      "size": 15063795,
+      "mtime": 1756280837322.9316
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Books/The Politics of Uneven Development_ Thailand's Economic -- Richard F_ Doner -- 1, 2009 -- Cambridge University Press.pdf",
+      "isDir": false,
+      "size": 1609692,
+      "mtime": 1756280837326.078
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837326.6948
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.pdf",
+      "isDir": false,
+      "size": 94337,
+      "mtime": 1756280837326.9148
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837330.6677
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837330.3755
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837329.9165
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/0EB16FF9-6C9D-4FA9-B47D-F8902B6AD165",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837327.1333
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/0EB16FF9-6C9D-4FA9-B47D-F8902B6AD165/content.pdf",
+      "isDir": false,
+      "size": 84548,
+      "mtime": 1756280837327.2932
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/15181D2C-56D4-428E-86BE-41C6F64D7705",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837327.4302
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/15181D2C-56D4-428E-86BE-41C6F64D7705/content.rtf",
+      "isDir": false,
+      "size": 1516,
+      "mtime": 1756280837327.4055
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/15181D2C-56D4-428E-86BE-41C6F64D7705/content.styles",
+      "isDir": false,
+      "size": 36,
+      "mtime": 1756280837327.4546
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/3B425F17-6AEB-4983-8C67-5167CFE5B4E9",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837327.5833
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/3B425F17-6AEB-4983-8C67-5167CFE5B4E9/content.rtf",
+      "isDir": false,
+      "size": 301,
+      "mtime": 1756280837327.5505
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/3B425F17-6AEB-4983-8C67-5167CFE5B4E9/notes.rtf",
+      "isDir": false,
+      "size": 327,
+      "mtime": 1756280837327.6199
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/3D707F9E-6E7B-4A2B-BF04-64BD98EC07A8",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837327.7444
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/3D707F9E-6E7B-4A2B-BF04-64BD98EC07A8/content.rtf",
+      "isDir": false,
+      "size": 238,
+      "mtime": 1756280837327.7178
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/3D707F9E-6E7B-4A2B-BF04-64BD98EC07A8/notes.rtf",
+      "isDir": false,
+      "size": 476,
+      "mtime": 1756280837327.7734
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/3ECF6511-EC5A-4B9A-B12F-039C0CDD2CB7",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837327.8828
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/3ECF6511-EC5A-4B9A-B12F-039C0CDD2CB7/content.rtf",
+      "isDir": false,
+      "size": 362,
+      "mtime": 1756280837327.8608
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/3ECF6511-EC5A-4B9A-B12F-039C0CDD2CB7/notes.rtf",
+      "isDir": false,
+      "size": 354,
+      "mtime": 1756280837327.913
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/520C484F-808A-4651-B417-C1CF776CEA07",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837328.0332
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/520C484F-808A-4651-B417-C1CF776CEA07/content.rtf",
+      "isDir": false,
+      "size": 484,
+      "mtime": 1756280837328.0066
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/520C484F-808A-4651-B417-C1CF776CEA07/notes.rtf",
+      "isDir": false,
+      "size": 434,
+      "mtime": 1756280837328.063
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/606E2F6A-318D-44EA-A9BC-81093A72CD2F",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837328.1733
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/606E2F6A-318D-44EA-A9BC-81093A72CD2F/content.rtf",
+      "isDir": false,
+      "size": 1185,
+      "mtime": 1756280837328.1492
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/606E2F6A-318D-44EA-A9BC-81093A72CD2F/content.styles",
+      "isDir": false,
+      "size": 73,
+      "mtime": 1756280837328.2004
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/60D37027-5A0F-4CA1-BA8F-0F527FC7BB6D",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837328.2622
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/60D37027-5A0F-4CA1-BA8F-0F527FC7BB6D/content.rtf",
+      "isDir": false,
+      "size": 2896,
+      "mtime": 1756280837328.2979
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/6A2981D0-EE77-461E-BF97-D9ED0D27A5D2",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837328.402
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/6A2981D0-EE77-461E-BF97-D9ED0D27A5D2/content.rtf",
+      "isDir": false,
+      "size": 238,
+      "mtime": 1756280837328.3784
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/6A2981D0-EE77-461E-BF97-D9ED0D27A5D2/notes.rtf",
+      "isDir": false,
+      "size": 476,
+      "mtime": 1756280837328.4287
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/6D6EA0BE-A570-43E8-9D39-A99ECFB0C8E2",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837328.543
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/6D6EA0BE-A570-43E8-9D39-A99ECFB0C8E2/content.rtf",
+      "isDir": false,
+      "size": 1011,
+      "mtime": 1756280837328.519
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/6D6EA0BE-A570-43E8-9D39-A99ECFB0C8E2/content.styles",
+      "isDir": false,
+      "size": 36,
+      "mtime": 1756280837328.5715
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/758594EB-4005-4184-A4B3-3301CB58CF79",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837328.6345
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/758594EB-4005-4184-A4B3-3301CB58CF79/content.png",
+      "isDir": false,
+      "size": 123121,
+      "mtime": 1756280837328.8838
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/96776348-B035-46DA-A5A5-210E99B93774",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837328.9612
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/96776348-B035-46DA-A5A5-210E99B93774/notes.rtf",
+      "isDir": false,
+      "size": 928,
+      "mtime": 1756280837328.9915
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/9FFBA333-8432-41C1-91F5-1302DFE283CA",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837329.0437
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/9FFBA333-8432-41C1-91F5-1302DFE283CA/content.rtf",
+      "isDir": false,
+      "size": 47875,
+      "mtime": 1756280837329.1296
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/B5BAD6CD-B8F5-469F-9D65-288D1D5001DD",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837329.2827
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/B5BAD6CD-B8F5-469F-9D65-288D1D5001DD/content.rtf",
+      "isDir": false,
+      "size": 265,
+      "mtime": 1756280837329.2588
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/B5BAD6CD-B8F5-469F-9D65-288D1D5001DD/notes.rtf",
+      "isDir": false,
+      "size": 327,
+      "mtime": 1756280837329.3113
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/BB360289-7F77-4AF1-A155-43057C51131A",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837329.4685
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/BB360289-7F77-4AF1-A155-43057C51131A/content.rtf",
+      "isDir": false,
+      "size": 1342,
+      "mtime": 1756280837329.395
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/BB360289-7F77-4AF1-A155-43057C51131A/notes.rtf",
+      "isDir": false,
+      "size": 961,
+      "mtime": 1756280837329.4434
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/BB360289-7F77-4AF1-A155-43057C51131A/synopsis.txt",
+      "isDir": false,
+      "size": 29,
+      "mtime": 1756280837329.4985
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/BC7E71F7-4BE2-4EC4-BAFB-7A9A6361CA0F",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837329.6353
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/BC7E71F7-4BE2-4EC4-BAFB-7A9A6361CA0F/content.rtf",
+      "isDir": false,
+      "size": 1694,
+      "mtime": 1756280837329.6074
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/BC7E71F7-4BE2-4EC4-BAFB-7A9A6361CA0F/content.styles",
+      "isDir": false,
+      "size": 36,
+      "mtime": 1756280837329.6626
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/D2AFCD23-3F09-4D73-B893-5743EFAC7306",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837329.771
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/D2AFCD23-3F09-4D73-B893-5743EFAC7306/content.rtf",
+      "isDir": false,
+      "size": 2651,
+      "mtime": 1756280837329.75
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/D2AFCD23-3F09-4D73-B893-5743EFAC7306/content.styles",
+      "isDir": false,
+      "size": 73,
+      "mtime": 1756280837329.801
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/D45CE407-175C-4B06-B4E3-28E435CEECFC",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837329.855
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/D45CE407-175C-4B06-B4E3-28E435CEECFC/content.rtf",
+      "isDir": false,
+      "size": 799,
+      "mtime": 1756280837329.8872
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/Data/docs.checksum",
+      "isDir": false,
+      "size": 2144,
+      "mtime": 1756280837329.9531
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/binder.autosave",
+      "isDir": false,
+      "size": 4117,
+      "mtime": 1756280837330.0322
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/binder.backup",
+      "isDir": false,
+      "size": 3492,
+      "mtime": 1756280837330.0925
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/search.indexes",
+      "isDir": false,
+      "size": 28176,
+      "mtime": 1756280837330.1987
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/styles.xml",
+      "isDir": false,
+      "size": 5505,
+      "mtime": 1756280837330.304
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/version.txt",
+      "isDir": false,
+      "size": 2,
+      "mtime": 1756280837330.3516
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Files/writing.history",
+      "isDir": false,
+      "size": 226,
+      "mtime": 1756280837330.4004
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/POL GOVT THAI Sum.scrivx",
+      "isDir": false,
+      "size": 24600,
+      "mtime": 1756280837330.4792
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/QuickLook",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837330.5667
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/QuickLook/Preview.html",
+      "isDir": false,
+      "size": 6795,
+      "mtime": 1756280837330.6416
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Settings",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837331.4011
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Settings/Compile Formats",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837330.8447
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Settings/Compile Formats/Non-Fiction Manuscript (Courier).scrformat",
+      "isDir": false,
+      "size": 58624,
+      "mtime": 1756280837330.8096
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Settings/Compile Formats/Non-Fiction Manuscript (Times).scrformat",
+      "isDir": false,
+      "size": 59099,
+      "mtime": 1756280837330.8833
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Settings/compile.xml",
+      "isDir": false,
+      "size": 24323,
+      "mtime": 1756280837330.9634
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Settings/favorites.xml",
+      "isDir": false,
+      "size": 76,
+      "mtime": 1756280837331.0369
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Settings/projectpreferences.xml",
+      "isDir": false,
+      "size": 634,
+      "mtime": 1756280837331.096
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Settings/recents.txt",
+      "isDir": false,
+      "size": 591,
+      "mtime": 1756280837331.1519
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Settings/templateinfo.xml",
+      "isDir": false,
+      "size": 215,
+      "mtime": 1756280837331.2092
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Settings/ui-common.xml",
+      "isDir": false,
+      "size": 15874,
+      "mtime": 1756280837331.3777
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP/POL GOVT THAI Sum.scriv/Settings/ui.plist",
+      "isDir": false,
+      "size": 9420,
+      "mtime": 1756280837331.4722
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Latex",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Latex/POL GOVT THAI.tex",
+      "isDir": false,
+      "size": 188,
+      "mtime": 1756280837331.5542
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/POL GOVT THAI Course Syllabus.pdf",
+      "isDir": false,
+      "size": 156217,
+      "mtime": 1756280837331.8196
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Prof Recap",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Prof Recap/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837331.9875
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Prof Recap/Week 2",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Prof Recap/Week 2/State Formation and Pre-1932 Institutional Order_recap.pdf",
+      "isDir": false,
+      "size": 653164,
+      "mtime": 1756280837332.703
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Slides",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Slides/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837332.8582
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Slides/Week 2",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Slides/Week 2/State Formation and Pre-1932 Institutional Order.pdf",
+      "isDir": false,
+      "size": 546899,
+      "mtime": 1756280837333.9558
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Slides/Week 2/State Formation and Pre-1932 Institutional Order_recap.pdf",
+      "isDir": false,
+      "size": 653164,
+      "mtime": 1756280837334.865
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Slides/Week 3",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2400104_POL GOVT THAI/Slides/Week 3/The 1932 Revolution as a Critical Juncture.pdf",
+      "isDir": false,
+      "size": 318043,
+      "mtime": 1756280837335.9688
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/.DS_Store",
+      "isDir": false,
+      "size": 14340,
+      "mtime": 1756281317432.3386
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/2402308_Development_of_the_International_System_2025-889694-17542193705530.pdf",
+      "isDir": false,
+      "size": 269205,
+      "mtime": 1756280837336.5713
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Books",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Books/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756281317431.812
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Books/Week 1",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Books/Week 1/(ebook - english) Luttwak, Edward. The Grand Strategy of the Roman Empire.pdf",
+      "isDir": false,
+      "size": 11476946,
+      "mtime": 1756280837352.097
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Books/Week 1/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837352.2385
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Books/Week 1/Empires In World History PDF.pdf",
+      "isDir": false,
+      "size": 1126961,
+      "mtime": 1756280837354.0105
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Books/Week 1/Feuchtwang, Stephen_ Rowlands, M. J. - Civilisation recast _ theoretical and historical perspectives (2019, Cambridge University Press) - libgen.li.pdf",
+      "isDir": false,
+      "size": 6348138,
+      "mtime": 1756280837363.2908
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Books/Week 1/James M. Blaut - Eight-Eurocentric-Historians.pdf",
+      "isDir": false,
+      "size": 1599095,
+      "mtime": 1756280837366.5762
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Books/Week 1/wickham-the-inheritance-of-rome.pdf",
+      "isDir": false,
+      "size": 6560187,
+      "mtime": 1756280837378.9302
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837379.1694
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.pdf",
+      "isDir": false,
+      "size": 92616,
+      "mtime": 1756280837379.3552
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837383.4648
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Class Summary.scrivx",
+      "isDir": false,
+      "size": 26378,
+      "mtime": 1756280837379.4585
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837383.3005
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837382.805
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/0EB16FF9-6C9D-4FA9-B47D-F8902B6AD165",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837379.6433
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/0EB16FF9-6C9D-4FA9-B47D-F8902B6AD165/content.pdf",
+      "isDir": false,
+      "size": 84548,
+      "mtime": 1756280837379.8289
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/1D193AC1-5A02-4030-BB32-75A3919681BF",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837379.9724
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/1D193AC1-5A02-4030-BB32-75A3919681BF/content.rtf",
+      "isDir": false,
+      "size": 2133,
+      "mtime": 1756280837379.9463
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/1D193AC1-5A02-4030-BB32-75A3919681BF/content.styles",
+      "isDir": false,
+      "size": 36,
+      "mtime": 1756280837380.0046
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/3B425F17-6AEB-4983-8C67-5167CFE5B4E9",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837380.124
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/3B425F17-6AEB-4983-8C67-5167CFE5B4E9/content.rtf",
+      "isDir": false,
+      "size": 301,
+      "mtime": 1756280837380.0981
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/3B425F17-6AEB-4983-8C67-5167CFE5B4E9/notes.rtf",
+      "isDir": false,
+      "size": 327,
+      "mtime": 1756280837380.1548
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/3D707F9E-6E7B-4A2B-BF04-64BD98EC07A8",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837380.283
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/3D707F9E-6E7B-4A2B-BF04-64BD98EC07A8/content.rtf",
+      "isDir": false,
+      "size": 238,
+      "mtime": 1756280837380.2559
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/3D707F9E-6E7B-4A2B-BF04-64BD98EC07A8/notes.rtf",
+      "isDir": false,
+      "size": 476,
+      "mtime": 1756280837380.3154
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/3ECF6511-EC5A-4B9A-B12F-039C0CDD2CB7",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837380.442
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/3ECF6511-EC5A-4B9A-B12F-039C0CDD2CB7/content.rtf",
+      "isDir": false,
+      "size": 362,
+      "mtime": 1756280837380.415
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/3ECF6511-EC5A-4B9A-B12F-039C0CDD2CB7/notes.rtf",
+      "isDir": false,
+      "size": 354,
+      "mtime": 1756280837380.4714
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/520C484F-808A-4651-B417-C1CF776CEA07",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837380.6038
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/520C484F-808A-4651-B417-C1CF776CEA07/content.rtf",
+      "isDir": false,
+      "size": 484,
+      "mtime": 1756280837380.5715
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/520C484F-808A-4651-B417-C1CF776CEA07/notes.rtf",
+      "isDir": false,
+      "size": 434,
+      "mtime": 1756280837380.6335
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/60D37027-5A0F-4CA1-BA8F-0F527FC7BB6D",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837380.7058
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/60D37027-5A0F-4CA1-BA8F-0F527FC7BB6D/content.rtf",
+      "isDir": false,
+      "size": 3595,
+      "mtime": 1756280837380.7397
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/6A2981D0-EE77-461E-BF97-D9ED0D27A5D2",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837380.8738
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/6A2981D0-EE77-461E-BF97-D9ED0D27A5D2/content.rtf",
+      "isDir": false,
+      "size": 238,
+      "mtime": 1756280837380.8467
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/6A2981D0-EE77-461E-BF97-D9ED0D27A5D2/notes.rtf",
+      "isDir": false,
+      "size": 476,
+      "mtime": 1756280837380.9062
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/7549ED70-FDD4-4A71-A9B4-F89A022A6B24",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837380.9783
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/7549ED70-FDD4-4A71-A9B4-F89A022A6B24/content.rtf",
+      "isDir": false,
+      "size": 670,
+      "mtime": 1756280837381.0115
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/758594EB-4005-4184-A4B3-3301CB58CF79",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837381.0857
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/758594EB-4005-4184-A4B3-3301CB58CF79/content.png",
+      "isDir": false,
+      "size": 123121,
+      "mtime": 1756280837381.3303
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/96776348-B035-46DA-A5A5-210E99B93774",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837381.4119
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/96776348-B035-46DA-A5A5-210E99B93774/notes.rtf",
+      "isDir": false,
+      "size": 928,
+      "mtime": 1756280837381.4458
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/9FFBA333-8432-41C1-91F5-1302DFE283CA",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837381.5137
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/9FFBA333-8432-41C1-91F5-1302DFE283CA/content.rtf",
+      "isDir": false,
+      "size": 47875,
+      "mtime": 1756280837381.6062
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/B5BAD6CD-B8F5-469F-9D65-288D1D5001DD",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837381.742
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/B5BAD6CD-B8F5-469F-9D65-288D1D5001DD/content.rtf",
+      "isDir": false,
+      "size": 265,
+      "mtime": 1756280837381.716
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/B5BAD6CD-B8F5-469F-9D65-288D1D5001DD/notes.rtf",
+      "isDir": false,
+      "size": 327,
+      "mtime": 1756280837381.769
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/BB360289-7F77-4AF1-A155-43057C51131A",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837381.945
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/BB360289-7F77-4AF1-A155-43057C51131A/content.rtf",
+      "isDir": false,
+      "size": 1332,
+      "mtime": 1756280837381.867
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/BB360289-7F77-4AF1-A155-43057C51131A/notes.rtf",
+      "isDir": false,
+      "size": 961,
+      "mtime": 1756280837381.918
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/BB360289-7F77-4AF1-A155-43057C51131A/synopsis.txt",
+      "isDir": false,
+      "size": 29,
+      "mtime": 1756280837381.9749
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/BBE633EF-235A-4272-BD34-DFB66AAD2392",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837382.1208
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/BBE633EF-235A-4272-BD34-DFB66AAD2392/content.rtf",
+      "isDir": false,
+      "size": 1770,
+      "mtime": 1756280837382.0798
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/BBE633EF-235A-4272-BD34-DFB66AAD2392/content.styles",
+      "isDir": false,
+      "size": 36,
+      "mtime": 1756280837382.1562
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/C5C89DB7-5404-4109-8CF7-355D76BE0DAD",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837382.3171
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/C5C89DB7-5404-4109-8CF7-355D76BE0DAD/content.rtf",
+      "isDir": false,
+      "size": 2398,
+      "mtime": 1756280837382.287
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/C5C89DB7-5404-4109-8CF7-355D76BE0DAD/content.styles",
+      "isDir": false,
+      "size": 36,
+      "mtime": 1756280837382.347
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/E62EDCE9-A101-43B0-9DE0-58C4CD03665B",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837382.4749
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/E62EDCE9-A101-43B0-9DE0-58C4CD03665B/content.rtf",
+      "isDir": false,
+      "size": 891,
+      "mtime": 1756280837382.4492
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/E62EDCE9-A101-43B0-9DE0-58C4CD03665B/content.styles",
+      "isDir": false,
+      "size": 36,
+      "mtime": 1756280837382.5017
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/EDE99FE3-7226-451F-B453-529D39F24DCF",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837382.6187
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/EDE99FE3-7226-451F-B453-529D39F24DCF/content.rtf",
+      "isDir": false,
+      "size": 2255,
+      "mtime": 1756280837382.5923
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/EDE99FE3-7226-451F-B453-529D39F24DCF/content.styles",
+      "isDir": false,
+      "size": 36,
+      "mtime": 1756280837382.654
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/FF6B0494-139F-45E6-A551-2B9B9F5D081F",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837382.7632
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/FF6B0494-139F-45E6-A551-2B9B9F5D081F/content.rtf",
+      "isDir": false,
+      "size": 649,
+      "mtime": 1756280837382.7422
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/FF6B0494-139F-45E6-A551-2B9B9F5D081F/content.styles",
+      "isDir": false,
+      "size": 36,
+      "mtime": 1756280837382.7844
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/Data/docs.checksum",
+      "isDir": false,
+      "size": 2234,
+      "mtime": 1756280837382.836
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/binder.autosave",
+      "isDir": false,
+      "size": 4234,
+      "mtime": 1756280837382.944
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/binder.backup",
+      "isDir": false,
+      "size": 4258,
+      "mtime": 1756280837383.0461
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/search.indexes",
+      "isDir": false,
+      "size": 28234,
+      "mtime": 1756280837383.1157
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/styles.xml",
+      "isDir": false,
+      "size": 5505,
+      "mtime": 1756280837383.2195
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/version.txt",
+      "isDir": false,
+      "size": 2,
+      "mtime": 1756280837383.2751
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Files/writing.history",
+      "isDir": false,
+      "size": 139,
+      "mtime": 1756280837383.3323
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/QuickLook",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837383.3884
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/QuickLook/Preview.html",
+      "isDir": false,
+      "size": 7240,
+      "mtime": 1756280837383.4407
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Settings",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837384.0337
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Settings/Compile Formats",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280837383.6086
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Settings/Compile Formats/Non-Fiction Manuscript (Courier).scrformat",
+      "isDir": false,
+      "size": 58624,
+      "mtime": 1756280837383.577
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Settings/Compile Formats/Non-Fiction Manuscript (Times).scrformat",
+      "isDir": false,
+      "size": 59099,
+      "mtime": 1756280837383.6467
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Settings/compile.xml",
+      "isDir": false,
+      "size": 24315,
+      "mtime": 1756280837383.721
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Settings/favorites.xml",
+      "isDir": false,
+      "size": 76,
+      "mtime": 1756280837383.7861
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Settings/projectpreferences.xml",
+      "isDir": false,
+      "size": 634,
+      "mtime": 1756280837383.8306
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Settings/recents.txt",
+      "isDir": false,
+      "size": 887,
+      "mtime": 1756280837383.873
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Settings/templateinfo.xml",
+      "isDir": false,
+      "size": 215,
+      "mtime": 1756280837383.9216
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Settings/ui-common.xml",
+      "isDir": false,
+      "size": 20504,
+      "mtime": 1756280837383.9878
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Class Sum In Progress/Class Summary.scriv/Settings/ui.plist",
+      "isDir": false,
+      "size": 10312,
+      "mtime": 1756280837384.087
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/.DS_Store",
+      "isDir": false,
+      "size": 8196,
+      "mtime": 1756280837384.1855
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/.texpadtmp",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/.texpadtmp/DEV INTL SYS.aux",
+      "isDir": false,
+      "size": 5600,
+      "mtime": 1756280837384.2952
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/.texpadtmp/DEV INTL SYS.dvi",
+      "isDir": false,
+      "size": 48808,
+      "mtime": 1756280837384.3809
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/.texpadtmp/DEV INTL SYS.log",
+      "isDir": false,
+      "size": 12983,
+      "mtime": 1756280837384.5496
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/.texpadtmp/DEV INTL SYS.out",
+      "isDir": false,
+      "size": 8168,
+      "mtime": 1756280837384.6272
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/.texpadtmp/DEV INTL SYS.ps",
+      "isDir": false,
+      "size": 390343,
+      "mtime": 1756280837385.2512
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/.texpadtmp/DEV INTL SYS.synctex.gz",
+      "isDir": false,
+      "size": 31111,
+      "mtime": 1756280837385.3716
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/.texpadtmp/DEV INTL SYS.toc",
+      "isDir": false,
+      "size": 3684,
+      "mtime": 1756280837385.4243
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/Books",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/Books/(ebook - english) Luttwak, Edward. The Grand Strategy of the Roman Empire.pdf",
+      "isDir": false,
+      "size": 11476946,
+      "mtime": 1756280837402.2107
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/Books/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837402.3438
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/Books/Empires In World History PDF.pdf",
+      "isDir": false,
+      "size": 1143086,
+      "mtime": 1756280837402.794
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/Books/Feuchtwang, Stephen_ Rowlands, M. J. - Civilisation recast _ theoretical and historical perspectives (2019, Cambridge University Press) - libgen.li.pdf",
+      "isDir": false,
+      "size": 6348138,
+      "mtime": 1756280837417.8716
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/Books/James M. Blaut - Eight-Eurocentric-Historians.pdf",
+      "isDir": false,
+      "size": 1599095,
+      "mtime": 1756280837421.0122
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/Books/wickham-the-inheritance-of-rome.pdf",
+      "isDir": false,
+      "size": 6560187,
+      "mtime": 1756280837433.246
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/DEV INTL SYS.dvi",
+      "isDir": false,
+      "size": 48808,
+      "mtime": 1756280837433.5317
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/DEV INTL SYS.pdf",
+      "isDir": false,
+      "size": 143384,
+      "mtime": 1756280837433.8389
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/DEV INTL SYS.ps",
+      "isDir": false,
+      "size": 390343,
+      "mtime": 1756280837434.6216
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/DEV INTL SYS.tex",
+      "isDir": false,
+      "size": 8064,
+      "mtime": 1756280837434.7612
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/Photos",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Latex/Photos/Chinese Hierachy.png",
+      "isDir": false,
+      "size": 221716,
+      "mtime": 1756280837435.2424
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Navin",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Navin/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837435.4128
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Navin/Week 1",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Navin/Week 1/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837435.5137
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Navin/Week 1/06-22_Lecture_Axial_Age_Roman_Empire_Han_Dynasty—Governance_Innovation_and_Legacy-.pdf",
+      "isDir": false,
+      "size": 163661,
+      "mtime": 1756280837435.7922
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Navin/Week 2",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Navin/Week 2/08-13_Lecture_Medieval_History_Rulership_and_Global_Power_Dynamics-.pdf",
+      "isDir": false,
+      "size": 285372,
+      "mtime": 1756280837436.2961
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Navin/Week 3",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Navin/Week 3/08-18_Patcha_3_Lecture_Eurasian_Trade_Ottoman_Empire_and_European_Transformation-.pdf",
+      "isDir": false,
+      "size": 535565,
+      "mtime": 1756280837437.15
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Navin/Week 4",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Navin/Week 4/08-25_Lecture_Colonialism_Economic_Growth_and_Institutional_Legacies-.pdf",
+      "isDir": false,
+      "size": 485973,
+      "mtime": 1756280837437.9182
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Prof's Note",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Prof's Note/Week_1_Notes-1264792-17546542660062.pdf",
+      "isDir": false,
+      "size": 372207,
+      "mtime": 1756280837438.6348
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Prof's Note/Week_2_Notes_DIS-1264792-17551090237060.pdf",
+      "isDir": false,
+      "size": 5500436,
+      "mtime": 1756280837441.5771
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Prof's Note/Week_3_Notes-1264792-17555103753523.pdf",
+      "isDir": false,
+      "size": 155504,
+      "mtime": 1756280837442.0132
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Slides",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Slides/.DS_Store",
+      "isDir": false,
+      "size": 14340,
+      "mtime": 1756280837442.2346
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Slides/Week 1",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Slides/Week 1/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837442.3662
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Slides/Week 1/Transitions_and_Transformations_(2025)-1264792-17546544978336.pdf",
+      "isDir": false,
+      "size": 12899228,
+      "mtime": 1756280837457.926
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Slides/Week 1/tumun.jpeg",
+      "isDir": false,
+      "size": 11746,
+      "mtime": 1756280837458.1052
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Slides/Week 2",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Slides/Week 2/Medieval_World_(2025)-1264792-17550771273550.pdf",
+      "isDir": false,
+      "size": 16470433,
+      "mtime": 1756280837474.4802
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Slides/Week 3",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Slides/Week 3/Religion__State_and_Law_(Reformation)__2025-1264792-17554948436892.pdf",
+      "isDir": false,
+      "size": 10205824,
+      "mtime": 1756280837485.2556
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Slides/Week 4",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2402308_DEV INTL SYS/Slides/Week 4/The_So_Called_Great_Divergence_(2025)-1264792-17560992557276.pdf",
+      "isDir": false,
+      "size": 9398811,
+      "mtime": 1756280837497.2898
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/.DS_Store",
+      "isDir": false,
+      "size": 10244,
+      "mtime": 1756280837498.5747
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/.DS_Store",
+      "isDir": false,
+      "size": 10244,
+      "mtime": 1756280837498.7383
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/.DS_Store",
+      "isDir": false,
+      "size": 8196,
+      "mtime": 1756280837498.9102
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Group 2_Assignment 2.pdf",
+      "isDir": false,
+      "size": 83813956,
+      "mtime": 1756280837653.0073
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Group 2_Assignment 2.tex",
+      "isDir": false,
+      "size": 29750,
+      "mtime": 1756280837654.9575
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/3 ways slider.JPG",
+      "isDir": false,
+      "size": 11599872,
+      "mtime": 1756280837677.1794
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/Additional1.JPG",
+      "isDir": false,
+      "size": 12386304,
+      "mtime": 1756280837700.3938
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/Anchalika_Akk.JPG",
+      "isDir": false,
+      "size": 1159732,
+      "mtime": 1756280837702.8374
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/Chalongraj_Bangwatana.jpg",
+      "isDir": false,
+      "size": 184244,
+      "mtime": 1756280837703.2007
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/DSC02357.JPG",
+      "isDir": false,
+      "size": 13139968,
+      "mtime": 1756280837719.7346
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/DSC02358.JPG",
+      "isDir": false,
+      "size": 13041664,
+      "mtime": 1756280837735.5686
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/GROUP_PHOTO.JPG",
+      "isDir": false,
+      "size": 12976128,
+      "mtime": 1756280837752.1538
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/In_Home.JPG",
+      "isDir": false,
+      "size": 10977280,
+      "mtime": 1756280837773.6768
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/Napat_Korsincharoen.jpg",
+      "isDir": false,
+      "size": 298226,
+      "mtime": 1756280837773.9663
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/Pawat_Kurovat.jpg",
+      "isDir": false,
+      "size": 249976,
+      "mtime": 1756280837774.2888
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/Punnawat_Lerdkijrachapong.jpeg",
+      "isDir": false,
+      "size": 567381,
+      "mtime": 1756280837775.498
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/Remains.JPG",
+      "isDir": false,
+      "size": 11894784,
+      "mtime": 1756280837799.6802
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/Remains2.JPG",
+      "isDir": false,
+      "size": 13074432,
+      "mtime": 1756280837820.7664
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/Residence CLARK.JPG",
+      "isDir": false,
+      "size": 11763712,
+      "mtime": 1756280837842.8308
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/Ruin.JPG",
+      "isDir": false,
+      "size": 12025856,
+      "mtime": 1756280837862.272
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/Whirpool_of_Stuff.JPG",
+      "isDir": false,
+      "size": 11632640,
+      "mtime": 1756280837884.5002
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 2/Photos/residence_JOHN.JPG",
+      "isDir": false,
+      "size": 9142272,
+      "mtime": 1756280837904.0864
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 3",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 3/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837904.2385
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Group 2 Assignment/Assignment 3/Group 2 Social Design Thinking.pdf",
+      "isDir": false,
+      "size": 1769728,
+      "mtime": 1756280837906.6865
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Latex",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Latex/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280837906.845
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Latex/Materials",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Latex/Materials/ST&DTF25_PGSSyllabusTemporary.pdf",
+      "isDir": false,
+      "size": 1485015,
+      "mtime": 1756280837909.4119
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Latex/Materials/STDTF25_W1&2GroupExercise.pdf",
+      "isDir": false,
+      "size": 368783,
+      "mtime": 1756280837910.4294
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Latex/Materials/S__41934851.jpg",
+      "isDir": false,
+      "size": 334388,
+      "mtime": 1756280837910.6592
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Latex/SOC THEORY DES THK.pdf",
+      "isDir": false,
+      "size": 2298467,
+      "mtime": 1756280837914.338
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Latex/SOC THEORY DES THK.tex",
+      "isDir": false,
+      "size": 7852,
+      "mtime": 1756280837914.4797
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/.DS_Store",
+      "isDir": false,
+      "size": 18436,
+      "mtime": 1756280837914.6611
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/Books",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/Books/The+LSP+Method+Book.pdf",
+      "isDir": false,
+      "size": 33054470,
+      "mtime": 1756280837953.483
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/Books/WICKED PROBLEMS.pdf",
+      "isDir": false,
+      "size": 466091,
+      "mtime": 1756280837954.8909
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/Extra Made-Up Class FOR Week 2  (9-_-25)_ Design and Sexuality ",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/Extra Made-Up Class FOR Week 2  (9-_-25)_ Design and Sexuality /Ahmed_QueerUse.pdf",
+      "isDir": false,
+      "size": 3301319,
+      "mtime": 1756280837961.7095
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/Extra Made-Up Class FOR Week 2  (9-_-25)_ Design and Sexuality /Chauncey_Privacy.pdf",
+      "isDir": false,
+      "size": 430811,
+      "mtime": 1756280837962.7192
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/Extra Made-Up Class FOR Week 2  (9-_-25)_ Design and Sexuality /Stevens_Sexualizing.pdf",
+      "isDir": false,
+      "size": 39070085,
+      "mtime": 1756280838041.4624
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838042.2192
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/.DS_Store",
+      "isDir": false,
+      "size": 10244,
+      "mtime": 1756280838042.4053
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 1",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 1/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838042.558
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 1/Dystopia Design Challenge",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 1/Dystopia Design Challenge/Our dystopia design.docx",
+      "isDir": false,
+      "size": 389084,
+      "mtime": 1756280838042.973
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 1/Group 1 - introduction.docx",
+      "isDir": false,
+      "size": 6288620,
+      "mtime": 1756280838046.9504
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 10",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 10/Dystopia design.pdf",
+      "isDir": false,
+      "size": 38708956,
+      "mtime": 1756280838088.5942
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 11",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 11/Dystopia Design.docx",
+      "isDir": false,
+      "size": 2213141,
+      "mtime": 1756280838090.3276
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 11/Get intro.docx",
+      "isDir": false,
+      "size": 6689,
+      "mtime": 1756280838090.538
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 11/Kodie Barrett.docx",
+      "isDir": false,
+      "size": 90491,
+      "mtime": 1756280838090.6309
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 11/Tonsom.pdf",
+      "isDir": false,
+      "size": 2420382,
+      "mtime": 1756280838092.9314
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 11/Wan - Self Intro.docx",
+      "isDir": false,
+      "size": 511723,
+      "mtime": 1756280838093.2905
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 12",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 12/Design for mobility.pdf",
+      "isDir": false,
+      "size": 6379058,
+      "mtime": 1756280838101.1252
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 2",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 2/Group 2_Assignment 2.pdf",
+      "isDir": false,
+      "size": 83813956,
+      "mtime": 1756280838255.652
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 3",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 3/Group 3 Introductions & Dystopia world assignment.pdf",
+      "isDir": false,
+      "size": 3508032,
+      "mtime": 1756280838260.2349
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 4",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 4/port.pdf",
+      "isDir": false,
+      "size": 5737909,
+      "mtime": 1756280838265.2266
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 5",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 5/Our dystopia world and self introductions.pdf",
+      "isDir": false,
+      "size": 7008704,
+      "mtime": 1756280838269.0696
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 6",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 6/dystopian world.pdf",
+      "isDir": false,
+      "size": 182398,
+      "mtime": 1756280838269.8152
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 6/introduction (group 6).docx",
+      "isDir": false,
+      "size": 998041,
+      "mtime": 1756280838270.4792
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 7",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 7/ Self-Introduction - Preecha Saetaew.docx",
+      "isDir": false,
+      "size": 3476631,
+      "mtime": 1756280838274.8308
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 7/Group 7 Portfolio - Social Theory and Design Thinking Week 1-2 Homework.pdf",
+      "isDir": false,
+      "size": 6514827,
+      "mtime": 1756280838280.5107
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 8",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 8/Group 8 Introductions.docx",
+      "isDir": false,
+      "size": 5021958,
+      "mtime": 1756280838283.7761
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 8/Group 8.docx",
+      "isDir": false,
+      "size": 186865,
+      "mtime": 1756280838284.131
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 9",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/Homework/Group 9/Dystopia Design Challenge.pdf",
+      "isDir": false,
+      "size": 8476821,
+      "mtime": 1756280838290.2036
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/ST&DTF25_PGSSyllabusTemporary.docx",
+      "isDir": false,
+      "size": 1264825,
+      "mtime": 1756280838291.598
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/ST&DTF25_PGSSyllabusTemporary.pdf",
+      "isDir": false,
+      "size": 1458720,
+      "mtime": 1756280838295.228
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/STDTF25_W1&2GroupExercise.docx",
+      "isDir": false,
+      "size": 687232,
+      "mtime": 1756280838296.5752
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 1 (8-5-25)_ Introduction to the Course/STDTF25_W1&2GroupExercise.pdf",
+      "isDir": false,
+      "size": 368783,
+      "mtime": 1756280838297.3184
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 13-16 (10-28, 11-4, 11-11, & 11-18-25)_ Individual Final Written Assignment Workshop Sessions",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 13-16 (10-28, 11-4, 11-11, & 11-18-25)_ Individual Final Written Assignment Workshop Sessions/Becker_TricksOFTheTrade.pdf",
+      "isDir": false,
+      "size": 1863096,
+      "mtime": 1756280838300.5342
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 3 (8-19-25)_ The Ideas of Design 1_ Wicked Problems ",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 3 (8-19-25)_ The Ideas of Design 1_ Wicked Problems /Buchanan_WickedProblemsINDesignThinking.pdf",
+      "isDir": false,
+      "size": 2675283,
+      "mtime": 1756280838306.3013
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 3 (8-19-25)_ The Ideas of Design 1_ Wicked Problems /Conklin_WickedProblems&SocialComplexity.pdf",
+      "isDir": false,
+      "size": 305768,
+      "mtime": 1756280838306.9536
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 3 (8-19-25)_ The Ideas of Design 1_ Wicked Problems /ST&DTF25_W3GroupExercise.pdf",
+      "isDir": false,
+      "size": 277985,
+      "mtime": 1756280838308.1658
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 3 (8-19-25)_ The Ideas of Design 1_ Wicked Problems /ST_DTF25_Week3WickedProblemsinDesignThinking.pdf",
+      "isDir": false,
+      "size": 1494796,
+      "mtime": 1756280838310.9673
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 4 (8-26-25)_ Ideas of Design II_ Human-Centered Design (HCD)",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 4 (8-26-25)_ Ideas of Design II_ Human-Centered Design (HCD)/Living with complexity.pdf",
+      "isDir": false,
+      "size": 35354200,
+      "mtime": 1756280838333.6711
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 4 (8-26-25)_ Ideas of Design II_ Human-Centered Design (HCD)/ST&DTF25_W4GroupExercise.pdf",
+      "isDir": false,
+      "size": 153811,
+      "mtime": 1756280838334.6519
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 4 (8-26-25)_ Ideas of Design II_ Human-Centered Design (HCD)/ST&DTF25_W4NormanDOET.pdf",
+      "isDir": false,
+      "size": 2883755,
+      "mtime": 1756280838340.243
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 4 (8-26-25)_ Ideas of Design II_ Human-Centered Design (HCD)/The Design of Everyday Things Revised and Expanded Edition copy 2.pdf",
+      "isDir": false,
+      "size": 2424307,
+      "mtime": 1756280838344.622
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 4 (8-26-25)_ Ideas of Design II_ Human-Centered Design (HCD)/The Design of Everyday Things Revised and Expanded Edition.pdf",
+      "isDir": false,
+      "size": 2424307,
+      "mtime": 1756280838348.8367
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 5 (9-2-25)_ Design and Self ",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 5 (9-2-25)_ Design and Self /.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838349.0098
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 5 (9-2-25)_ Design and Self /Sherry Turkle - Evocative Objects_ Things We Think With (2007).pdf",
+      "isDir": false,
+      "size": 2014371,
+      "mtime": 1756280838352.7634
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 5 (9-2-25)_ Design and Self /[Mihaly_Csikszentmihalyi,_Eugene_Halton]_The_Meani(b-ok.cc).pdf",
+      "isDir": false,
+      "size": 15451032,
+      "mtime": 1756280838384.8423
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 6 (9-9-25)_ Design and Democracy",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 6 (9-9-25)_ Design and Democracy/Winner_Chapter112ndEdition.pdf",
+      "isDir": false,
+      "size": 1112994,
+      "mtime": 1756280838387.6675
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 6 (9-9-25)_ Design and Democracy/Winner_TheWhale&TheReactor1989Version.pdf",
+      "isDir": false,
+      "size": 11034223,
+      "mtime": 1756280838409.4321
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 7 (9-16-25)_ Design and Gender",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 7 (9-16-25)_ Design and Gender/Brickell_Gendering.pdf",
+      "isDir": false,
+      "size": 39070066,
+      "mtime": 1756280838491.9102
+    },
+    {
+      "path": "PGS-1/Semester-1/2410302_SOC THEORY DES THK/Materials/WEEK 7 (9-16-25)_ Design and Gender/Cowan_MoreWorkFORMotherExcerpt.pdf",
+      "isDir": false,
+      "size": 4455770,
+      "mtime": 1756280838501.5847
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/.DS_Store",
+      "isDir": false,
+      "size": 8196,
+      "mtime": 1756280838502.274
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Ajarn Lecture Note",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Ajarn Lecture Note/Lecture note for MPI, class one.pdf",
+      "isDir": false,
+      "size": 341284,
+      "mtime": 1756280838502.8096
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Ajarn Lecture Note/Lecture note for MPI, class two.pdf",
+      "isDir": false,
+      "size": 269570,
+      "mtime": 1756280838503.2847
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Latex",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Latex/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838503.5273
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Latex/MEDIA POL IMAGIN.pdf",
+      "isDir": false,
+      "size": 702073,
+      "mtime": 1756280838504.6274
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Latex/MEDIA POL IMAGIN.tex",
+      "isDir": false,
+      "size": 3861,
+      "mtime": 1756280838504.7197
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Latex/Materials",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Latex/Materials/Lecture_note_for_MPI_class_one.pdf",
+      "isDir": false,
+      "size": 520731,
+      "mtime": 1756280838505.3613
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Latex/Materials/Syllabus_MEDIA_POL_SCI.pdf",
+      "isDir": false,
+      "size": 295305,
+      "mtime": 1756280838505.8496
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Materials",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Materials/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838505.9722
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Materials/Andrew Heywood - Political Ideologies_ An Introduction (2012).pdf",
+      "isDir": false,
+      "size": 4741151,
+      "mtime": 1756280838515.8381
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Materials/Political Science An Introduction.pdf",
+      "isDir": false,
+      "size": 7061707,
+      "mtime": 1756280838525.145
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Navin",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Navin/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838525.4512
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Navin/Week 1",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Navin/Week 1/08-18_Surat_1_Lecture_Political_Science_Fundamentals_Authority_and_Film_Analysis-.pdf",
+      "isDir": false,
+      "size": 405241,
+      "mtime": 1756280838526.1072
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Navin/Week 2",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Navin/Week 2/Week_1_Notes-1264792-17546542660062 2.pdf",
+      "isDir": false,
+      "size": 400229,
+      "mtime": 1756280838528.0664
+    },
+    {
+      "path": "PGS-1/Semester-1/2410408_MEDIA POL IMAGIN/Syllabus for Media and Political Imagination 2025.pdf",
+      "isDir": false,
+      "size": 295305,
+      "mtime": 1756280838528.5356
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS/.DS_Store",
+      "isDir": false,
+      "size": 10244,
+      "mtime": 1756280838528.705
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS/5504111 Syllabus 2025.pdf",
+      "isDir": false,
+      "size": 282873,
+      "mtime": 1756280838529.2014
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS/Exercise",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS/Exercise/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838529.3447
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS/Exercise/Week 3 My Kind of Candidate",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS/Exercise/Week 3 My Kind of Candidate/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838529.4827
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS/Exercise/Week 3 My Kind of Candidate/Aim",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280870000
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS/Exercise/Week 3 My Kind of Candidate/Aim/My Kind of Candidate.pdf",
+      "isDir": false,
+      "size": 36904,
+      "mtime": 1756280838529.6384
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS/Exercise/Week 3 My Kind of Candidate/Aim/My Kind of Candidate.tex",
+      "isDir": false,
+      "size": 2559,
+      "mtime": 1756280838529.7102
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS/Latex",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS/Latex/FUND ACAD ENG.pdf",
+      "isDir": false,
+      "size": 46896,
+      "mtime": 1756280838529.88
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS/Latex/FUND ACAD ENG.tex",
+      "isDir": false,
+      "size": 416,
+      "mtime": 1756280838529.9526
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS/Material",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280861000
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS/Material/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838530.0579
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS/Material/Topic 1_2025.pdf",
+      "isDir": false,
+      "size": 660577,
+      "mtime": 1756280838531.2659
+    },
+    {
+      "path": "PGS-1/Semester-1/5504111_FUND ACAD ENG PGS/Material/Topic 2_2025.pdf",
+      "isDir": false,
+      "size": 7749839,
+      "mtime": 1756280838538.4602
+    },
+    {
+      "path": "PGS-1/Semester-1/Extras",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280852000
+    },
+    {
+      "path": "PGS-1/Semester-1/Extras/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838538.6672
+    },
+    {
+      "path": "PGS-1/Semester-1/Extras/Freshy Game Schedule.pdf",
+      "isDir": false,
+      "size": 931924,
+      "mtime": 1756280838540.418
+    },
+    {
+      "path": "PGS-2",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280852000
+    },
+    {
+      "path": "PGS-2/.DS_Store",
+      "isDir": false,
+      "size": 10244,
+      "mtime": 1756280838540.7173
+    },
+    {
+      "path": "PGS-2/Essex",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280849000
+    },
+    {
+      "path": "PGS-2/Essex/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838540.843
+    },
+    {
+      "path": "PGS-2/Korea",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280849000
+    },
+    {
+      "path": "PGS-2/Korea/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838540.9548
+    },
+    {
+      "path": "PGS-2/Leeds",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280849000
+    },
+    {
+      "path": "PGS-2/Leeds/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838541.076
+    },
+    {
+      "path": "PGS-2/Queensland",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280849000
+    },
+    {
+      "path": "PGS-2/Queensland/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838541.1892
+    },
+    {
+      "path": "PGS-3",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280852000
+    },
+    {
+      "path": "PGS-3/.DS_Store",
+      "isDir": false,
+      "size": 10244,
+      "mtime": 1756280838541.326
+    },
+    {
+      "path": "PGS-3/Essex",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280849000
+    },
+    {
+      "path": "PGS-3/Essex/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838541.4414
+    },
+    {
+      "path": "PGS-3/Korea",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280849000
+    },
+    {
+      "path": "PGS-3/Korea/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838541.554
+    },
+    {
+      "path": "PGS-3/Leeds",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280849000
+    },
+    {
+      "path": "PGS-3/Leeds/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838541.6624
+    },
+    {
+      "path": "PGS-3/Queensland",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756280849000
+    },
+    {
+      "path": "PGS-3/Queensland/.DS_Store",
+      "isDir": false,
+      "size": 6148,
+      "mtime": 1756280838541.773
+    },
+    {
+      "path": "README.md",
+      "isDir": false,
+      "size": 87,
+      "mtime": 1756201682493.3145
+    },
+    {
+      "path": "app.js",
+      "isDir": false,
+      "size": 16328,
+      "mtime": 1756284283546.9885
+    },
+    {
+      "path": "index.html",
+      "isDir": false,
+      "size": 2483,
+      "mtime": 1756283937273.7043
+    },
+    {
+      "path": "scripts",
+      "isDir": true,
+      "size": 0,
+      "mtime": 1756284440000
+    },
+    {
+      "path": "scripts/generate-manifest.js",
+      "isDir": false,
+      "size": 2044,
+      "mtime": 1756284435341.9414
+    },
+    {
+      "path": "style.css",
+      "isDir": false,
+      "size": 0,
+      "mtime": 1756284010335.6443
+    }
+  ]
+}
