@@ -2,19 +2,39 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Finder-style File Explorer</title>
+        <title>Politic and Global Studies</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div id="app">
             <header>
                 <h1>📂 Politic and Global Studies</h1>
+                <div class="toolbar">
+                    <input
+                        id="search"
+                        type="text"
+                        placeholder="Search files…"
+                    />
+                    <select id="sort">
+                        <option value="name">Name</option>
+                        <option value="type">Type</option>
+                        <option value="size">Size</option>
+                        <option value="date">Date</option>
+                    </select>
+                    <button id="theme-toggle">🌞</button>
+                </div>
             </header>
             <main>
                 <div id="breadcrumb"></div>
                 <div id="file-view" class="grid"></div>
             </main>
         </div>
+
+        <!-- Quick Look modal -->
+        <div id="quicklook" class="hidden">
+            <div class="ql-content"></div>
+        </div>
+
         <script src="script.js"></script>
     </body>
 </html>
