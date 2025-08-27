@@ -2,31 +2,28 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Finder‑Style Explorer (List View)</title>
-        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>File Explorer</title>
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
+        <nav class="breadcrumb"></nav>
         <header>
-            <h1>📂 Politic and Global Studies</h1>
-            <div class="toolbar">
-                <input id="search" type="text" placeholder="Search…" />
-                <select id="sort">
-                    <option value="name">Name</option>
-                    <option value="type">Type</option>
-                    <option value="size">Size</option>
-                    <option value="date">Date</option>
-                </select>
-                <button id="view-toggle">📃</button>
-            </div>
+            <input type="text" id="search" placeholder="Search files..." />
+            <select id="sort">
+                <option value="name">Name</option>
+                <option value="type">Type</option>
+                <option value="size">Size</option>
+                <option value="date">Date</option>
+            </select>
         </header>
+        <ul id="file-list"></ul>
 
-        <nav id="breadcrumb"></nav>
-
-        <main id="file-view" class="list"></main>
-
-        <!-- Quick Look -->
-        <div id="quicklook" class="hidden" role="dialog" aria-modal="true">
-            <div class="ql-content"></div>
+        <div id="modal" class="hidden">
+            <div class="modal-content">
+                <span id="close">&times;</span>
+                <pre id="preview"></pre>
+            </div>
         </div>
 
         <script src="script.js"></script>

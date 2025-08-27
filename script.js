@@ -1,111 +1,72 @@
-let fileTree,
-  currentPath = [];
-
-async function loadFiles() {
+async function loadFiles(path = "") {
   const res = await fetch("files.json");
-  fileTree = await res.json();
-  navigateTo([]);
+  const data = await res.json();
+
+  const files = path ? data.filter((f) => f.path.startsWith(path)) : data;
+  renderBreadcrumb(path);
+  renderFiles(files);
 }
 
-function getNodeByPath(path) {
-  let node = fileTree;
-  for (const seg of path) {
-    node = node.children.find((c) => c.name === seg && c.type === "folder");
-  }
-  return node;
-}
-
-function navigateTo(path) {
-  currentPath = [...path];
-  render();
-}
-
-function render() {
-  const container = document.getElementById("file-view");
-  const breadcrumb = document.getElementById("breadcrumb");
-  const node = getNodeByPath(currentPath) || fileTree;
-  let children = node.children || [];
-
-  // Search
-  const term = document.getElementById("search").value.toLowerCase();
-  if (term)
-    children = children.filter((f) => f.name.toLowerCase().includes(term));
-
-  // Sort
-  const sortBy = document.getElementById("sort").value;
-  children.sort((a, b) => {
-    if (sortBy === "name") return a.name.localeCompare(b.name);
-    if (sortBy === "type") return a.type.localeCompare(b.type);
-    if (sortBy === "size") return (a.size || 0) - (b.size || 0);
-    if (sortBy === "date") return new Date(a.date || 0) - new Date(b.date || 0);
-  });
-
-  // Breadcrumb
-  breadcrumb.innerHTML = currentPath.length
-    ? `<span data-idx="-1">🏠</span> / ` +
-      currentPath.map((p, i) => `<span data-idx="${i}">${p}</span>`).join(" / ")
-    : "🏠";
-
-  breadcrumb.querySelectorAll("span").forEach((span) => {
-    span.onclick = () => {
-      const idx = parseInt(span.dataset.idx);
-      navigateTo(idx === -1 ? [] : currentPath.slice(0, idx + 1));
-    };
-  });
-
-  // Files
-  container.innerHTML = "";
-  children.forEach((item) => {
-    const row = document.createElement("div");
-    row.className = "item";
-    row.innerHTML = `
-      <div class="filename">${item.name}
-        ${item.label ? `<span class="label" style="background:${item.labelColor || "#ccc"}">${item.label}</span>` : ""}
-      </div>
-      <div class="details">${item.type} ${item.size ? `• ${item.size} KB` : ""} ${item.date ? `• ${item.date}` : ""}</div>
-    `;
-    row.onclick = () => {
-      if (item.type === "folder") navigateTo([...currentPath, item.name]);
-      else openFile(item);
-    };
-    container.appendChild(row);
+function renderBreadcrumb(path) {
+  const breadcrumb = document.querySelector(".breadcrumb");
+  const parts = path.split("/").filter(Boolean);
+  breadcrumb.innerHTML = '<a href="#" data-path="">Home</a>';
+  let currPath = "";
+  parts.forEach((part, i) => {
+    currPath += (currPath ? "/" : "") + part;
+    breadcrumb.innerHTML += ` / <a href="#" data-path="${currPath}">${part}</a>`;
   });
 }
 
-function openFile(item) {
-  const ext = item.name.split(".").pop().toLowerCase();
-  if (["png", "jpg", "jpeg", "gif", "svg"].includes(ext)) {
-    showQuickLook(`<img src="${item.url}" style="max-width:100%;">`);
-  } else if (["txt", "md"].includes(ext)) {
-    fetch(item.url)
+function renderFiles(files) {
+  const list = document.getElementById("file-list");
+  list.innerHTML = "";
+  const searchVal = document.getElementById("search").value.toLowerCase();
+  const sortVal = document.getElementById("sort").value;
+
+  files
+    .filter((f) => f.name.toLowerCase().includes(searchVal))
+    .sort((a, b) => {
+      if (sortVal === "name") return a.name.localeCompare(b.name);
+      if (sortVal === "type") return a.type.localeCompare(b.type);
+      if (sortVal === "size") return a.size - b.size;
+      if (sortVal === "date") return new Date(a.date) - new Date(b.date);
+    })
+    .forEach((f) => {
+      const li = document.createElement("li");
+      li.textContent = `${f.name} [${f.type}]`;
+      li.addEventListener("click", () => handleFileClick(f));
+      list.appendChild(li);
+    });
+}
+
+function handleFileClick(file) {
+  if (["jpg", "png"].includes(file.type)) {
+    openModal(`<img src="${file.url}" style="max-width:100%;">`);
+  } else if (["txt", "md"].includes(file.type)) {
+    fetch(file.url)
       .then((r) => r.text())
-      .then((text) => {
-        if (ext === "md") {
-          showQuickLook(`<div>${marked.parse(text)}</div>`);
-        } else {
-          showQuickLook(`<pre>${escapeHtml(text)}</pre>`);
-        }
-      });
-  } else {
-    window.open(item.url, "_blank");
+      .then((text) => openModal(`<pre>${text}</pre>`));
   }
 }
 
-function showQuickLook(content) {
-  const ql = document.getElementById("quicklook");
-  ql.querySelector(".ql-content").innerHTML = content;
-  ql.classList.remove("hidden");
-  ql.onclick = () => ql.classList.add("hidden");
+function openModal(content) {
+  document.getElementById("preview").innerHTML = content;
+  document.getElementById("modal").classList.remove("hidden");
 }
 
-function escapeHtml(text) {
-  var div = document.createElement("div");
-  div.innerText = text;
-  return div.innerHTML;
-}
+document.getElementById("close").addEventListener("click", () => {
+  document.getElementById("modal").classList.add("hidden");
+});
 
-// Events
-document.getElementById("search").addEventListener("input", render);
-document.getElementById("sort").addEventListener("change", render);
+document.getElementById("search").addEventListener("input", () => loadFiles());
+document.getElementById("sort").addEventListener("change", () => loadFiles());
+
+document.querySelector(".breadcrumb").addEventListener("click", (e) => {
+  if (e.target.tagName === "A") {
+    e.preventDefault();
+    loadFiles(e.target.dataset.path);
+  }
+});
 
 loadFiles();
