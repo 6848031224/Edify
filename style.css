@@ -1,99 +1,166 @@
-:root {
-    --bg: #f5f5f7;
-    --fg: #000;
-    --card-bg: #fff;
+// -----------------------
+// Finder Pro - script.js
+// -----------------------
+
+// Config
+let files = [];
+let currentPath = '';
+let viewMode = 'list';
+let sortMode = 'name';
+let searchTerm = '';
+let selectedItems = new Set();
+let renamingItem = null;
+
+// Utility: fetch & sort files
+async function loadFiles(path = '') {
+  const res = await fetch('files.json'); // adjust path if needed
+  const allFiles = await res.json();
+  currentPath = path;
+  files = allFiles.filter(f => f.path.startsWith(path));
+  render();
 }
 
-body {
-    background: var(--bg);
-    color: var(--fg);
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    margin: 0;
+function sortFiles(a, b) {
+  // folders-first
+  if (a.type !== b.type) return a.type === 'folder' ? -1 : 1;
+  if (sortMode === 'name') return a.name.localeCompare(b.name);
+  if (sortMode === 'date') return new Date(b.modified) - new Date(a.modified);
+  return 0;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #e1e4e8;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ccc;
+// Render file list/grid
+function render() {
+  const view = document.getElementById('file-view');
+  view.innerHTML = '';
+  let filtered = files
+    .filter(f => f.name.toLowerCase().includes(searchTerm))
+    .sort(sortFiles);
+
+  filtered.forEach(file => {
+    const item = document.createElement('div');
+    item.className = `file-item ${viewMode}`;
+    item.dataset.name = file.name;
+
+    const icon = document.createElement('span');
+    icon.textContent = file.type === 'folder' ? '📁' : '📄';
+    icon.className = 'icon';
+
+    const name = document.createElement('span');
+    name.textContent = file.name;
+    name.className = 'name';
+
+    if (renamingItem === file.name) {
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.value = file.name;
+      input.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+          file.name = input.value.trim() || file.name;
+          renamingItem = null;
+          render();
+        } else if (e.key === 'Escape') {
+          renamingItem = null;
+          render();
+        }
+      });
+      name.innerHTML = '';
+      name.appendChild(input);
+      setTimeout(() => input.focus(), 0);
+    }
+
+    // selection
+    item.addEventListener('click', e => {
+      if (e.ctrlKey || e.metaKey) {
+        toggleSelect(file.name);
+      } else {
+        clearSelection();
+        toggleSelect(file.name);
+      }
+    });
+
+    // double-click navigation / quick look
+    item.addEventListener('dblclick', () => {
+      if (file.type === 'folder') {
+        loadFiles(file.path + '/');
+      } else {
+        quickLook(file);
+      }
+    });
+
+    item.appendChild(icon);
+    item.appendChild(name);
+    if (selectedItems.has(file.name)) item.classList.add('selected');
+    view.appendChild(item);
+  });
+
+  updateBreadcrumb();
 }
 
-.toolbar {
-    display: flex;
-    gap: 10px;
+function updateBreadcrumb() {
+  const bc = document.getElementById('breadcrumb');
+  const parts = currentPath.split('/').filter(Boolean);
+  bc.innerHTML = '';
+  let accum = '';
+  const home = document.createElement('span');
+  home.textContent = '🏠';
+  home.addEventListener('click', () => loadFiles(''));
+  bc.appendChild(home);
+
+  parts.forEach((part, i) => {
+    accum += part + '/';
+    const span = document.createElement('span');
+    span.textContent = ' › ' + part;
+    span.addEventListener('click', () => loadFiles(accum));
+    bc.appendChild(span);
+  });
 }
 
-#breadcrumb {
-    padding: 10px 20px;
-    font-size: 14px;
+// Selection helpers
+function toggleSelect(name) {
+  if (selectedItems.has(name)) {
+    selectedItems.delete(name);
+  } else {
+    selectedItems.add(name);
+  }
+  render();
 }
 
-#breadcrumb span {
-    cursor: pointer;
+function clearSelection() {
+  selectedItems.clear();
 }
 
-.list .item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 20px;
-    border-bottom: 1px solid #ddd;
-    background: var(--card-bg);
-    transition: background 0.2s;
+// Quick Look
+function quickLook(file) {
+  alert(`Quick Look: ${file.name}`);
 }
 
-.list .item:hover {
-    background: rgba(0, 0, 0, 0.05);
-}
+// Inline rename
+document.addEventListener('keydown', e => {
+  if (e.key === 'F2' && selectedItems.size === 1) {
+    renamingItem = [...selectedItems][0];
+    render();
+  }
+});
 
-.item .filename {
-    flex: 2;
-}
+// Search + Sort bindings
+document.getElementById('search')?.addEventListener('input', e => {
+  searchTerm = e.target.value.toLowerCase();
+  render();
+});
 
-.item .details {
-    flex: 1;
-    text-align: right;
-    font-size: 12px;
-    color: #555;
-}
+document.getElementById('sort')?.addEventListener('change', e => {
+  sortMode = e.target.value;
+  render();
+});
 
-.label {
-    display: inline-block;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 11px;
-    margin-left: 8px;
-}
+// View toggle
+document.getElementById('view-toggle')?.addEventListener('click', () => {
+  viewMode = viewMode === 'list' ? 'icon' : 'list';
+  document.getElementById('file-view').className = viewMode;
+  document.getElementById('view-toggle').textContent =
+    viewMode === 'list' ? '📃' : '🗂️';
+  render();
+});
 
-#quicklook {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#quicklook.hidden {
-    display: none;
-}
-
-.ql-content {
-    background: white;
-    padding: 20px;
-    max-width: 80%;
-    max-height: 80%;
-    overflow: auto;
-    border-radius: 8px;
-}
-.file-icon {
-    width: 16px; /* keeps icons compact and uniform */
-    height: 16px;
-    margin-right: 6px; /* breathing room between icon and filename */
-    vertical-align: middle; /* aligns neatly with text baseline */
-}
+// Initial load
+loadFiles();
