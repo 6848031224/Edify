@@ -1,6 +1,54 @@
 let fileTree,
   currentPath = [];
 
+// Icon map
+const fileIcons = {
+  folder: "icons/FOLDER.svg",
+  crd: "icons/CRD.svg",
+  ai: "icons/AI.svg",
+  avi: "icons/AVI.svg",
+  bmp: "icons/BMP.svg",
+  csv: "icons/CSV.svg",
+  dll: "icons/DLL.svg",
+  doc: "icons/DOC.svg",
+  docx: "icons/DOCX.svg",
+  dwg: "icons/DWG.svg",
+  eps: "icons/EPS.svg",
+  exe: "icons/EXE.svg",
+  flv: "icons/FLV.svg",
+  giff: "icons/GIFF.svg",
+  gif: "icons/GIFF.svg",
+  html: "icons/HTML.svg",
+  iso: "icons/ISO.svg",
+  java: "icons/JAVA.svg",
+  jpg: "icons/JPG.svg",
+  jpeg: "icons/JPG.svg",
+  mdb: "icons/MDB.svg",
+  mid: "icons/MID.svg",
+  mov: "icons/MOV.svg",
+  mp3: "icons/MP3.svg",
+  mp4: "icons/MP4.svg",
+  mpeg: "icons/MPEG.svg",
+  pdf: "icons/PDF.svg",
+  png: "icons/PNG.svg",
+  ppt: "icons/PPT.svg",
+  ps: "icons/PS.svg",
+  psd: "icons/PSD.svg",
+  pub: "icons/PUB.svg",
+  rar: "icons/RAR.svg",
+  raw: "icons/RAW.svg",
+  rss: "icons/RSS.svg",
+  svg: "icons/SVG.svg",
+  tiff: "icons/TIFF.svg",
+  txt: "icons/TXT.svg",
+  wav: "icons/WAV.svg",
+  wma: "icons/WMA.svg",
+  xml: "icons/XML.svg",
+  xsl: "icons/XSL.svg",
+  zip: "icons/ZIP.svg",
+  default: "icons/file.svg",
+};
+
 async function loadFiles() {
   const res = await fetch("files.json");
   fileTree = await res.json();
@@ -61,10 +109,18 @@ function render() {
   // Files
   container.innerHTML = "";
   children.forEach((item) => {
+    const ext =
+      item.type === "folder"
+        ? "folder"
+        : item.name.split(".").pop().toLowerCase();
+    const iconSrc = fileIcons[ext] || fileIcons.default;
+
     const row = document.createElement("div");
     row.className = "item";
     row.innerHTML = `
-      <div class="filename">${item.name}
+      <div class="filename">
+        <img src="${iconSrc}" alt="" class="file-icon">
+        ${item.name}
         ${item.label ? `<span class="label" style="background:${item.labelColor || "#ccc"}">${item.label}</span>` : ""}
       </div>
       <div class="details">${item.type} ${item.size ? `• ${item.size} KB` : ""} ${item.date ? `• ${item.date}` : ""}</div>
@@ -112,7 +168,7 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 
-// Events (safe attachment)
+// Events
 const searchEl = document.getElementById("search");
 if (searchEl) searchEl.addEventListener("input", render);
 

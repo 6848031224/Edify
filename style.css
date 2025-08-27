@@ -91,3 +91,9 @@ header {
     overflow: auto;
     border-radius: 8px;
 }
+.file-icon {
+    width: 16px; /* keeps icons compact and uniform */
+    height: 16px;
+    margin-right: 6px; /* breathing room between icon and filename */
+    vertical-align: middle; /* aligns neatly with text baseline */
+}
