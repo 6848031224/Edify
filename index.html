@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Finder‑Style Explorer (List View)</title>
+        <title>Finder‑Style Explorer</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -10,19 +10,27 @@
             <h1>📂 Politic and Global Studies</h1>
             <div class="toolbar">
                 <input id="search" type="text" placeholder="Search…" />
-                <select id="sort">
-                    <option value="name">Name</option>
-                    <option value="type">Type</option>
-                    <option value="size">Size</option>
-                    <option value="date">Date</option>
-                </select>
-                <button id="view-toggle">📃</button>
+                <button id="up-btn" title="Go up one level">⬆️</button>
             </div>
         </header>
 
         <nav id="breadcrumb"></nav>
 
-        <main id="file-view" class="list"></main>
+        <table id="file-table">
+            <thead>
+                <tr>
+                    <th data-sort="name">Name</th>
+                    <th data-sort="type">Type</th>
+                    <th data-sort="size">Size</th>
+                    <th data-sort="date">Date</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div id="multi-action" class="hidden">
+            <button id="open-selected">Open Selected</button>
+        </div>
 
         <!-- Quick Look -->
         <div id="quicklook" class="hidden" role="dialog" aria-modal="true">
