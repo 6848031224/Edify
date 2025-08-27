@@ -10,6 +10,7 @@ let searchTerm = "";
 let selectedItems = new Set();
 let renamingItem = null;
 
+// Recursively flatten the nested tree into a single array with paths
 function flattenTree(node, parentPath = "") {
   const currentPath = parentPath ? `${parentPath}/${node.name}` : node.name;
   const entry = {
@@ -20,6 +21,7 @@ function flattenTree(node, parentPath = "") {
     size: node.size || null,
     url: node.url || null,
   };
+
   let list = [entry];
   if (Array.isArray(node.children)) {
     for (const child of node.children) {
@@ -62,6 +64,61 @@ function sortFiles(a, b) {
   return 0;
 }
 
+// Get matching icon path for a file
+function getIconForFile(file) {
+  if (file.type === "folder") return "icons/FOLDER.svg";
+  const ext = file.name.includes(".")
+    ? file.name.split(".").pop().toUpperCase()
+    : "";
+  const availableIcons = [
+    "AI",
+    "AVI",
+    "BMP",
+    "CRD",
+    "CSV",
+    "DLL",
+    "DOC",
+    "DOCX",
+    "DWG",
+    "EPS",
+    "EXE",
+    "FLV",
+    "FOLDER",
+    "GIFF",
+    "HTML",
+    "ISO",
+    "JAVA",
+    "JPG",
+    "MDB",
+    "MID",
+    "MOV",
+    "MP3",
+    "MP4",
+    "MPEG",
+    "PDF",
+    "PNG",
+    "PPT",
+    "PS",
+    "PSD",
+    "PUB",
+    "RAR",
+    "RAW",
+    "RSS",
+    "SVG",
+    "TIFF",
+    "TXT",
+    "WAV",
+    "WMA",
+    "XML",
+    "XSL",
+    "ZIP",
+  ];
+  if (availableIcons.includes(ext)) {
+    return `icons/${ext}.svg`;
+  }
+  return "icons/TXT.svg"; // fallback
+}
+
 function render() {
   const view = document.getElementById("file-view");
   if (!view) return;
@@ -76,8 +133,9 @@ function render() {
     item.className = `item ${viewMode}`;
     item.dataset.name = file.name;
 
-    const icon = document.createElement("span");
-    icon.textContent = file.type === "folder" ? "📁" : "📄";
+    const icon = document.createElement("img");
+    icon.src = getIconForFile(file);
+    icon.alt = file.type;
     icon.className = "file-icon";
 
     const name = document.createElement("span");
@@ -202,7 +260,6 @@ function quickLook(file) {
 
   ql.classList.remove("hidden");
 
-  // Close on click outside or Escape
   ql.addEventListener("click", (e) => {
     if (e.target === ql) ql.classList.add("hidden");
   });
