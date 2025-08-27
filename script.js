@@ -10,6 +10,10 @@ let searchTerm = "";
 let selectedItems = new Set();
 let renamingItem = null;
 
+// Keyboard nav state
+let visibleFiles = [];
+let focusedIndex = -1; // index within visibleFiles or -1 when none
+
 // Recursively flatten the nested tree into a single array with paths
 function flattenTree(node, parentPath = "") {
   const currentPath = parentPath ? `${parentPath}/${node.name}` : node.name;
@@ -47,10 +51,13 @@ async function loadFiles(path = "") {
         f.path.split("/").filter(Boolean).length === depth,
     );
 
+    // Reset keyboard focus when navigating folders
+    focusedIndex = -1;
     render();
   } catch (err) {
     console.error("Error loading files:", err);
     files = [];
+    focusedIndex = -1;
     render();
   }
 }
@@ -128,7 +135,27 @@ function render() {
     .filter((f) => (f.name || "").toLowerCase().includes(searchTerm))
     .sort(sortFiles);
 
-  filtered.forEach((file) => {
+  // Expose for keyboard navigation
+  visibleFiles = filtered;
+
+  // Keep focusedIndex aligned with current selection if possible
+  if (selectedItems.size === 1) {
+    const selName = [...selectedItems][0];
+    const idx = visibleFiles.findIndex((f) => f.name === selName);
+    if (idx !== -1) {
+      focusedIndex = idx;
+    } else if (visibleFiles.length === 0) {
+      focusedIndex = -1;
+    } else {
+      focusedIndex = Math.min(focusedIndex, visibleFiles.length - 1);
+    }
+  } else {
+    // No single selection; clamp or reset focus
+    focusedIndex = Math.min(focusedIndex, visibleFiles.length - 1);
+    if (visibleFiles.length === 0) focusedIndex = -1;
+  }
+
+  filtered.forEach((file, idx) => {
     const item = document.createElement("div");
     item.className = `item ${viewMode}`;
     item.dataset.name = file.name;
@@ -166,19 +193,20 @@ function render() {
     item.addEventListener("click", (e) => {
       if (e.ctrlKey || e.metaKey) {
         toggleSelect(file.name);
+        // Keep focus aligned if single selection remains
+        if (selectedItems.size === 1) {
+          focusedIndex = idx;
+        }
       } else {
         clearSelection();
         toggleSelect(file.name);
+        focusedIndex = idx;
       }
     });
 
     // Double-click: open folder or file in new tab
     item.addEventListener("dblclick", () => {
-      if (file.type === "folder") {
-        loadFiles(file.path);
-      } else if (file.url) {
-        window.open(file.url, "_blank");
-      }
+      openEntry(file);
     });
 
     item.appendChild(icon);
@@ -186,6 +214,12 @@ function render() {
     if (selectedItems.has(file.name)) item.classList.add("selected");
     view.appendChild(item);
   });
+
+  // After render, keep focused item visible
+  if (focusedIndex >= 0) {
+    const nodes = view.querySelectorAll(".item");
+    nodes[focusedIndex]?.scrollIntoView({ block: "nearest" });
+  }
 
   updateBreadcrumb();
 }
@@ -233,8 +267,51 @@ function clearSelection() {
   selectedItems.clear();
 }
 
-// Quick Look completely removed — no longer used
+// Open folder or file (file opens in new tab)
+function openEntry(file) {
+  if (file.type === "folder") {
+    loadFiles(file.path);
+  } else if (file.url) {
+    window.open(file.url, "_blank");
+  }
+}
 
+// Keyboard shortcuts
+document.addEventListener("keydown", (e) => {
+  // Avoid interfering with typing/renaming
+  const target = e.target;
+  if (
+    target &&
+    (target.tagName === "INPUT" ||
+      target.tagName === "TEXTAREA" ||
+      target.isContentEditable)
+  ) {
+    return;
+  }
+
+  // Navigation only when we have files visible
+  if (!visibleFiles || visibleFiles.length === 0) return;
+
+  // Arrow navigation (linear). In icon view, Left/Right also move by ±1 for now.
+  if (e.key === "ArrowDown") {
+    e.preventDefault();
+    setActiveIndex(focusedIndex === -1 ? 0 : focusedIndex + 1);
+  } else if (e.key === "ArrowUp") {
+    e.preventDefault();
+    setActiveIndex(focusedIndex === -1 ? 0 : focusedIndex - 1);
+  } else if (e.key === "ArrowRight" && viewMode === "icon") {
+    e.preventDefault();
+    setActiveIndex(focusedIndex === -1 ? 0 : focusedIndex + 1);
+  } else if (e.key === "ArrowLeft" && viewMode === "icon") {
+    e.preventDefault();
+    setActiveIndex(focusedIndex === -1 ? 0 : focusedIndex - 1);
+  } else if (e.key === "Enter") {
+    e.preventDefault();
+    if (focusedIndex >= 0) openEntry(visibleFiles[focusedIndex]);
+  }
+});
+
+// F2 rename (existing)
 document.addEventListener("keydown", (e) => {
   if (e.key === "F2" && selectedItems.size === 1) {
     renamingItem = [...selectedItems][0];
@@ -259,5 +336,15 @@ document.getElementById("view-toggle")?.addEventListener("click", () => {
     viewMode === "list" ? "📃" : "🗂️";
   render();
 });
+
+// Helpers
+function setActiveIndex(next) {
+  if (!visibleFiles.length) return;
+  const clamped = Math.max(0, Math.min(next, visibleFiles.length - 1));
+  focusedIndex = clamped;
+  selectedItems.clear();
+  selectedItems.add(visibleFiles[focusedIndex].name);
+  render();
+}
 
 loadFiles();
