@@ -218,3 +218,51 @@ header {
     overflow: auto;
     border-radius: var(--radius);
 }
+/*──────────────────────────────────────────────────────────
+   Touch-friendly tap targets & smooth scrolling on iOS
+──────────────────────────────────────────────────────────*/
+.item {
+    /* increase hit area on touch devices */
+    padding: calc(var(--pad-md) * 1.5) var(--pad-md);
+    touch-action: manipulation;
+}
+
+#file-view {
+    /* enable momentum scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
+}
+
+/*──────────────────────────────────────────────────────────
+   Mobile Layout Overrides
+──────────────────────────────────────────────────────────*/
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .toolbar {
+        flex-wrap: wrap;
+        gap: var(--pad-sm);
+    }
+
+    .toolbar input,
+    .toolbar select,
+    .toolbar button {
+        flex: 1 1 48%;
+    }
+
+    #file-view.icon {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+
+    #file-view.list .item {
+        font-size: var(--font-small);
+    }
+
+    /* Optionally hide breadcrumb on small screens */
+    #breadcrumb {
+        display: none;
+    }
+}

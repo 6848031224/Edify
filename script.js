@@ -4,8 +4,8 @@
 
 let files = [];
 let currentPath = "";
-let viewMode = "list";
-let sortMode = "name";
+let viewMode = "icon";
+let sortConfig = { key: "name", order: "asc" };
 let searchTerm = "";
 let selectedItems = new Set();
 let renamingItem = null;
@@ -63,12 +63,25 @@ async function loadFiles(path = "") {
 }
 
 function sortFiles(a, b) {
+  // folders first
   if (a.type !== b.type) return a.type === "folder" ? -1 : 1;
-  if (sortMode === "name") return (a.name || "").localeCompare(b.name || "");
-  if (sortMode === "type") return (a.type || "").localeCompare(b.type || "");
-  if (sortMode === "size") return (a.size || 0) - (b.size || 0);
-  if (sortMode === "date") return new Date(b.modified) - new Date(a.modified);
-  return 0;
+
+  // compare value
+  let result;
+  const { key, order } = sortConfig;
+  if (key === "name" || key === "type") {
+    result = (a[key] || "").localeCompare(b[key] || "");
+  } else if (key === "size") {
+    result = (a.size || 0) - (b.size || 0);
+  } else if (key === "date") {
+    result = new Date(a.modified) - new Date(b.modified);
+  }
+
+  // stable fallback on name for equal
+  if (result === 0) result = a.name.localeCompare(b.name);
+
+  // flip for descending
+  return order === "asc" ? result : -result;
 }
 
 // Get matching icon path for a file
@@ -357,7 +370,14 @@ document.getElementById("search")?.addEventListener("input", (e) => {
 });
 
 document.getElementById("sort")?.addEventListener("change", (e) => {
-  sortMode = e.target.value;
+  sortConfig.key = e.target.value;
+  render();
+});
+
+document.getElementById("sort-order")?.addEventListener("click", (e) => {
+  // toggle between 'asc' and 'desc'
+  sortConfig.order = sortConfig.order === "asc" ? "desc" : "asc";
+  e.target.textContent = sortConfig.order === "asc" ? "▲" : "▼";
   render();
 });
 
