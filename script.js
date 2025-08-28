@@ -89,7 +89,7 @@ function sortFiles(a, b) {
 
 // Get matching icon path for a file
 function getIconForFile(file) {
-  if (file.type === "folder") return "icons/FOLDER.svg";
+  if (file.type === "folder") return "resources/icons/FOLDER.svg";
   const ext = file.name.includes(".")
     ? file.name.split(".").pop().toUpperCase()
     : "";
@@ -137,9 +137,9 @@ function getIconForFile(file) {
     "ZIP",
   ];
   if (availableIcons.includes(ext)) {
-    return `icons/${ext}.svg`;
+    return `resources/icons/${ext}.svg`;
   }
-  return "icons/TXT.svg"; // fallback
+  return "resources/icons/TXT.svg"; // fallback
 }
 
 function render() {
