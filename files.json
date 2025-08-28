@@ -829,6 +829,32 @@
                   "type": "folder",
                   "children": [
                     {
+                      "name": "19th Century Europe (Teewin)",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "BookThe_Evolution_of_International_Society__A_Comparative__Historical_Analysis_(1992)-838610-17252423305433.pdf",
+                          "type": "file",
+                          "url": "Politic and Global Studies/PGS-1/Semester-1/2402308_DEV INTL SYS/19th Century Europe (Teewin)/BookThe_Evolution_of_International_Society__A_Comparative__Historical_Analysis_(1992)-838610-17252423305433.pdf"
+                        },
+                        {
+                          "name": "Book_Diplomacy_Henry_Kissinger_1994-838610-17252424697025.pdf",
+                          "type": "file",
+                          "url": "Politic and Global Studies/PGS-1/Semester-1/2402308_DEV INTL SYS/19th Century Europe (Teewin)/Book_Diplomacy_Henry_Kissinger_1994-838610-17252424697025.pdf"
+                        },
+                        {
+                          "name": "Book_The_West_in_the_World_(Ch_16__French_Revolution)-838610-17252421766028.pdf",
+                          "type": "file",
+                          "url": "Politic and Global Studies/PGS-1/Semester-1/2402308_DEV INTL SYS/19th Century Europe (Teewin)/Book_The_West_in_the_World_(Ch_16__French_Revolution)-838610-17252421766028.pdf"
+                        },
+                        {
+                          "name": "CleanShot 2568-08-28 at 13.02.02@2x.png",
+                          "type": "file",
+                          "url": "Politic and Global Studies/PGS-1/Semester-1/2402308_DEV INTL SYS/19th Century Europe (Teewin)/CleanShot 2568-08-28 at 13.02.02@2x.png"
+                        }
+                      ]
+                    },
+                    {
                       "name": "2402308_Development_of_the_International_System_2025-889694-17542193705530.pdf",
                       "type": "file",
                       "url": "Politic and Global Studies/PGS-1/Semester-1/2402308_DEV INTL SYS/2402308_Development_of_the_International_System_2025-889694-17542193705530.pdf"
@@ -1490,6 +1516,11 @@
                       ]
                     },
                     {
+                      "name": "Navin 2",
+                      "type": "folder",
+                      "children": []
+                    },
+                    {
                       "name": "Prof's Note",
                       "type": "folder",
                       "children": [
@@ -1564,6 +1595,11 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "name": "Slides 3",
+                      "type": "folder",
+                      "children": []
                     }
                   ]
                 },
@@ -1736,6 +1772,11 @@
                           "url": "Politic and Global Studies/PGS-1/Semester-1/2410302_SOC THEORY DES THK/Latex/SOC THEORY DES THK.tex"
                         }
                       ]
+                    },
+                    {
+                      "name": "Latex 2",
+                      "type": "folder",
+                      "children": []
                     },
                     {
                       "name": "Materials",
@@ -2308,11 +2349,6 @@
                       ]
                     },
                     {
-                      "name": "Latex 2",
-                      "type": "folder",
-                      "children": []
-                    },
-                    {
                       "name": "Materials",
                       "type": "folder",
                       "children": [
@@ -2355,11 +2391,6 @@
                           ]
                         }
                       ]
-                    },
-                    {
-                      "name": "Navin 2",
-                      "type": "folder",
-                      "children": []
                     },
                     {
                       "name": "Syllabus for Media and Political Imagination 2025.pdf",
