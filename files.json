@@ -1516,11 +1516,6 @@
                       ]
                     },
                     {
-                      "name": "Navin 2",
-                      "type": "folder",
-                      "children": []
-                    },
-                    {
                       "name": "Prof's Note",
                       "type": "folder",
                       "children": [
@@ -1595,11 +1590,6 @@
                           ]
                         }
                       ]
-                    },
-                    {
-                      "name": "Slides 3",
-                      "type": "folder",
-                      "children": []
                     }
                   ]
                 },
@@ -1732,11 +1722,6 @@
                       ]
                     },
                     {
-                      "name": "Group 2 Assignment 2",
-                      "type": "folder",
-                      "children": []
-                    },
-                    {
                       "name": "Latex",
                       "type": "folder",
                       "children": [
@@ -1772,11 +1757,6 @@
                           "url": "Politic and Global Studies/PGS-1/Semester-1/2410302_SOC THEORY DES THK/Latex/SOC THEORY DES THK.tex"
                         }
                       ]
-                    },
-                    {
-                      "name": "Latex 2",
-                      "type": "folder",
-                      "children": []
                     },
                     {
                       "name": "Materials",
@@ -2288,11 +2268,6 @@
                           ]
                         }
                       ]
-                    },
-                    {
-                      "name": "Materials 2",
-                      "type": "folder",
-                      "children": []
                     }
                   ]
                 },
@@ -2435,11 +2410,6 @@
                           ]
                         }
                       ]
-                    },
-                    {
-                      "name": "Exercise 2",
-                      "type": "folder",
-                      "children": []
                     },
                     {
                       "name": "Latex",
