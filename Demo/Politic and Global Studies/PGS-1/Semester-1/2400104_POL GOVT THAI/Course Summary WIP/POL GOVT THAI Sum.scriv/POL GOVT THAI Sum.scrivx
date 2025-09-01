@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="1F65485C-3E80-43CB-8128-C229115877C2" Version="2.0" Creator="SCRMAC-3.4-16639" Device="Punnawats-MacBook-Pro" Author="Punnawat Lerdkijrachapong" Modified="2025-08-26 00:22:01 +0700" ModID="F45DAD10-33C9-4BBF-8EB1-9BE3B33E8EBB">
+<ScrivenerProject Identifier="1F65485C-3E80-43CB-8128-C229115877C2" Version="2.0" Creator="SCRMAC-3.4-16639" Device="Chalongrajs-MacBook-Air" Author="" Modified="2025-08-31 16:23:45 +0700" ModID="814C27B0-7611-458A-A246-453157C8244F">
     <Binder>
         <BinderItem UUID="9FFBA333-8432-41C1-91F5-1302DFE283CA" Type="Text" Created="2025-08-25 23:44:57 +0700" Modified="2025-08-25 23:44:57 +0700">
             <Title>Non-Fiction Format</Title>
@@ -8,7 +8,7 @@
                 <IconFileName>Information</IconFileName>
             </MetaData>
             <TextSettings>
-                <TextSelection>1292,0</TextSelection>
+                <TextSelection>1558,0</TextSelection>
             </TextSettings>
         </BinderItem>
         <BinderItem UUID="7A583553-3A84-40D6-B9B9-0430B8CD3E39" Type="DraftFolder" Created="2025-08-25 23:44:57 +0700" Modified="2025-08-25 23:44:57 +0700">
@@ -42,7 +42,19 @@
                     <TextSettings>
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
+                    <CorkboardAndOutliner>
+                        <SelectedSubdocumentUUIDs>1F511E52-A546-4AE9-951D-BD19CB2DBDBD</SelectedSubdocumentUUIDs>
+                    </CorkboardAndOutliner>
                     <Children>
+                        <BinderItem UUID="1F511E52-A546-4AE9-951D-BD19CB2DBDBD" Type="Text" Created="2025-08-31 12:39:12 +0700" Modified="2025-08-31 15:12:11 +0700">
+                            <Title>1932 (2475) Khanarassadorn</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>131,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
                         <BinderItem UUID="606E2F6A-318D-44EA-A9BC-81093A72CD2F" Type="Text" Created="2025-08-25 23:44:57 +0700" Modified="2025-08-25 23:57:09 +0700">
                             <Title>Constitutional Court</Title>
                             <MetaData>
@@ -50,7 +62,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>20,0</TextSelection>
+                                <TextSelection>5,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem UUID="15181D2C-56D4-428E-86BE-41C6F64D7705" Type="Text" Created="2025-08-25 23:49:57 +0700" Modified="2025-08-25 23:52:16 +0700">
@@ -342,6 +354,14 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
+                <BinderItem UUID="F5AF7B3A-0173-436A-8144-1226C4E02611" Type="Text" Created="2025-08-31 15:12:28 +0700" Modified="2025-08-31 15:12:28 +0700">
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
             </Children>
         </BinderItem>
     </Binder>
@@ -410,14 +430,14 @@
     </StatusSettings>
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="Yes" Deadline="2011-04-12 19:24:39 +0700" IgnoreDeadline="Yes">0</DraftTarget>
-        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" NextResetDate="2025-08-27 00:00:00 +0700" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="77" Characters="477" Date="2025-08-26 00:05:23 +0700"/>
+        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" NextResetDate="2025-09-01 00:00:00 +0700" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
+        <PreviousSession Words="254" Characters="1725" Date="2025-08-31 16:23:41 +0700"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2025-08-26 00:00:00 +0700">
-        <DraftWordCount>190</DraftWordCount>
-        <DraftCharCount>1254</DraftCharCount>
-        <OtherWordCount>6</OtherWordCount>
-        <OtherCharCount>63</OtherCharCount>
+    <RecentWritingHistory Date="2025-08-31 00:00:00 +0700">
+        <DraftWordCount>254</DraftWordCount>
+        <DraftCharCount>1725</DraftCharCount>
+        <OtherWordCount>0</OtherWordCount>
+        <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
     <BookmarksFolderUUID>07B0D7C6-57CE-4D6F-8AD9-11F06A261A5F</BookmarksFolderUUID>
     <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="7AE4FB65-4E6A-4074-BBC9-DAE321309D80" Version="2.0" Creator="SCRMAC-3.4-16639" Device="Chalongrajs-MacBook-Air" Author="" Modified="2025-08-26 09:01:30 +0700" ModID="5E148957-C88E-4ED4-ADAF-52AA13DAD322">
+<ScrivenerProject Identifier="7AE4FB65-4E6A-4074-BBC9-DAE321309D80" Version="2.0" Creator="SCRMAC-3.4-16639" Device="Punnawats-MacBook-Pro" Author="Punnawat Lerdkijrachapong" Modified="2025-08-31 17:04:46 +0700" ModID="83C5F437-8E7B-401E-9AF0-588925C6C8B3">
     <Binder>
         <BinderItem UUID="9FFBA333-8432-41C1-91F5-1302DFE283CA" Type="Text" Created="2025-08-25 22:20:29 +0700" Modified="2025-08-25 22:20:29 +0700">
             <Title>Non-Fiction Format</Title>
@@ -100,22 +100,374 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem UUID="BBE633EF-235A-4272-BD34-DFB66AAD2392" Type="Text" Created="2025-08-25 23:26:58 +0700" Modified="2025-08-25 23:32:24 +0700">
-                            <Title>Why Understanding the "Great Divergence" Is Important?</Title>
+                        <BinderItem UUID="48D59A2C-AD2C-4CE4-A627-420CC42A6012" Type="Text" Created="2025-08-31 16:37:10 +0700" Modified="2025-08-31 16:37:36 +0700">
+                            <Title>Introduction</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>267,0</TextSelection>
+                                <TextSelection>143,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="E62EDCE9-A101-43B0-9DE0-58C4CD03665B" Type="Text" Created="2025-08-25 23:34:07 +0700" Modified="2025-08-25 23:36:06 +0700">
-                            <Title>What is Colonialism?</Title>
+                        <BinderItem UUID="C3469E6D-FCC1-4632-AF4D-2A6D99BD0545" Type="Text" Created="2025-08-31 16:38:14 +0700" Modified="2025-08-31 16:43:18 +0700">
+                            <Title>The Malthusian Model—Dynamics and Equilibrium</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>334,0</TextSelection>
+                                <TextSelection>45,0</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="B7A30882-3FB4-4238-8ADD-CEA4F46DB3CF" Type="Text" Created="2025-08-31 16:38:22 +0700" Modified="2025-08-31 16:39:43 +0700">
+                                    <Title>Core Dynamics of the Malthusian Regime</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>969,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="D103D645-FC61-442F-AAF8-DF49E66DA94D" Type="Text" Created="2025-08-31 16:39:08 +0700" Modified="2025-08-31 16:44:13 +0700">
+                                    <Title>Equilibrium Conditions and Adjustments</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>264,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="42010292-FA11-46B5-8B06-4655B39D68FE" Type="Text" Created="2025-08-31 16:40:19 +0700" Modified="2025-08-31 16:46:57 +0700">
+                                    <Title>Empirical Evidence: Wages, Life Expectancy, and Mortality</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>643,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="950422AF-7F51-4FC1-A36E-415B3E3A754D" Type="Text" Created="2025-08-31 16:41:03 +0700" Modified="2025-08-31 16:41:24 +0700">
+                                    <Title>Critiques and Limits</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>394,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="C3A96864-6A69-40B9-8063-A2EC44BB8CCB" Type="Text" Created="2025-08-31 16:43:04 +0700" Modified="2025-08-31 16:43:30 +0700">
+                            <Title>Smithian Growth—Division of Labour and Markets</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,46</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="495102F4-CF0D-44FA-8117-869F0C52DA2D" Type="Text" Created="2025-08-31 16:43:27 +0700" Modified="2025-08-31 16:45:53 +0700">
+                                    <Title>Smith's Model of Economic Progress</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>257,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="1FCACC5E-78AC-4EF8-944C-5DDD50D5650E" Type="Text" Created="2025-08-31 16:44:17 +0700" Modified="2025-08-31 16:45:00 +0700">
+                                    <Title>Mechanisms and Limitations</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>645,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="D01A1CAE-F062-45E7-B690-9B340A75E5B3" Type="Text" Created="2025-08-31 16:46:04 +0700" Modified="2025-08-31 16:46:43 +0700">
+                                    <Title>Empirical Patterns: Britain 1500–1800</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>697,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="B9EFBC0E-AA6D-48CB-AFEB-34C77E021A03" Type="Text" Created="2025-08-31 16:47:16 +0700" Modified="2025-08-31 16:47:54 +0700">
+                            <Title>From Malthus to Solow—Technological Change in Growth Models</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>59,0</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="1431C4B8-1149-404F-9116-6FADD0FE67FA" Type="Text" Created="2025-08-31 16:47:52 +0700" Modified="2025-08-31 16:48:28 +0700">
+                                    <Title>Comparing Solow and Malthusian Regimes</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>593,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="CE782D4E-CC57-48AA-A252-05358A9FD8EE" Type="Text" Created="2025-08-31 16:48:33 +0700" Modified="2025-08-31 16:48:56 +0700">
+                                    <Title>Transition from Malthusian to Modern Growth</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>0,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="7167A96B-0E28-4E78-83FF-3954AFF1964B" Type="Text" Created="2025-08-31 16:49:48 +0700" Modified="2025-08-31 16:50:02 +0700">
+                            <Title>Endogenous Growth—Innovation and Knowledge Spillovers</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>53,0</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="3F43045B-8140-42CA-9BCF-708DE62D5F93" Type="Text" Created="2025-08-31 16:49:59 +0700" Modified="2025-08-31 16:50:25 +0700">
+                                    <Title>The Romer Model and Endogenous Innovation</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>522,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="1683FD58-C07E-4BEB-B581-8C6615016A45" Type="Text" Created="2025-08-31 16:50:28 +0700" Modified="2025-08-31 17:04:05 +0700">
+                                    <Title>Key Features
+</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>23,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="B747A691-C440-45B7-A10A-4A30F92E2203" Type="Text" Created="2025-08-31 16:51:22 +0700" Modified="2025-08-31 17:04:13 +0700">
+                                    <Title>Empirical Evidence
+Empirical EvidenceEmpirical Evidence
+Empirical Evidence
+Empirical Evidence</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>292,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="EF91168A-D8A0-4BD6-BEA5-643662A32559" Type="Text" Created="2025-08-31 16:51:59 +0700" Modified="2025-08-31 16:52:32 +0700">
+                            <Title>The Industrial Revolution—Regional Case Studies of Growth</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,57</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="6245E147-8DC2-4006-BA9D-FC0B40BF7FEE" Type="Text" Created="2025-08-31 16:52:04 +0700" Modified="2025-08-31 16:54:13 +0700">
+                                    <Title>Patterns and Drivers of Industrialization</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>965,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="FC5A740C-9654-4BD3-BCB8-F16A12219AA4" Type="Text" Created="2025-08-31 16:54:21 +0700" Modified="2025-08-31 16:54:42 +0700">
+                                    <Title>Deindustrialization and the East
+</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>260,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="C4B052CE-BF94-435D-93F2-086CA452BDD5" Type="Text" Created="2025-08-31 16:54:46 +0700" Modified="2025-08-31 16:55:07 +0700">
+                                    <Title>Global Wage and GDP Gaps</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>26,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="C09B5090-3706-443B-85E3-CEE8EE1FA9EF" Type="Text" Created="2025-08-31 16:55:13 +0700" Modified="2025-08-31 16:55:39 +0700">
+                            <Title>The Historical Context of the Great Divergence</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,46</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="3B9F88E1-B687-47F2-95B6-7F720C175547" Type="Text" Created="2025-08-31 16:55:27 +0700" Modified="2025-08-31 16:56:08 +0700">
+                                    <Title>Timing, Contours, and Explanatory Theories</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>903,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="AF6F2715-AA21-40A6-8C9D-DBCF7ECE102F" Type="Text" Created="2025-08-31 16:56:14 +0700" Modified="2025-08-31 16:56:25 +0700">
+                            <Title>Colonialism’s Economic Impact and Institutional Legacies</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,56</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="BCF5AF16-0893-40AA-90C9-164B4C931AD0" Type="Text" Created="2025-08-31 16:56:21 +0700" Modified="2025-08-31 16:56:44 +0700">
+                                    <Title>Heterogeneous Effects and Extractive vs. Inclusive Institutions</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>540,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="46A9664D-7FC8-4F05-9E4C-B0B0B72F1BA5" Type="Text" Created="2025-08-31 16:56:47 +0700" Modified="2025-08-31 16:57:26 +0700">
+                                    <Title>Empirical findings:
+
+</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>489,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="F2E6C4BB-2F20-439E-B426-E7493F47DA64" Type="Text" Created="2025-08-31 16:57:28 +0700" Modified="2025-08-31 16:57:46 +0700">
+                                    <Title>Ongoing Legacies</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>282,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="42A20734-348D-4C08-A46E-6E9613A86716" Type="Text" Created="2025-08-31 16:57:44 +0700" Modified="2025-08-31 16:58:24 +0700">
+                            <Title>Real Wages and Consumption Pre- and Post-Industrialization</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>58,0</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="1E556CAB-8332-4F20-9099-B70943D01F2A" Type="Text" Created="2025-08-31 16:58:29 +0700" Modified="2025-08-31 16:59:00 +0700">
+                                    <Title>The Wage Gap, Consumption, and the Standard of Living</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>994,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="EA769BC2-8FD4-4BA8-B50D-028604BCE56A" Type="Text" Created="2025-08-31 16:59:01 +0700" Modified="2025-08-31 16:59:15 +0700">
+                                    <Title>Modern Wage Divergence and Consumption</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>343,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="D139E2B3-5A6F-477E-A5C4-CA863B06BFCE" Type="Text" Created="2025-08-31 16:59:19 +0700" Modified="2025-08-31 16:59:28 +0700">
+                            <Title>Technology, Sustainability, and Innovation</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,42</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="D37E11EB-D46F-4393-8BC6-F57C090A0D02" Type="Text" Created="2025-08-31 16:59:26 +0700" Modified="2025-08-31 16:59:45 +0700">
+                                    <Title>Technological Change: Accelerating and Polarizing</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>692,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="EDB2924B-B1FC-4A0C-9903-C40719D6402D" Type="Text" Created="2025-08-31 17:00:10 +0700" Modified="2025-08-31 17:00:43 +0700">
+                            <Title>Colonial Racial and Ideological Foundations, Education, and Globalization</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,73</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="E62EDCE9-A101-43B0-9DE0-58C4CD03665B" Type="Text" Created="2025-08-25 23:34:07 +0700" Modified="2025-08-25 23:36:06 +0700">
+                                    <Title>What is Colonialism?</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>334,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="63089251-C46A-4AB2-8020-53228DE7C1D7" Type="Text" Created="2025-08-31 17:00:34 +0700" Modified="2025-08-31 17:01:09 +0700">
+                                    <Title>The Racial and Ideological Roots of Empire</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>487,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="DF057A35-C856-4907-B361-4A17F458273F" Type="Text" Created="2025-08-31 17:01:12 +0700" Modified="2025-08-31 17:01:41 +0700">
+                                    <Title>Colonial Education and Its Postcolonial Repercussions
+</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>719,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="DA18BF45-9A79-4E05-96F3-9AAECAE646D6" Type="Text" Created="2025-08-31 17:01:43 +0700" Modified="2025-08-31 17:02:09 +0700">
+                                    <Title>Globalization and Modern Inequality</Title>
+                                    <MetaData>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>993,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="1858A8F8-BF64-40C0-9890-18759377DEDE" Type="Text" Created="2025-08-31 17:02:19 +0700" Modified="2025-08-31 17:02:37 +0700">
+                            <Title>Conclusion: Lessons and Policy Insights</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>442,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                     </Children>
@@ -151,14 +503,14 @@
                                 <TextSelection>0,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="60D37027-5A0F-4CA1-BA8F-0F527FC7BB6D" Type="Text" Created="2025-08-25 22:20:29 +0700" Modified="2025-08-25 23:38:05 +0700">
+                        <BinderItem UUID="60D37027-5A0F-4CA1-BA8F-0F527FC7BB6D" Type="Text" Created="2025-08-25 22:20:29 +0700" Modified="2025-08-31 17:03:21 +0700">
                             <Title>Contents</Title>
                             <MetaData>
                                 <SectionType>9B7CC6A5-14B4-4916-84BB-57D48011B8A4</SectionType>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>338,0</TextSelection>
+                                <TextSelection>910,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                     </Children>
@@ -371,6 +723,24 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
+                <BinderItem UUID="6888FCAC-5BD6-4149-9AE5-035F7E13EB6E" Type="Folder" Created="2025-08-31 16:36:51 +0700" Modified="2025-08-31 16:36:58 +0700">
+                    <Title>The Malthusian Model—Dynamics and Equilibrium</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="BBE633EF-235A-4272-BD34-DFB66AAD2392" Type="Text" Created="2025-08-25 23:26:58 +0700" Modified="2025-08-25 23:32:24 +0700">
+                    <Title>Why Understanding the "Great Divergence" Is Important?</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>267,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
             </Children>
         </BinderItem>
     </Binder>
@@ -439,15 +809,15 @@
     </StatusSettings>
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="Yes" Deadline="2011-04-12 19:24:39 +0700" IgnoreDeadline="Yes">0</DraftTarget>
-        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" NextResetDate="2025-08-27 00:00:00 +0700" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="0" Characters="0" Date="2025-08-26 09:01:26 +0700"/>
+        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" NextResetDate="2025-09-01 00:00:00 +0700" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
+        <PreviousSession Words="2658" Characters="19953" Date="2025-08-31 16:53:12 +0700"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2025-08-26 00:00:00 +0700">
-        <DraftWordCount>0</DraftWordCount>
-        <DraftCharCount>0</DraftCharCount>
-        <OtherWordCount>0</OtherWordCount>
-        <OtherCharCount>0</OtherCharCount>
+    <RecentWritingHistory Date="2025-08-31 00:00:00 +0700">
+        <DraftWordCount>2658</DraftWordCount>
+        <DraftCharCount>19953</DraftCharCount>
+        <OtherWordCount>74</OtherWordCount>
+        <OtherCharCount>572</OtherCharCount>
     </RecentWritingHistory>
     <BookmarksFolderUUID>07B0D7C6-57CE-4D6F-8AD9-11F06A261A5F</BookmarksFolderUUID>
-    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"/>
+    <PrintSettings PaperSize="595.275567,841.889771" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"/>
 </ScrivenerProject>

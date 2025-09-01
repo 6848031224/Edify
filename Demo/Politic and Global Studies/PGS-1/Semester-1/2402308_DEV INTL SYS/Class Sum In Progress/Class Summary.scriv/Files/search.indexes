@@ -1,7 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
+        <Document ID="0778B444-3F1F-4924-83BA-B2AB7028AC3E">
+            <Title>Back Matter</Title>
+        </Document>
+        <Document ID="3D707F9E-6E7B-4A2B-BF04-64BD98EC07A8">
+            <Title>Notes</Title>
+            <Text>&lt;$--ENDNOTES--&gt;</Text>
+            <Notes>The &lt;$--ENDNOTES--&gt; tag will be replaced by the footnotes during Compile. Using this tag allows us to have the footnotes inserted wherever we like, without having a separator placed above them.</Notes>
+        </Document>
+        <Document ID="EDE99FE3-7226-451F-B453-529D39F24DCF">
+            <Title>Historical–Contextual Eurocentrism</Title>
+            <Text>Historical–Contextual Eurocentrism
+
+The Historical–Contextual Eurocentrism focuses on the historical context of European dominance, its development, and how historical narratives have been shaped to favor European achievements and perspectives. It often emphasises the unique development of European societies, particularly in terms of rationality and progress.
+	•	Marxist Rationality Argument belongs to his school of Eurocentrism.
+	•	Superiority and emphasis of Greco–Roman dominance and inheritance is also part of this arguement.
+	⁃	I.e., Rome is the only great empire and all else must be compared to Rome.</Text>
+        </Document>
+        <Document ID="495102F4-CF0D-44FA-8117-869F0C52DA2D">
+            <Title>Smith's Model of Economic Progress</Title>
+            <Text>Smith's Model of Economic Progress
+	Adam Smith’s growth model, articulated in The Wealth of Nations (1776), stressed the transformative power of the division of labour, the extent of the market, and capital accumulation. Unlike Malthus, Smith believed that productivity could rise with scale, specialization, and institutional development:
+	•	Division of labour: Specialization increases productivity (e.g., pin factory example), but is limited by the "extent of the market."
+	•	Market expansion: Larger and more connected markets allow for further specialization and innovation.
+	•	Capital accumulation: Savings and investment increase the stock of productive assets, fueling future growth</Text>
+        </Document>
+        <Document ID="3F43045B-8140-42CA-9BCF-708DE62D5F93">
+            <Title>The Romer Model and Endogenous Innovation</Title>
+            <Text>The Romer Model and Endogenous Innovation
+	Endogenous growth theory, particularly Paul Romer’s model (1990), internalizes technological progress by focusing on human capital, R&amp;D, and knowledge spillovers:
+	•	Ideas are non-rival: One person’s use of an idea does not preclude another’s. Thus, research and innovation produce increasing returns at the aggregate level.
+	•	Positive externalities: Firms/factories benefit from each other's innovations (knowledge spillovers), creating social returns greater than private ones</Text>
+        </Document>
+        <Document ID="6C3BDCCC-F6C3-4AF9-B7CD-475616712EAE">
+            <Title>Introduction to Eurocentrism</Title>
+        </Document>
+        <Document ID="66C7F882-B4AF-496D-B388-9C513A590903">
+            <Title>Types of Eurocentrism</Title>
+        </Document>
+        <Document ID="6A2981D0-EE77-461E-BF97-D9ED0D27A5D2">
+            <Title>Endnotes</Title>
+            <Text>&lt;$--ENDNOTES--&gt;</Text>
+            <Notes>The &lt;$--ENDNOTES--&gt; tag will be replaced by the footnotes during Compile. Using this tag allows us to have the footnotes inserted wherever we like, without having a separator placed above them.</Notes>
+        </Document>
+        <Document ID="4DAE20E1-E8B4-402B-BA96-7067A8A89451">
+            <Title>Ebook</Title>
+        </Document>
+        <Document ID="A097A466-32FF-491F-8E6B-6DCD12185DE1">
+            <Title>Foreword</Title>
+        </Document>
+        <Document ID="606E2F6A-318D-44EA-A9BC-81093A72CD2F">
+            <Title>Section</Title>
+        </Document>
+        <Document ID="758594EB-4005-4184-A4B3-3301CB58CF79">
+            <Title>Cover</Title>
+        </Document>
+        <Document ID="1858A8F8-BF64-40C0-9890-18759377DEDE">
+            <Title>Conclusion: Lessons and Policy Insights</Title>
+            <Text>	The long arc of the Great Divergence and its associated phenomena—colonialism, industrialization, and globalization—has left indelible imprints on world inequality. Key takeaways:
+	•	Historical growth models (Malthusian, Smithian, Solow, Romer) provide necessary lenses for interpreting global economic trajectories and understanding why some societies broke free of stagnation while others remained mired in poverty.
+	•	Colonial expansion and deindustrialization created lasting disparities in institutions, education systems, and trade structures, fostering persistent gaps in income and opportunity.
+	•	Technological change is indispensable for development but must be harnessed inclusively to avoid sharpening divides.
+	•	Racial and ideological legacies shape not only policies of the past but the structures of present-day societies—from who controls capital and land, to who enjoys educational and political rights.
+	•	Globalization connects, but also divides—reflecting colonial legacies in trade, education, and culture.
+For progress toward equality and sustainable development:
+	•	Invest in universal, relevant education and skill-building.
+	•	Foster institutions that protect rights, encourage innovation, and distribute political and economic power widely.
+	•	Design technology and globalization policies that prioritize inclusion, sustainability, and local agency.
+</Text>
+        </Document>
+        <Document ID="B5BAD6CD-B8F5-469F-9D65-288D1D5001DD">
+            <Title>Dedication</Title>
+            <Text>
+
+
+
+
+Your dedication here.</Text>
+            <Notes>Feel free to delete this document if you don’t need it.</Notes>
+        </Document>
+        <Document ID="AF6F2715-AA21-40A6-8C9D-DBCF7ECE102F">
+            <Title>Colonialism’s Economic Impact and Institutional Legacies</Title>
+            <Text>Colonialism’s Economic Impact and Institutional Legacies</Text>
+        </Document>
+        <Document ID="FF6B0494-139F-45E6-A551-2B9B9F5D081F">
+            <Title>Philosophical Eurocentrism</Title>
+            <Text>Philosophical Eurocentrism
+
+</Text>
+        </Document>
+        <Document ID="C09B5090-3706-443B-85E3-CEE8EE1FA9EF">
+            <Title>The Historical Context of the Great Divergence</Title>
+            <Text>The Historical Context of the Great Divergence</Text>
+        </Document>
+        <Document ID="FC5A740C-9654-4BD3-BCB8-F16A12219AA4">
+            <Title>Deindustrialization and the East
+</Title>
+            <Text>Deindustrialization and the East
+	•	India: The British colonial regime promoted the export of raw materials, undermined local textiles with tariff and policy barriers, and imported British manufactures, precipitating "de-proto-industrialization" in key regions.
+	•	China: Long led the world in production and urbanization but lost competitive ground by c. 1800 as its institutions failed to match the pace of Western innovation and trade expansion.
+</Text>
+        </Document>
+        <Document ID="3B9F88E1-B687-47F2-95B6-7F720C175547">
+            <Title>Timing, Contours, and Explanatory Theories</Title>
+            <Text>Timing, Contours, and Explanatory Theories
+	The Great Divergence is widely accepted as having unfolded between 1750 and 1900, reshaping the world. Key facts:
+	•	In 1500, differences in standards of living were modest (factor of 4); today, the ratio between richest and poorest nations exceeds 40:1.
+	•	Core drivers:
+	◦	The Industrial Revolution (Western Europe, North America)
+	◦	Colonial expansion and resource transfer (from colonies to metropole)
+	◦	Institutional change (property rights, inclusive vs. extractive institutions)
+	◦	Technology adoption and innovation
+Explanatory Variable
+Key Role
+Geography
+Coastline, coal, agricultural productivity
+Institutions
+Inclusive (secure property rights) vs. extractive
+Colonial legacies
+Structures persisting post-independence
+Human capital
+Education, research capacity, "absorptive ability"
+State and policy
+Investment, openness, trade policy, legal order
+
+Sectoral shifts, marriage patterns (delaying fertility in NW Europe), labor discipline, and state capacity all feature prominently in recent debates
+</Text>
+        </Document>
+        <Document ID="D139E2B3-5A6F-477E-A5C4-CA863B06BFCE">
+            <Title>Technology, Sustainability, and Innovation</Title>
+            <Text>Technology, Sustainability, and Innovation</Text>
+        </Document>
+        <Document ID="42A20734-348D-4C08-A46E-6E9613A86716">
+            <Title>Real Wages and Consumption Pre- and Post-Industrialization</Title>
+            <Text>Real Wages and Consumption Pre- and Post-Industrialization</Text>
+        </Document>
+        <Document ID="7167A96B-0E28-4E78-83FF-3954AFF1964B">
+            <Title>Endogenous Growth—Innovation and Knowledge Spillovers</Title>
+            <Text>Endogenous Growth—Innovation and Knowledge Spillovers</Text>
+        </Document>
+        <Document ID="46A9664D-7FC8-4F05-9E4C-B0B0B72F1BA5">
+            <Title>Empirical findings:
+
+</Title>
+            <Text>Empirical findings:
+	•	Settler mortality rates predict present-day income, via their influence on institutional development.
+	•	Today, up to two-thirds of cross-country income variation can be attributed to historical institutional differences linked to colonial governance strategies.
+Type of Colony
+Institutional Legacy
+Current Economic Outcome
+Settler (US, Canada)
+Inclusive, democratic
+High prosperity
+Extractive (Congo, India)
+Authoritarian, exploitative
+Persistent poverty/inequality</Text>
+        </Document>
         <Document ID="0EB16FF9-6C9D-4FA9-B47D-F8902B6AD165">
+            <Title>Sample MS</Title>
             <Text>Amy Nonomusse
 Your manuscript should have your address
 and contact details
@@ -46,48 +203,76 @@ Endnotes
 Nonomusse / NON-FICTION MS / 6
 </Text>
         </Document>
-        <Document ID="833DF1C1-C636-4034-9053-01C6641E9578">
-            <Title>Contents</Title>
+        <Document ID="B7A30882-3FB4-4238-8ADD-CEA4F46DB3CF">
+            <Title>Core Dynamics of the Malthusian Regime</Title>
+            <Text>Core Dynamics of the Malthusian Regime
+
+	The Malthusian model, named after Thomas Robert Malthus's 1798 work, is foundational to understanding pre-industrial economic stagnation. It centers on a simple but powerful equilibrium mechanism: any increase in living standards (real income per capita), whether due to fortuitous events or incremental technological progress, leads to population growth. As population expands, diminishing returns in agricultural productivity drive real incomes back to subsistence. Thus, living standards remain stagnant over time, oscillating around a low equilibrium.
+The classical formulation can be summarized as follows:
+	•	Positive relationship: higher income per person raises birth rates and lowers mortality, spurring population growth.
+	•	Negative relationship: rising population depresses per capita income (due to fixed land and slow technological change), which, in turn, checks further population increases via higher mortality.</Text>
+        </Document>
+        <Document ID="7549ED70-FDD4-4A71-A9B4-F89A022A6B24">
+            <Title>What is Eurocentrism?</Title>
+            <Text>Eurocentrism is a cultural phenomenon and worldview that interprets the histories, cultures, and societies of the world primarily from a European or Western European perspective.</Text>
+        </Document>
+        <Document ID="E4E08195-CB6C-40A5-9D50-F01F80AA57FF">
+            <Title>Types of Eurocentrism</Title>
+        </Document>
+        <Document ID="C4B052CE-BF94-435D-93F2-086CA452BDD5">
+            <Title>Global Wage and GDP Gaps</Title>
+            <Text>Global Wage and GDP Gaps
+	Growing wage, GDP, and consumption gaps after 1800 permanently altered the relative fortunes of societies—a trend that still drives global inequality today</Text>
+        </Document>
+        <Document ID="1683FD58-C07E-4BEB-B581-8C6615016A45">
+            <Title>Key Features
+</Title>
+            <Text>Key Features
+	•	Sustained growth is achievable with ongoing R&amp;D and knowledge accumulation.
+	•	Human capital and education systems become essential—where skills and research capacity are lacking, regions fall behind in technological adoption and income growth.
+	•	Policy and market structures (e.g., intellectual property law, research grants) play a central role.
+Feature
+Solow Model
+Endogenous/Romer Model
+Source of TFP growth
+Exogenous
+Endogenous (R&amp;D, spillovers)
+Role of education
+Minor
+Central (human capital)
+Innovation spillover
+Absent
+Key externality
+</Text>
+        </Document>
+        <Document ID="C5C89DB7-5404-4109-8CF7-355D76BE0DAD">
+            <Title>Residual Eurocentrism</Title>
+            <Text>Residual Eurocentrism
+
+This refers to the lingering effects of Eurocentric views that persist even in contemporary thought and practices. It can manifest in subtle ways, influencing policies and attitudes even when there is a conscious effort to move beyond Eurocentric frameworks.
+	•	Holding European standards as universalist views and perspectives.
+	•	Example: Mainstream theories in international relations often reflect Eurocentric assumptions about state behavior, sovereignty, and international norms, which may not be applicable or relevant to non–European contexts. This can limit the field’s ability to account for diverse geopolitical realities.
+	⁃	Tolay, J., 2021. Inadvertent reproduction of Eurocentrism in IR: The politics of critiquing Eurocentrism. Review of International Studies, 47, pp. 692 - 713.
+</Text>
+        </Document>
+        <Document ID="EDB2924B-B1FC-4A0C-9903-C40719D6402D">
+            <Title>Colonial Racial and Ideological Foundations, Education, and Globalization</Title>
+            <Text>Colonial Racial and Ideological Foundations, Education, and Globalization</Text>
         </Document>
         <Document ID="BBE633EF-235A-4272-BD34-DFB66AAD2392">
             <Title>Why Understanding the "Great Divergence" Is Important?</Title>
             <Text>Why understanding the “Great Divergence” is important?
-The Great Divergence explains 
+	•	The Great Divergence explains 
 	•	Global Inequality, and Political Economic Imbalances.
 	•	The Institutional, and Cultural Differences.
 	•	Future Economic Development.
 	•	The Challenges to Eurocentric Naratives.
 </Text>
         </Document>
-        <Document ID="3B425F17-6AEB-4983-8C67-5167CFE5B4E9">
-            <Title>Dedication</Title>
-            <Text>
-
-
-
-
-
-
-
-
-
-
-Insert dedication here.</Text>
-            <Notes>Feel free to delete this document if you don’t need it.</Notes>
-        </Document>
-        <Document ID="E62EDCE9-A101-43B0-9DE0-58C4CD03665B">
-            <Title>What is Colonialism?</Title>
-            <Text>What is Colonialism?
-Colonialism is a distinct mode of domination that involves the extended subjugation and political control of one people by another, typically manifesting through a foreign power establishing direct sovereignty, settling populations, and enforcing legal, economic, and social hierachies in the colonised territory.</Text>
-        </Document>
-        <Document ID="7549ED70-FDD4-4A71-A9B4-F89A022A6B24">
-            <Title>What is Eurocentrism?</Title>
-            <Text>Eurocentrism is a cultural phenomenon and worldview that interprets the histories, cultures, and societies of the world primarily from a European or Western European perspective.</Text>
-        </Document>
-        <Document ID="6A2981D0-EE77-461E-BF97-D9ED0D27A5D2">
-            <Title>Endnotes</Title>
-            <Text>&lt;$--ENDNOTES--&gt;</Text>
-            <Notes>The &lt;$--ENDNOTES--&gt; tag will be replaced by the footnotes during Compile. Using this tag allows us to have the footnotes inserted wherever we like, without having a separator placed above them.</Notes>
+        <Document ID="F2E6C4BB-2F20-439E-B426-E7493F47DA64">
+            <Title>Ongoing Legacies</Title>
+            <Text>Ongoing Legacies
+	Resource dependency, weak political systems, and marginalization of ethnic groups persist in large part due to the way colonial economies and societies were structured, while postcolonial efforts at reform often struggle to overcome these entrenched disadvantages.</Text>
         </Document>
         <Document ID="BB360289-7F77-4AF1-A155-43057C51131A">
             <Title>Title Page</Title>
@@ -122,11 +307,179 @@ The &lt;$wc100&gt; words tag will be replaced with the word count rounded to the
 
 Feel free to edit the text of the title page as required.</Notes>
         </Document>
-        <Document ID="DF5CB5B8-F2F9-4739-AACF-2F0A927A5215">
-            <Title>Types of Eurocentrism</Title>
+        <Document ID="3B425F17-6AEB-4983-8C67-5167CFE5B4E9">
+            <Title>Dedication</Title>
+            <Text>
+
+
+
+
+
+
+
+
+
+
+Insert dedication here.</Text>
+            <Notes>Feel free to delete this document if you don’t need it.</Notes>
+        </Document>
+        <Document ID="48D59A2C-AD2C-4CE4-A627-420CC42A6012">
+            <Title>Introduction</Title>
+            <Text>The "Great Divergence" refers to the widening gap in economic prosperity, technology, and living standards that emerged between the Western world and much of Asia, Africa, and Latin America from the late 18th century onwards—a process deeply linked to colonialism, industrialization, evolving models of economic growth, and the long shadows they cast on global inequality. This report provides a concise, accessible synthesis suitable for an educational book and slide deck, drawing on recent scholarship, official datasets, and key historical analyses. It is organized in ten chapters mirroring the original uploaded presentation: examining foundational growth models (Malthusian, Smithian, Solow, endogenous growth), the mechanics and regional cases of industrialization, the historical roots and institutional legacies of colonialism, wage and consumption dynamics, technology and sustainable development, the racial and ideological foundations of imperialism, the construction of colonial education systems, and contemporary globalization's entanglement with persistent inequality. Where appropriate, tables compare economic models, wage and consumption data, and summarize colonial impacts</Text>
+        </Document>
+        <Document ID="3ECF6511-EC5A-4B9A-B12F-039C0CDD2CB7">
+            <Title>Copyright</Title>
+            <Text>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright © &lt;$year&gt; &lt;$author&gt;
+All rights reserved.
+ISBN:
+ISBN-13:
+</Text>
+            <Notes>Feel free to delete this document if you don’t need it, or edit it for your needs.</Notes>
+        </Document>
+        <Document ID="60D37027-5A0F-4CA1-BA8F-0F527FC7BB6D">
+            <Title>Contents</Title>
+            <Text>Foreword	&lt;$p&gt;
+Introduction to Eurocentrism	&lt;$p&gt;
+What is Eurocentrism?	&lt;$p&gt;
+Types of Eurocentrism	&lt;$p&gt;
+Historical–Contextual Eurocentrism	&lt;$p&gt;
+Ideological Eurocentrism	&lt;$p&gt;
+Residual Eurocentrism	&lt;$p&gt;
+Philosophical Eurocentrism	&lt;$p&gt;
+Great Divergence	&lt;$p&gt;
+Introduction	&lt;$p&gt;
+The Malthusian Model—Dynamics and Equilibrium	&lt;$p&gt;
+Smithian Growth—Division of Labour and Markets	&lt;$p&gt;
+From Malthus to Solow—Technological Change in Growth Models	&lt;$p&gt;
+Endogenous Growth—Innovation and Knowledge Spillovers	&lt;$p&gt;
+The Industrial Revolution—Regional Case Studies of Growth	&lt;$p&gt;
+The Historical Context of the Great Divergence	&lt;$p&gt;
+Colonialism’s Economic Impact and Institutional Legacies	&lt;$p&gt;
+Real Wages and Consumption Pre- and Post-Industrialization	&lt;$p&gt;
+Technology, Sustainability, and Innovation	&lt;$p&gt;
+Colonial Racial and Ideological Foundations, Education, and Globalization	&lt;$p&gt;
+Conclusion: Lessons and Policy Insights	&lt;$p&gt;</Text>
+        </Document>
+        <Document ID="EF91168A-D8A0-4BD6-BEA5-643662A32559">
+            <Title>The Industrial Revolution—Regional Case Studies of Growth</Title>
+            <Text>The Industrial Revolution—Regional Case Studies of Growth</Text>
+        </Document>
+        <Document ID="CB0EEE35-84F6-4D12-9A81-6827BED783B8">
+            <Title>Paperback</Title>
+        </Document>
+        <Document ID="E62EDCE9-A101-43B0-9DE0-58C4CD03665B">
+            <Title>What is Colonialism?</Title>
+            <Text>What is Colonialism?
+Colonialism is a distinct mode of domination that involves the extended subjugation and political control of one people by another, typically manifesting through a foreign power establishing direct sovereignty, settling populations, and enforcing legal, economic, and social hierachies in the colonised territory.</Text>
+        </Document>
+        <Document ID="1FCACC5E-78AC-4EF8-944C-5DDD50D5650E">
+            <Title>Mechanisms and Limitations</Title>
+            <Text>Mechanisms and Limitations
+	Smith's model embodies a positive feedback loop:
+	1.	More capital → more output
+	2.	Higher output/income → larger market
+	3.	Expanded market → more specialization and innovation
+	4.	Specialization feeds both productivity and the development of new machinery
+	However, Smith's model also recognizes that institutional structures and market access are crucial—state policies, political stability, and secure property rights foster the accumulation and deployment of capital.
+Smithian Model Elements
+Description
+Production function
+Output = f(Labor, Land, Capital)
+Returns to scale
+Increasing, due to division of labour
+Growth drivers
+Division of labour, market extent, capital accumulation
+Population dynamics
+Responsive to wages; lower than in Malthus’s model
+Institutional context
+Property rights, legal security, easy commerce
+</Text>
+        </Document>
+        <Document ID="E17E8BB7-8E12-4469-AFEE-ACD12A954D33">
+            <Title>Paperback</Title>
+        </Document>
+        <Document ID="9C47FE92-A3E7-4D4A-A856-E4CA8C558327">
+            <Title>Manuscript Format</Title>
+        </Document>
+        <Document ID="42010292-FA11-46B5-8B06-4655B39D68FE">
+            <Title>Empirical Evidence: Wages, Life Expectancy, and Mortality</Title>
+            <Text>Empirical Evidence: Wages, Life Expectancy, and Mortality
+	Available wage and demographic data corroborate Malthus's predictions. Before 1800, real wages were flat or declining despite occasional technological advances, and life expectancy remained low (20–40 years, with high infant and child mortality)6.
+Parameter
+Pre-1750 Levels
+Notes
+Technological Innovation
+Low
+Innovations sporadic, poorly diffused
+Productivity
+Low
+Predominantly subsistence farming
+Population Growth
+Very slow
+Zero or near-zero net growth over centuries
+Mortality
+High
+LE 20–40; high infant/child mortality
+Fertility
+Moderate
+Avg. 4–9 children per woman, but survival to adulthood low
+Standard of Living
+Subsistence
+Vulnerable to shocks, poor nutrition/housing
+
+While these trends held globally before the Industrial Revolution, regional heterogeneity did exist: certain parts of China, India, and the Islamic world experienced temporary clusters of higher productivity and urbanization, but these gains rarely broke the Malthusian ceiling for long.
+</Text>
         </Document>
         <Document ID="B0417A1B-D617-4CBD-900A-14A6AB12C289">
             <Title>Ideas</Title>
+        </Document>
+        <Document ID="DF5CB5B8-F2F9-4739-AACF-2F0A927A5215">
+            <Title>Types of Eurocentrism</Title>
+        </Document>
+        <Document ID="07B0D7C6-57CE-4D6F-8AD9-11F06A261A5F">
+            <Title>Notes</Title>
+        </Document>
+        <Document ID="B747A691-C440-45B7-A10A-4A30F92E2203">
+            <Title>Empirical Evidence
+Empirical EvidenceEmpirical Evidence
+Empirical Evidence
+Empirical Evidence</Title>
+            <Text>Empirical Evidence
+	•	Countries with higher investments in R&amp;D and education show higher long-run growth rates.
+	•	Global productivity gaps (e.g., US vs. Sub-Saharan Africa) correlate strongly with research/education disparities and the ability to absorb, adapt, and generate new technologies</Text>
+        </Document>
+        <Document ID="EA769BC2-8FD4-4BA8-B50D-028604BCE56A">
+            <Title>Modern Wage Divergence and Consumption</Title>
+            <Text>Modern Wage Divergence and Consumption
+	Official datasets (ILO, World Bank, OECD) show that wage trends since 1820 have mirrored, and often lagged, GDP per capita growth; wage gaps widened rapidly in the 19th century and then shrank modestly in the late 20th as some emerging economies began closing the gap (East Asia, parts of Latin America)</Text>
+        </Document>
+        <Document ID="CE782D4E-CC57-48AA-A252-05358A9FD8EE">
+            <Title>Transition from Malthusian to Modern Growth</Title>
+            <Text>Transition from Malthusian to Modern Growth
+	Modern growth began when societies escaped the Malthusian trap: industrialization, institutional reform, and faster technological change enabled sustained per capita income growth for the first time in history.
+In Britain, for instance, the transition is evident in:
+	•	Flat real wages from the Middle Ages to ~1800; surging after.
+	•	Population surges initially lowered wages (Malthusian effect), but subsequent technological progress then increased both wages and population—a signature of the Solow regime.
+	•	Land’s economic significance plummeted; capital and knowledge took center stage.
+
+</Text>
         </Document>
         <Document ID="9FFBA333-8432-41C1-91F5-1302DFE283CA">
             <Title>Non-Fiction Format</Title>
@@ -250,58 +603,200 @@ Like all templates in Scrivener, this project was originally created from the �
 
 You can create your own templates by setting up a skeletal project with the files, folders and settings you would like to use for new projects and using File &gt; Save As Template.</Text>
         </Document>
-        <Document ID="CB0EEE35-84F6-4D12-9A81-6827BED783B8">
-            <Title>Paperback</Title>
+        <Document ID="BC0DC62B-D666-419C-A37C-870C3C678050">
+            <Title>Manuscript Format</Title>
         </Document>
-        <Document ID="C5C89DB7-5404-4109-8CF7-355D76BE0DAD">
-            <Title>Residual Eurocentrism</Title>
-            <Text>Residual Eurocentrism
+        <Document ID="950422AF-7F51-4FC1-A36E-415B3E3A754D">
+            <Title>Critiques and Limits</Title>
+            <Text>Critiques and Limits
+	Modern critics highlight that declining birthrates, rising food production, and sustained gains in income from the 19th century onward made Malthus's model obsolete for the industrial world. The demographic transition reversed the link between prosperity and fertility, making Malthus's model mainly a model of the distant past or economies facing environmental constraint</Text>
+        </Document>
+        <Document ID="B9EFBC0E-AA6D-48CB-AFEB-34C77E021A03">
+            <Title>From Malthus to Solow—Technological Change in Growth Models</Title>
+            <Text>From Malthus to Solow—Technological Change in Growth Models</Text>
+        </Document>
+        <Document ID="833DF1C1-C636-4034-9053-01C6641E9578">
+            <Title>Contents</Title>
+        </Document>
+        <Document ID="6245E147-8DC2-4006-BA9D-FC0B40BF7FEE">
+            <Title>Patterns and Drivers of Industrialization</Title>
+            <Text>Patterns and Drivers of Industrialization
+The Industrial Revolution, starting roughly in late-18th-century Britain, is the locus classicus of the Great Divergence:
+	•	Britain led with mechanized textile production, steam power, and coal-based energy. Urbanization accelerated as employment shifted from farming to industry. By 1850, real incomes and productivity diverged sharply from Asian and African economies7.
+	•	Continental Europe (France, Germany, Belgium) followed in the 19th century, though with varied speeds and state involvement.
+Country
+GDP/capita 1820
+GDP/capita 1870
+Industrialisation (share)
+UK
+$1706
+$3,190
+&gt;30% by 1870
+NL
+$1,838
+$2,757
+&gt;25% by 1870
+India
+$533
+$533
+&lt;10% in 19th C.
+China
+$600
+$530
+Stagnant/declining
+Japan
+$669
+$737
+Industrial takeoff post-1868
 
-This refers to the lingering effects of Eurocentric views that persist even in contemporary thought and practices. It can manifest in subtle ways, influencing policies and attitudes even when there is a conscious effort to move beyond Eurocentric frameworks.
-	•	Holding European standards as universalist views and perspectives.
-	•	Example: Mainstream theories in international relations often reflect Eurocentric assumptions about state behavior, sovereignty, and international norms, which may not be applicable or relevant to non–European contexts. This can limit the field’s ability to account for diverse geopolitical realities.
-	⁃	Tolay, J., 2021. Inadvertent reproduction of Eurocentrism in IR: The politics of critiquing Eurocentrism. Review of International Studies, 47, pp. 692 - 713.
+Regional Lag: India and China, which had been on par with Europe in the early modern period, saw stagnation or outright deindustrialization under colonial or semi-colonial constraints
 </Text>
         </Document>
-        <Document ID="FF6B0494-139F-45E6-A551-2B9B9F5D081F">
-            <Title>Philosophical Eurocentrism</Title>
-            <Text>Philosophical Eurocentrism
+        <Document ID="D37E11EB-D46F-4393-8BC6-F57C090A0D02">
+            <Title>Technological Change: Accelerating and Polarizing</Title>
+            <Text>Technological Change: Accelerating and Polarizing
+	The rapid pace of technological advance is both the greatest opportunity and challenge of the 21st century. Technology is a double-edged sword: essential for productivity, resilience, and progress—yet capable of entrenching inequality and disrupting societies if poorly managed.
+	•	Frontier technologies: AI, robotics, IoT, nanotechnology, biotech, and renewable energy can transform productive capacity and life prospects, but their benefits are unequally distributed.
+	•	Sustainable development: Rapid innovation is critical for achieving the UN Sustainable Development Goals (SDGs), but without deliberate policy, it can heighten gaps within and between nations.
+Technological Impact
+Opportunity
+Risk/Challenge
+Economic growth
+Higher productivity, more jobs
+Job displacement, regional gaps
+Social dimensions
+Better health, connectivity
+Exclusion of poor, digital divide
+Environment
+Renewable energy, pollution control
+Increased consumption, e-waste
 
+Policy implication: Guided investment in human capital and "absorptive capacity" (the ability to adopt and adapt new knowledge) is crucial for nations lagging behind to catch up or leapfrog in development.
 </Text>
         </Document>
-        <Document ID="A097A466-32FF-491F-8E6B-6DCD12185DE1">
-            <Title>Foreword</Title>
+        <Document ID="63089251-C46A-4AB2-8020-53228DE7C1D7">
+            <Title>The Racial and Ideological Roots of Empire</Title>
+            <Text>The Racial and Ideological Roots of Empire
+	Colonial expansion was justified by racial ideologies: beliefs in the superiority of Europeans and the corresponding “civilizing mission.” Racial thinking structured not only policies towards colonized peoples, but relations within European empires (e.g., Turks atop the Ottoman hierarchy, Aryanism in Nazi Empire). Such ideologies persist in the memory, politics, and, unfortunately, institutional structures inherited from the colonial past.</Text>
         </Document>
-        <Document ID="3ECF6511-EC5A-4B9A-B12F-039C0CDD2CB7">
-            <Title>Copyright</Title>
-            <Text>
+        <Document ID="96776348-B035-46DA-A5A5-210E99B93774">
+            <Title>Front Matter</Title>
+            <Notes>Note that in the “Metadata” pane of the Inspector, under “Section Type”, the “Default Subdocument Type” is set to “Front Matter”. This setting causes all subdocuments of this folder to use the “Front Matter” section type by default (that is, when “Structure-Based” is selected as the section type).
 
+This saves us from having to manually assign the “Front Matter” section type for each document we place into this folder.
 
+During Compile, documents assigned the “Front Matter” section type will be laid out differently from documents in the main body of the manuscript.</Notes>
+        </Document>
+        <Document ID="C3469E6D-FCC1-4632-AF4D-2A6D99BD0545">
+            <Title>The Malthusian Model—Dynamics and Equilibrium</Title>
+            <Text>The Malthusian Model—Dynamics and Equilibrium</Text>
+        </Document>
+        <Document ID="D103D645-FC61-442F-AAF8-DF49E66DA94D">
+            <Title>Equilibrium Conditions and Adjustments</Title>
+            <Text>Equilibrium Conditions and Adjustments
+	The interaction between population and income creates a stable long-term equilibrium at subsistence wage (the minimum to keep population stable). If population rises (perhaps due to a favorable harvest or a drop in deaths), wages fall and mortality rises until numbers return to equilibrium. Conversely, plagues or famine reduce the population, driving up wages for survivors until birth rates rebound.</Text>
+        </Document>
+        <Document ID="1D193AC1-5A02-4030-BB32-75A3919681BF">
+            <Title>Ideological Eurocentrism</Title>
+            <Text>Ideological Eurocentrism
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Copyright © &lt;$year&gt; &lt;$author&gt;
-All rights reserved.
-ISBN:
-ISBN-13:
+Unique and superior ideology justify European superiority and the imposition of European norms and values on other cultures. It includes the belief that European culture is the pinnacle of human development and that other cultures should aspire to European standards.
+	•	Some predecessors of this includes Abrahamic Religion’s belief in determinism.
+	⁃	These ideas would back up “White Man’s Burden” argument in both the history of religious expansion, missionaries, and conquest.
 </Text>
-            <Notes>Feel free to delete this document if you don’t need it, or edit it for your needs.</Notes>
         </Document>
-        <Document ID="3D707F9E-6E7B-4A2B-BF04-64BD98EC07A8">
-            <Title>Notes</Title>
-            <Text>&lt;$--ENDNOTES--&gt;</Text>
-            <Notes>The &lt;$--ENDNOTES--&gt; tag will be replaced by the footnotes during Compile. Using this tag allows us to have the footnotes inserted wherever we like, without having a separator placed above them.</Notes>
+        <Document ID="35F9F5B4-E4BA-4530-8791-BEEB7D179A06">
+            <Title>Great Divergence</Title>
+        </Document>
+        <Document ID="1431C4B8-1149-404F-9116-6FADD0FE67FA">
+            <Title>Comparing Solow and Malthusian Regimes</Title>
+            <Text>Comparing Solow and Malthusian Regimes
+	The 20th-century Solow model addresses the limitations of both Malthus and Smith by centering sustained technological progress and relaxing land constraints:
+	•	Solow Model: Growth depends on capital accumulation, labor expansion, and, crucially, exogenous technological progress.
+	•	Unlike Malthus, in the Solow framework, continuous technology adoption raises both income and population sustainably, allowing for perpetual increases in per capita income if the rate of tech progress exceeds population growth15.
+Characteristic
+Malthus Model
+Solow Model
+Main constraint
+Land/resources
+Diminishing returns to cap.
+Tech progress
+Slow/exogenous
+Exogenous, central driver
+Population-income link
+Positive feedback
+Weakens w/ less land-depend.
+Steady-state income
+Fixed (subsistence)
+Rising (via tech progress)
+</Text>
+        </Document>
+        <Document ID="BCF5AF16-0893-40AA-90C9-164B4C931AD0">
+            <Title>Heterogeneous Effects and Extractive vs. Inclusive Institutions</Title>
+            <Text>Heterogeneous Effects and Extractive vs. Inclusive Institutions
+	Colonialism reshaped global economics by:
+	•	Reorienting trade, production, and political institutions for the benefit of the metropole
+	•	Establishing extractive institutions (favoring raw material exports, limiting local entrepreneurial growth) in densely populated or malaria-prone regions (Latin America, Africa, South Asia)
+	•	Creating inclusive institutions (with property rights, broader suffrage) in settler colonies with mortal climates (e.g., US, Canada, Australia)</Text>
+        </Document>
+        <Document ID="DF057A35-C856-4907-B361-4A17F458273F">
+            <Title>Colonial Education and Its Postcolonial Repercussions
+</Title>
+            <Text>Colonial Education and Its Postcolonial Repercussions
+	•	Purpose: Educate a small elite and create bureaucratic/technical staff loyal to the colonial regime.
+	•	Content: Curricula imported from Europe, often irrelevant to local needs; missionary and private schools established for upper classes; public provision minimal or restricted.
+	•	Outcome: Upon independence, many postcolonial societies inherited fragmented, elitist, or biased education systems, impeding equitable social mobility and weakening skills' match to economic needs.
+Efforts at reform (expansion, “Africanization,” curriculum reform) met mixed success. The legacy is visible in persistent stratification, skills gaps, and language/cultural tensions</Text>
+        </Document>
+        <Document ID="6888FCAC-5BD6-4149-9AE5-035F7E13EB6E">
+            <Title>The Malthusian Model—Dynamics and Equilibrium</Title>
+        </Document>
+        <Document ID="D01A1CAE-F062-45E7-B690-9B340A75E5B3">
+            <Title>Empirical Patterns: Britain 1500–1800</Title>
+            <Text>Empirical Patterns: Britain 1500–1800
+	Smithian dynamics explain early modern growth spurts seen, for example, in Britain:
+	•	Between 1500–1800, division of labour (documented via occupational data and the spread of urban trades) and increased market integration prefigured Britain’s later industrial leap.
+	•	Regions with higher market access, urbanization, and trade saw more specialization, higher wages, and greater productivity.
+Metric
+Trend, England 1500-1800
+Source
+# Clockmaking job titles
+1 → &gt;25
+Smithian study
+Urban population
+Grew substantially
+Chilosi et al.
+GDP per capita
+Steady rise (esp. after 1650)
+Maddison data
+Market potential
+Strongly correlated w/ specialization
+LSE WP382
+
+Smithian growth is thus transitional: It paved the way for the Industrial Revolution but did not—and could not—generate the exponential income gains observed post-1800 without further, innovation-driven dynamics.
+</Text>
+        </Document>
+        <Document ID="DA18BF45-9A79-4E05-96F3-9AAECAE646D6">
+            <Title>Globalization and Modern Inequality</Title>
+            <Text>Globalization and Modern Inequality
+	Modern globalization is both a legacy and an evolution of colonial dynamics:
+	•	Global trade networks established during colonialism survive, with former colonies frequently stuck exporting raw materials or low-value-added goods25.
+	•	Cultural globalization continues to be marked by hierarchies established in the colonial period, with Western languages, institutions, and norms dominating international life.
+	•	Inequality: The North-South divide, shaped by centuries of extraction and institutional disparity, is now reinforced by technological gaps, capital flows, and trade structures favoring wealthy economies.
+Colonial/Postcolonial Mechanism
+21st-Century Globalization Result
+Resource extraction, plantation economies
+Commodity dependency, "trade traps"
+Education for elite/bureaucrats
+Persistent skills/educational gaps
+Cultural suppression
+Language loss, marginalization
+Divide-and-rule policies
+Ethnic conflicts, weak states, authoritarianism
+
+
+
+</Text>
         </Document>
         <Document ID="520C484F-808A-4651-B417-C1CF776CEA07">
             <Title>Title Page</Title>
@@ -321,61 +816,37 @@ ISBN-13:
 &lt;$author&gt;</Text>
             <Notes>These tags get replaced with the information set in the Metadata pane of Compile. Alternatively, you can simply replace this text altogether.</Notes>
         </Document>
-        <Document ID="60D37027-5A0F-4CA1-BA8F-0F527FC7BB6D">
-            <Title>Contents</Title>
-            <Text>Foreword	&lt;$p&gt;
-Introduction to Eurocentrism	&lt;$p&gt;
-What is Eurocentrism?	&lt;$p&gt;
-Types of Eurocentrism	&lt;$p&gt;
-Historical–Contextual Eurocentrism	&lt;$p&gt;
-Ideological Eurocentrism	&lt;$p&gt;
-Residual Eurocentrism	&lt;$p&gt;
-Philosophical Eurocentrism	&lt;$p&gt;
-Great Divergence	&lt;$p&gt;
-Why Understanding the "Great Divergence" Is Important?	&lt;$p&gt;
-What is Colonialism?	&lt;$p&gt;</Text>
-        </Document>
-        <Document ID="606E2F6A-318D-44EA-A9BC-81093A72CD2F">
-            <Title>Section</Title>
-        </Document>
-        <Document ID="96776348-B035-46DA-A5A5-210E99B93774">
-            <Title>Front Matter</Title>
-            <Notes>Note that in the “Metadata” pane of the Inspector, under “Section Type”, the “Default Subdocument Type” is set to “Front Matter”. This setting causes all subdocuments of this folder to use the “Front Matter” section type by default (that is, when “Structure-Based” is selected as the section type).
+        <Document ID="1E556CAB-8332-4F20-9099-B70943D01F2A">
+            <Title>The Wage Gap, Consumption, and the Standard of Living</Title>
+            <Text>The Wage Gap, Consumption, and the Standard of Living
+	The real wage (wage/price index) is central to historical livelihoods analysis. Prior to the 19th century, real wage trends (corrected for cost of basic subsistence) reflect stagnation and crisis. The Industrial Revolution saw real wages in Britain and parts of NW Europe rise tenfold by the 20th century, while those in most of Asia and Africa remained flat—manifesting and sharpening the Great Divergence.
+Region
+Real Wages, 1750s
+Real Wages, 1900s
+Consumption Patterns
+London
+~3–4× subsistence
+&gt;8–10× subsistence baselines
+Rising calories, luxury goods
+Amsterdam
+~3× subsistence
+&gt;6× by 19th century
+Similar to above
+Yangzi Delta
+~1.5× subsistence
+1–1.2×
+Basic, little improvement
+India
+~1–1.5×
+1–1.2×
+Little diversification
 
-This saves us from having to manually assign the “Front Matter” section type for each document we place into this folder.
-
-During Compile, documents assigned the “Front Matter” section type will be laid out differently from documents in the main body of the manuscript.</Notes>
-        </Document>
-        <Document ID="07B0D7C6-57CE-4D6F-8AD9-11F06A261A5F">
-            <Title>Notes</Title>
-        </Document>
-        <Document ID="B5BAD6CD-B8F5-469F-9D65-288D1D5001DD">
-            <Title>Dedication</Title>
-            <Text>
-
-
-
-
-Your dedication here.</Text>
-            <Notes>Feel free to delete this document if you don’t need it.</Notes>
-        </Document>
-        <Document ID="1D193AC1-5A02-4030-BB32-75A3919681BF">
-            <Title>Ideological Eurocentrism</Title>
-            <Text>Ideological Eurocentrism
-
-Unique and superior ideology justify European superiority and the imposition of European norms and values on other cultures. It includes the belief that European culture is the pinnacle of human development and that other cultures should aspire to European standards.
-	•	Some predecessors of this includes Abrahamic Religion’s belief in determinism.
-	⁃	These ideas would back up “White Man’s Burden” argument in both the history of religious expansion, missionaries, and conquest.
+Wage data (silver and grain wages) show that while some regions (Yangzi Delta, South India) approached NW European standards for a time, only Northwestern Europe maintained—and then accelerated—gains after 1800
 </Text>
         </Document>
-        <Document ID="EDE99FE3-7226-451F-B453-529D39F24DCF">
-            <Title>Historical–Contextual Eurocentrism</Title>
-            <Text>Historical–Contextual Eurocentrism
-
-The Historical–Contextual Eurocentrism focuses on the historical context of European dominance, its development, and how historical narratives have been shaped to favor European achievements and perspectives. It often emphasises the unique development of European societies, particularly in terms of rationality and progress.
-	•	Marxist Rationality Argument belongs to his school of Eurocentrism.
-	•	Superiority and emphasis of Greco–Roman dominance and inheritance is also part of this arguement.
-	⁃	I.e., Rome is the only great empire and all else must be compared to Rome.</Text>
+        <Document ID="C3A96864-6A69-40B9-8063-A2EC44BB8CCB">
+            <Title>Smithian Growth—Division of Labour and Markets</Title>
+            <Text>Smithian Growth—Division of Labour and Markets</Text>
         </Document>
     </Documents>
 </SearchIndexes>
