@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="7AE4FB65-4E6A-4074-BBC9-DAE321309D80" Version="2.0" Creator="SCRMAC-3.4-16639" Device="Punnawats-MacBook-Pro" Author="Punnawat Lerdkijrachapong" Modified="2025-08-31 17:04:46 +0700" ModID="83C5F437-8E7B-401E-9AF0-588925C6C8B3">
+<ScrivenerProject Identifier="7AE4FB65-4E6A-4074-BBC9-DAE321309D80" Version="2.0" Creator="SCRMAC-3.4-16639" Device="Punnawats-MacBook-Pro" Author="Punnawat Lerdkijrachapong" Modified="2025-09-01 20:37:55 +0700" ModID="92F8757C-E31A-4563-9498-C10C1B59DB1C">
     <Binder>
         <BinderItem UUID="9FFBA333-8432-41C1-91F5-1302DFE283CA" Type="Text" Created="2025-08-25 22:20:29 +0700" Modified="2025-08-25 22:20:29 +0700">
             <Title>Non-Fiction Format</Title>
@@ -100,13 +100,13 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem UUID="48D59A2C-AD2C-4CE4-A627-420CC42A6012" Type="Text" Created="2025-08-31 16:37:10 +0700" Modified="2025-08-31 16:37:36 +0700">
+                        <BinderItem UUID="48D59A2C-AD2C-4CE4-A627-420CC42A6012" Type="Text" Created="2025-08-31 16:37:10 +0700" Modified="2025-09-01 20:37:39 +0700">
                             <Title>Introduction</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>143,0</TextSelection>
+                                <TextSelection>951,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem UUID="C3469E6D-FCC1-4632-AF4D-2A6D99BD0545" Type="Text" Created="2025-08-31 16:38:14 +0700" Modified="2025-08-31 16:43:18 +0700">
@@ -809,14 +809,14 @@ Empirical Evidence</Title>
     </StatusSettings>
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="Yes" Deadline="2011-04-12 19:24:39 +0700" IgnoreDeadline="Yes">0</DraftTarget>
-        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" NextResetDate="2025-09-01 00:00:00 +0700" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="2658" Characters="19953" Date="2025-08-31 16:53:12 +0700"/>
+        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" NextResetDate="2025-09-02 00:00:00 +0700" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
+        <PreviousSession Words="3" Characters="16" Date="2025-09-01 20:37:08 +0700"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2025-08-31 00:00:00 +0700">
-        <DraftWordCount>2658</DraftWordCount>
-        <DraftCharCount>19953</DraftCharCount>
-        <OtherWordCount>74</OtherWordCount>
-        <OtherCharCount>572</OtherCharCount>
+    <RecentWritingHistory Date="2025-09-01 00:00:00 +0700">
+        <DraftWordCount>-33</DraftWordCount>
+        <DraftCharCount>-243</DraftCharCount>
+        <OtherWordCount>0</OtherWordCount>
+        <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
     <BookmarksFolderUUID>07B0D7C6-57CE-4D6F-8AD9-11F06A261A5F</BookmarksFolderUUID>
     <PrintSettings PaperSize="595.275567,841.889771" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"/>

@@ -325,7 +325,10 @@ Insert dedication here.</Text>
         </Document>
         <Document ID="48D59A2C-AD2C-4CE4-A627-420CC42A6012">
             <Title>Introduction</Title>
-            <Text>The "Great Divergence" refers to the widening gap in economic prosperity, technology, and living standards that emerged between the Western world and much of Asia, Africa, and Latin America from the late 18th century onwards—a process deeply linked to colonialism, industrialization, evolving models of economic growth, and the long shadows they cast on global inequality. This report provides a concise, accessible synthesis suitable for an educational book and slide deck, drawing on recent scholarship, official datasets, and key historical analyses. It is organized in ten chapters mirroring the original uploaded presentation: examining foundational growth models (Malthusian, Smithian, Solow, endogenous growth), the mechanics and regional cases of industrialization, the historical roots and institutional legacies of colonialism, wage and consumption dynamics, technology and sustainable development, the racial and ideological foundations of imperialism, the construction of colonial education systems, and contemporary globalization's entanglement with persistent inequality. Where appropriate, tables compare economic models, wage and consumption data, and summarize colonial impacts</Text>
+            <Text>The "Great Divergence" refers to the widening gap in economic prosperity, technology, and living standards that emerged between the Western world and much of Asia, Africa, and Latin America from the late 18th century onwards—a process deeply linked to colonialism, industrialization, evolving models of economic growth, and the long shadows they cast on global inequality. This chapter examines the foundational growth models (Malthusian, Smithian, Solow, endogenous growth), the mechanics and regional cases of industrialization, the historical roots and institutional legacies of colonialism, wage and consumption dynamics, technology and sustainable development, the racial and ideological foundations of imperialism, the construction of colonial education systems, and contemporary globalization's entanglement with persistent inequality. Where appropriate, tables compare economic models, wage and consumption data, and summarize colonial impacts</Text>
+        </Document>
+        <Document ID="E17E8BB7-8E12-4469-AFEE-ACD12A954D33">
+            <Title>Paperback</Title>
         </Document>
         <Document ID="3ECF6511-EC5A-4B9A-B12F-039C0CDD2CB7">
             <Title>Copyright</Title>
@@ -377,17 +380,12 @@ Technology, Sustainability, and Innovation	&lt;$p&gt;
 Colonial Racial and Ideological Foundations, Education, and Globalization	&lt;$p&gt;
 Conclusion: Lessons and Policy Insights	&lt;$p&gt;</Text>
         </Document>
-        <Document ID="EF91168A-D8A0-4BD6-BEA5-643662A32559">
-            <Title>The Industrial Revolution—Regional Case Studies of Growth</Title>
-            <Text>The Industrial Revolution—Regional Case Studies of Growth</Text>
-        </Document>
         <Document ID="CB0EEE35-84F6-4D12-9A81-6827BED783B8">
             <Title>Paperback</Title>
         </Document>
-        <Document ID="E62EDCE9-A101-43B0-9DE0-58C4CD03665B">
-            <Title>What is Colonialism?</Title>
-            <Text>What is Colonialism?
-Colonialism is a distinct mode of domination that involves the extended subjugation and political control of one people by another, typically manifesting through a foreign power establishing direct sovereignty, settling populations, and enforcing legal, economic, and social hierachies in the colonised territory.</Text>
+        <Document ID="EF91168A-D8A0-4BD6-BEA5-643662A32559">
+            <Title>The Industrial Revolution—Regional Case Studies of Growth</Title>
+            <Text>The Industrial Revolution—Regional Case Studies of Growth</Text>
         </Document>
         <Document ID="1FCACC5E-78AC-4EF8-944C-5DDD50D5650E">
             <Title>Mechanisms and Limitations</Title>
@@ -412,8 +410,10 @@ Institutional context
 Property rights, legal security, easy commerce
 </Text>
         </Document>
-        <Document ID="E17E8BB7-8E12-4469-AFEE-ACD12A954D33">
-            <Title>Paperback</Title>
+        <Document ID="E62EDCE9-A101-43B0-9DE0-58C4CD03665B">
+            <Title>What is Colonialism?</Title>
+            <Text>What is Colonialism?
+Colonialism is a distinct mode of domination that involves the extended subjugation and political control of one people by another, typically manifesting through a foreign power establishing direct sovereignty, settling populations, and enforcing legal, economic, and social hierachies in the colonised territory.</Text>
         </Document>
         <Document ID="9C47FE92-A3E7-4D4A-A856-E4CA8C558327">
             <Title>Manuscript Format</Title>
