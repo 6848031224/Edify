@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="1F65485C-3E80-43CB-8128-C229115877C2" Version="2.0" Creator="SCRMAC-3.4-16639" Device="Chalongrajs-MacBook-Air" Author="" Modified="2025-08-31 16:23:45 +0700" ModID="814C27B0-7611-458A-A246-453157C8244F">
+<ScrivenerProject Identifier="1F65485C-3E80-43CB-8128-C229115877C2" Version="2.0" Creator="SCRMAC-3.4-16639" Device="Chalongrajs-MacBook-Air" Author="" Modified="2025-09-02 15:29:08 +0700" ModID="4F0316D4-937B-4607-B7D6-0F4CB5D0E667">
     <Binder>
         <BinderItem UUID="9FFBA333-8432-41C1-91F5-1302DFE283CA" Type="Text" Created="2025-08-25 23:44:57 +0700" Modified="2025-08-25 23:44:57 +0700">
             <Title>Non-Fiction Format</Title>
@@ -46,7 +46,7 @@
                         <SelectedSubdocumentUUIDs>1F511E52-A546-4AE9-951D-BD19CB2DBDBD</SelectedSubdocumentUUIDs>
                     </CorkboardAndOutliner>
                     <Children>
-                        <BinderItem UUID="1F511E52-A546-4AE9-951D-BD19CB2DBDBD" Type="Text" Created="2025-08-31 12:39:12 +0700" Modified="2025-08-31 15:12:11 +0700">
+                        <BinderItem UUID="1F511E52-A546-4AE9-951D-BD19CB2DBDBD" Type="Text" Created="2025-08-31 12:39:12 +0700" Modified="2025-09-02 15:28:54 +0700">
                             <Title>1932 (2475) Khanarassadorn</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -430,12 +430,12 @@
     </StatusSettings>
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="Yes" Deadline="2011-04-12 19:24:39 +0700" IgnoreDeadline="Yes">0</DraftTarget>
-        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" NextResetDate="2025-09-01 00:00:00 +0700" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="254" Characters="1725" Date="2025-08-31 16:23:41 +0700"/>
+        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" NextResetDate="2025-09-03 00:00:00 +0700" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
+        <PreviousSession Words="0" Characters="4" Date="2025-09-02 14:57:40 +0700"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2025-08-31 00:00:00 +0700">
-        <DraftWordCount>254</DraftWordCount>
-        <DraftCharCount>1725</DraftCharCount>
+    <RecentWritingHistory Date="2025-09-02 00:00:00 +0700">
+        <DraftWordCount>0</DraftWordCount>
+        <DraftCharCount>-1</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>

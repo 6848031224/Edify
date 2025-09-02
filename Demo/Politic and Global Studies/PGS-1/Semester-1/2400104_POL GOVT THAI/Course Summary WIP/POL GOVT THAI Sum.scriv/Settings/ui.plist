@@ -9,7 +9,7 @@
 	<key>CommentsUseTextScale</key>
 	<true/>
 	<key>CompileFolder</key>
-	<string>/Users/chantrix/Desktop/University/Bachelor/Politic and Global Studies/PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP</string>
+	<string>/Users/suishan/Library/Mobile Documents/com~apple~CloudDocs/Politic and Global Studies 06/PGS-1/Semester-1/2400104_POL GOVT THAI/Course Summary WIP</string>
 	<key>NotesScaleFactor</key>
 	<real>1</real>
 	<key>QRPanelSettings</key>
@@ -65,8 +65,8 @@
 	</array>
 	<key>binderSplitFrames</key>
 	<array>
-		<string>{{0, 0}, {198, 776}}</string>
-		<string>{{199, 0}, {1271, 776}}</string>
+		<string>{{0, 0}, {198, 773}}</string>
+		<string>{{199, 0}, {1271, 773}}</string>
 	</array>
 	<key>binderState</key>
 	<array>
@@ -225,8 +225,8 @@
 	<integer>0</integer>
 	<key>inspectorSplitFrames</key>
 	<array>
-		<string>{{0, 0}, {1012.5, 746}}</string>
-		<string>{{1013.5, 0}, {257.5, 746}}</string>
+		<string>{{0, 0}, {1012.5, 743}}</string>
+		<string>{{1013.5, 0}, {257.5, 743}}</string>
 	</array>
 	<key>inspectorWidth</key>
 	<real>258</real>
@@ -275,7 +275,7 @@
 	<key>mainDocumentEditor.rulerIsVisible</key>
 	<false/>
 	<key>mainDocumentEditor.scrollRect</key>
-	<string>{{0, 59.5}, {506, 345}}</string>
+	<string>{{0, 59.5}, {506, 343.5}}</string>
 	<key>mainDocumentEditor.selectedRanges</key>
 	<string>{0, 0}</string>
 	<key>mainDocumentEditor.textEditorState</key>
@@ -286,7 +286,7 @@
 	<key>mainDocumentEditor.textMode</key>
 	<integer>0</integer>
 	<key>mainWindowFrame</key>
-	<string>0 115 1470 804 0 0 1470 919 </string>
+	<string>0 118 1470 801 0 0 1470 919 </string>
 	<key>projectStatsSheet</key>
 	<dict>
 		<key>excludeAnnots</key>
