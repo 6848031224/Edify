@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
+        <Document ID="0EB16FF9-6C9D-4FA9-B47D-F8902B6AD165">
+            <Text>Amy Nonomusse
+Your manuscript should have your address
+and contact details
+on the first page only.
+If you have an agent, your agent’s address can be included beneath.
+900 words
+Non-Fiction Standard Manuscript Format by A. Nonomusse
+Contents
+Foreword 1 Chapter One - Folder Names Become Subtitles 2 Chapter Two - Another Chapter Folder 4
+Foreword
+Non-fiction works often feature a foreword or preface. This usually comes after the table of contents, but not always—sometimes the foreword precedes the table of contents. If you need your foreword to come before the table of contents, place the “Contents” document after “Foreword” in the Manuscript folder. You can also rename “Foreword” to "Preface" or "Introduction", or delete it entirely, depending on your requirements.
+The table of contents is generated using Scrivener's Edit &gt; Copy Special &gt; Copy Documents as ToC feature. Simply select the documents in the binder that you want to include in your table of contents, select "Copy Documents as ToC" from the Edit &gt; Copy Special menu, and then hit Edit &gt; Paste (cmd-V) in the "Contents" document. The results won't look much in Scrivener's editor—a bunch of linked text with "&lt;$p&gt;" page number tags after it—but when compiled this will become a proper table of contents using the correct chapter titles. Remember to update your table of contents if you move, add, delete or rename any chapters.
+Nonomusse / NON-FICTION MS / 1
+Chapter One
+Folder Names Become Subtitles
+Standard manuscript format is often required for novels so that work can easily be read by editors. It allows editors to estimate word count and determine roughly how many pages will be required to produce a book using the page size, style and font used by their house.1 This PDF file was generated using Scrivener's Compile feature and was created using the “General Non-Fiction” project template.
+Manuscripts for full-length novels require a separate title page. The author's name, address, telephone number and e-mail address should be shown in the upper-left corner of the title page, single-spaced. The title of the work should appear about half-way down the page. The author's name follows the title on the by-line as the author wants it to appear when published. A real name or pseudonym may be used and may include initials, actual given name or professional designation.
+A table of contents and foreword, preface or introduction may follow the title page, preceding the main text.
+All text should be double-spaced and left-justified with a ragged right margin.
+Nonomusse / NON-FICTION MS / 2
+Paragraphs should be indented by about five spaces (half an inch) and not separated by an additional blank line. (It used to be traditional to separate each sentence with two spaces, but in these days of word processors this is now less common.) A 12-point font such as Courier, Times New Roman or Arial should be used throughout. In Scrivener, however, you can write using any font and formatting you choose —the Compile options can be used to change the formatting in the final document. In the “General Non-Fiction” project template, the Compile settings will deal with changing the font and formatting to those required for standard manuscript format.
+Top, bottom, left and right margins should all be approximately one inch, not allowing for the page header. Each page except for the title page should include a header comprising the author's real surname, the title of the work (or a key word from the title) in capitals, and the page number. In Scrivener, all of this is handled by the Compile settings.
+#
+Section breaks are indicated with the hash character. Do not simply add an extra line space as this can be missed by the typesetter. In general, this will be handled by Compile in Scrivener,
+however, so that you can either leave empty lines in the text (and Scrivener will insert the hash character during Compile) or use different documents for different sections (and Scrivener will add the hash between them).
+Some editors and publishers prefer emphasis to be indicated by underlining rather than italics. In Scrivener, this conversion can be handled by Compile. The “General Non- Fiction (Courier)” Compile format will convert italics to underlines, whereas the “General Non-Fiction (Times)” format will not.
+Nonomusse / NON-FICTION MS / 3
+Chapter Two Another Chapter Folder
+Begin each new chapter on a new page like this with the chapter number about a third of the way down the page. In Scrivener, all of this is handled automatically by the “General Non- Fiction” compile formats.
+Although it is often said that writers should not use the word-count features of their computers to determine the number of words in a manuscript, most publishers and editors will happily accept a word processor word count these days. In Scrivener, you can insert a word count of your manuscript by using Edit &gt; Insert &gt; Draft Word Count (for a manuscript, you may wish to have the word count rounded to the nearest 100, in which case select Edit &gt; Insert &gt; Draft Word Count &gt; Rounded To Nearest 100—this feature is used on the title page of this manuscript, in fact). Note that the actual word count will not be inserted, but a tag that will be substituted for the word count upon export.
+#
+Footnotes should generally be numbered sequentially throughout the manuscript and appear
+as endnotes at the very end.2 However, different editors and publishers have different
+Nonomusse / NON-FICTION MS / 4
+requirements when it comes to footnotes, so you should always check the submission guidelines.3
+In reality, the formatting of a manuscript is often only really crucial when submitting directly to a publisher—first time authors will usually submit to an agent first, and agents are often less picky about format and will point you in the right direction before submitting your work to a publisher.
+Nonomusse / NON-FICTION MS / 5
+Endnotes
+1. Much of the information contained in this document is based on a description of novel manuscript format by Matt Carless for the BBC Writers' Room website (http:// www.bbc.co.uk/writersroom), along with various web resources describing non-fiction manuscript format (the basics of standard manuscript format is commonly used for both fiction and non-fiction).
+2. Useful information about non-fiction manuscript formatting was also taken from this web page: http://calemccaskey.blogspot.com/2011/05/how-to-prepare-non-fiction- manuscript.html
+3. Note that if you require more advanced footnote and endnote layout, or if you require indexes, you should compile to RTF or Word format and open the generated file in your word processor of choice for a final pass.
+Nonomusse / NON-FICTION MS / 6
+</Text>
+        </Document>
+        <Document ID="833DF1C1-C636-4034-9053-01C6641E9578">
+            <Title>Contents</Title>
+        </Document>
+        <Document ID="D45CE407-175C-4B06-B4E3-28E435CEECFC">
+            <Title>Acknowledgement</Title>
+            <Text>This summary book is the result of my study group member’s work, and I couldn’t make it without these persons: Mr. Pawat Kurovat, Mr. Chalongraj Bangwatana, Mr. Napat Korsincharoen, and Ms. Anchalika Akkarawibonkij.
+During our pre–examination preparation, we divided chapters among the members, each study, and take turn to teach each other. This method ensures that we understand the concept of each chapter to a certain degree. And as the result, this book has been created.
+</Text>
+        </Document>
         <Document ID="3B425F17-6AEB-4983-8C67-5167CFE5B4E9">
             <Title>Dedication</Title>
             <Text>
@@ -23,7 +77,7 @@ Insert dedication here.</Text>
 
 What is Khanarassadorn?
 	•	A group of elite people who studied in France and Swirzerland and wished to change of regime (absolute monarchy —&gt; constitutional monarchy)
-	•	At first, consists of seaven people:
+	•	At first, consists of seven people:
 	⁃	Pridi Banomyong
 	⁃	Prayun Phamonmontri
 	⁃	Plaek Phibunsongkhram
@@ -59,6 +113,58 @@ What is Khanarassadorn?
 	•	Rama VII signed the Temporary Constitution Act
 	•	The Constitution began by annoucing that “the highest power in the land belongs to all people.”
 </Text>
+        </Document>
+        <Document ID="6D6EA0BE-A570-43E8-9D39-A99ECFB0C8E2">
+            <Title>Constitutional Court of Thailand</Title>
+            <Text>Constitutional Court of Thailand.
+The concept of a constitutional court in Thailand was modeled after European examples, such as the Constitutional Courts of Austria and Germany, and was first established by the 1997 Constitution. This, then, re–established undr the 2007 and 2017 Constitutions, though with changing structures and powers.</Text>
+        </Document>
+        <Document ID="6A2981D0-EE77-461E-BF97-D9ED0D27A5D2">
+            <Title>Endnotes</Title>
+            <Text>&lt;$--ENDNOTES--&gt;</Text>
+            <Notes>The &lt;$--ENDNOTES--&gt; tag will be replaced by the footnotes during Compile. Using this tag allows us to have the footnotes inserted wherever we like, without having a separator placed above them.</Notes>
+        </Document>
+        <Document ID="BB360289-7F77-4AF1-A155-43057C51131A">
+            <Title>Title Page</Title>
+            <Synopsis>Title page to the manuscript.</Synopsis>
+            <Text>Punnawat Lerdkijrachapong
+Bangkok
+10330
+punnawatcont@gmail.com
+
+
+
+
+&lt;$wc100&gt; words
+
+
+
+
+
+
+
+
+
+
+&lt;$projecttitle&gt;
+
+by &lt;$fullname&gt;</Text>
+            <Notes>This is the title page of the manuscript. Note that its “Section Type” is automatically set to “Front Matter” in the Metadata pane of the Inspector, allowing the title page to be formatted differently from body text during Compile.
+
+The &lt;$PROJECTTITLE&gt; and &lt;$fullname&gt; tags get replaced with metadata information you can set when compiling. Other information is taken from Contacts when the project is created.
+
+The &lt;$wc100&gt; words tag will be replaced with the word count rounded to the nearest 100 during Compile (this and other tags can be inserted from the Insert menu).
+
+Feel free to edit the text of the title page as required.</Notes>
+        </Document>
+        <Document ID="336CC680-521E-4AD4-8381-DDB4D0FFD175">
+            <Title>Acknowledgement</Title>
+        </Document>
+        <Document ID="FD14C7F7-0D24-400F-BD76-8F7798A339DC">
+            <Title>Acknowledgement</Title>
+        </Document>
+        <Document ID="B0417A1B-D617-4CBD-900A-14A6AB12C289">
+            <Title>Ideas</Title>
         </Document>
         <Document ID="9FFBA333-8432-41C1-91F5-1302DFE283CA">
             <Title>Non-Fiction Format</Title>
@@ -182,46 +288,39 @@ Like all templates in Scrivener, this project was originally created from the �
 
 You can create your own templates by setting up a skeletal project with the files, folders and settings you would like to use for new projects and using File &gt; Save As Template.</Text>
         </Document>
-        <Document ID="4DAE20E1-E8B4-402B-BA96-7067A8A89451">
-            <Title>Ebook</Title>
-        </Document>
         <Document ID="CB0EEE35-84F6-4D12-9A81-6827BED783B8">
             <Title>Paperback</Title>
         </Document>
-        <Document ID="9C47FE92-A3E7-4D4A-A856-E4CA8C558327">
-            <Title>Manuscript Format</Title>
+        <Document ID="15181D2C-56D4-428E-86BE-41C6F64D7705">
+            <Title>A Specialized Judicial Body</Title>
+            <Text>A Specialized Judicial Body.
+The constitutional court isn’t mandatory for democratic countries.
+	•	The Constitutional courts are found in more than 80 countries, particularly in civil law country.
+	•	The concept of a specialized constitutional court, following the model of Hans Kalsen, became significant after World War II and was influential in the democratic reconstruction of countries like Germany, and Italy.
+</Text>
         </Document>
-        <Document ID="96776348-B035-46DA-A5A5-210E99B93774">
-            <Title>Front Matter</Title>
-            <Notes>Note that in the “Metadata” pane of the Inspector, under “Section Type”, the “Default Subdocument Type” is set to “Front Matter”. This setting causes all subdocuments of this folder to use the “Front Matter” section type by default (that is, when “Structure-Based” is selected as the section type).
-
-This saves us from having to manually assign the “Front Matter” section type for each document we place into this folder.
-
-During Compile, documents assigned the “Front Matter” section type will be laid out differently from documents in the main body of the manuscript.</Notes>
+        <Document ID="BC7E71F7-4BE2-4EC4-BAFB-7A9A6361CA0F">
+            <Title>2017 Constitution</Title>
+            <Text>Constitutional Court of Thailand according to 2017 Constitution.
+A specialized judicial body responsible for reviewing the constitutionality of laws and bills, ensuring the supremacy of the constitution, and adjudicating questions regarding the powers and duties of government bodies.
+	•	It consists of a President and eight Justices who are approved by the Senate and appointed by the King.
+	•	The court’s powers include ruling on draft amendments to the Constitution and ensuring that governmental actions and laws align with the Constitution, which also protects human rights and liberties.
+</Text>
         </Document>
-        <Document ID="3D707F9E-6E7B-4A2B-BF04-64BD98EC07A8">
-            <Title>Notes</Title>
-            <Text>&lt;$--ENDNOTES--&gt;</Text>
-            <Notes>The &lt;$--ENDNOTES--&gt; tag will be replaced by the footnotes during Compile. Using this tag allows us to have the footnotes inserted wherever we like, without having a separator placed above them.</Notes>
+        <Document ID="D2AFCD23-3F09-4D73-B893-5743EFAC7306">
+            <Title>Key Function and Purposes</Title>
+            <Text>Key Functions:
+Constitution is the primary function, where the court examines laws and government acts to determine if they are consistent with the constitution.
+The Main Purposes are to:
+Protection of Rights and Liberties
+The court plays a vital role in protecting the fundamental rights and freedoms garanteed by the constitution to the people.
+Uphold the Rule of Law
+By ensuring that poltical organs and institutions adhere to the constitution, the court helps maintain the supremacy of constitutional law.
+Adjudicate Constitutional Disputes
+The court resolves problematic issues of constitutionality that arise from legislation, regulations, or government actions.</Text>
         </Document>
-        <Document ID="B5BAD6CD-B8F5-469F-9D65-288D1D5001DD">
-            <Title>Dedication</Title>
-            <Text>
-
-
-
-
-Your dedication here.</Text>
-            <Notes>Feel free to delete this document if you don’t need it.</Notes>
-        </Document>
-        <Document ID="FD14C7F7-0D24-400F-BD76-8F7798A339DC">
-            <Title>Constitutional Court of Thailand</Title>
-        </Document>
-        <Document ID="6C3BDCCC-F6C3-4AF9-B7CD-475616712EAE">
-            <Title>The 1932 Revolution as a Critical Juncture</Title>
-        </Document>
-        <Document ID="BC0DC62B-D666-419C-A37C-870C3C678050">
-            <Title>Manuscript Format</Title>
+        <Document ID="A097A466-32FF-491F-8E6B-6DCD12185DE1">
+            <Title>Foreword</Title>
         </Document>
         <Document ID="3ECF6511-EC5A-4B9A-B12F-039C0CDD2CB7">
             <Title>Copyright</Title>
@@ -249,6 +348,11 @@ ISBN-13:
 </Text>
             <Notes>Feel free to delete this document if you don’t need it, or edit it for your needs.</Notes>
         </Document>
+        <Document ID="3D707F9E-6E7B-4A2B-BF04-64BD98EC07A8">
+            <Title>Notes</Title>
+            <Text>&lt;$--ENDNOTES--&gt;</Text>
+            <Notes>The &lt;$--ENDNOTES--&gt; tag will be replaced by the footnotes during Compile. Using this tag allows us to have the footnotes inserted wherever we like, without having a separator placed above them.</Notes>
+        </Document>
         <Document ID="520C484F-808A-4651-B417-C1CF776CEA07">
             <Title>Title Page</Title>
             <Text>
@@ -267,107 +371,11 @@ ISBN-13:
 &lt;$author&gt;</Text>
             <Notes>These tags get replaced with the information set in the Metadata pane of Compile. Alternatively, you can simply replace this text altogether.</Notes>
         </Document>
-        <Document ID="D2AFCD23-3F09-4D73-B893-5743EFAC7306">
-            <Title>Key Function and Purposes</Title>
-            <Text>Key Functions:
-Constitution is the primary function, where the court examines laws and government acts to determine if they are consistent with the constitution.
-The Main Purposes are to:
-Protection of Rights and Liberties
-The court plays a vital role in protecting the fundamental rights and freedoms garanteed by the constitution to the people.
-Uphold the Rule of Law
-By ensuring that poltical organs and institutions adhere to the constitution, the court helps maintain the supremacy of constitutional law.
-Adjudicate Constitutional Disputes
-The court resolves problematic issues of constitutionality that arise from legislation, regulations, or government actions.</Text>
-        </Document>
-        <Document ID="B0417A1B-D617-4CBD-900A-14A6AB12C289">
-            <Title>Ideas</Title>
-        </Document>
-        <Document ID="6D6EA0BE-A570-43E8-9D39-A99ECFB0C8E2">
-            <Title>Constitutional Court of Thailand</Title>
-            <Text>Constitutional Court of Thailand.
-The concept of a constitutional court in Thailand was modeled after European examples, such as the Constitutional Courts of Austria and Germany, and was first established by the 1997 Constitution. This, then, re–established undr the 2007 and 2017 Constitutions, though with changing structures and powers.</Text>
-        </Document>
-        <Document ID="6A2981D0-EE77-461E-BF97-D9ED0D27A5D2">
-            <Title>Endnotes</Title>
-            <Text>&lt;$--ENDNOTES--&gt;</Text>
-            <Notes>The &lt;$--ENDNOTES--&gt; tag will be replaced by the footnotes during Compile. Using this tag allows us to have the footnotes inserted wherever we like, without having a separator placed above them.</Notes>
-        </Document>
-        <Document ID="BC7E71F7-4BE2-4EC4-BAFB-7A9A6361CA0F">
-            <Title>2017 Constitution</Title>
-            <Text>Constitutional Court of Thailand according to 2017 Constitution.
-A specialized judicial body responsible for reviewing the constitutionality of laws and bills, ensuring the supremacy of the constitution, and adjudicating questions regarding the powers and duties of government bodies.
-	•	It consists of a President and eight Justices who are approved by the Senate and appointed by the King.
-	•	The court’s powers include ruling on draft amendments to the Constitution and ensuring that governmental actions and laws align with the Constitution, which also protects human rights and liberties.
-</Text>
-        </Document>
-        <Document ID="606E2F6A-318D-44EA-A9BC-81093A72CD2F">
-            <Title>Constitutional Court</Title>
-            <Text>Constitutional Court
-A specialized judicial body with the exclusive power to interpret the constitution, review the constitutionality of laws and government actions, and safeguard the rights and liberties of citizens.
-Unlike courts of general jurisdiction, a constitutional court’s primary role is to ensure that all legislative acts, royal decrees, and administrative actions comply with the supreme constitutional law of the land.</Text>
-        </Document>
-        <Document ID="07B0D7C6-57CE-4D6F-8AD9-11F06A261A5F">
-            <Title>Notes</Title>
-        </Document>
-        <Document ID="15181D2C-56D4-428E-86BE-41C6F64D7705">
-            <Title>A Specialized Judicial Body</Title>
-            <Text>A Specialized Judicial Body.
-The constitutional court isn’t mandatory for democratic countries.
-	•	The Constitutional courts are found in more than 80 countries, particularly in civil law country.
-	•	The concept of a specialized constitutional court, following the model of Hans Kalsen, became significant after World War II and was influential in the democratic reconstruction of countries like Germany, and Italy.
-</Text>
-        </Document>
-        <Document ID="758594EB-4005-4184-A4B3-3301CB58CF79">
-            <Title>Cover</Title>
-        </Document>
-        <Document ID="D45CE407-175C-4B06-B4E3-28E435CEECFC">
-            <Title>Acknowledgement</Title>
-            <Text>This summary book is the result of my study group member’s work, and I couldn’t make it without these persons: Mr. Pawat Kurovat, Mr. Chalongraj Bangwatana, Mr. Napat Korsincharoen, and Ms. Anchalika Akkarawibonkij.
-During our pre–examination preparation, we divided chapters among the members, each study, and take turn to teach each other. This method ensures that we understand the concept of each chapter to a certain degree. And as the result, this book has been created.
-</Text>
-        </Document>
-        <Document ID="BB360289-7F77-4AF1-A155-43057C51131A">
-            <Title>Title Page</Title>
-            <Synopsis>Title page to the manuscript.</Synopsis>
-            <Text>Punnawat Lerdkijrachapong
-Bangkok
-10330
-punnawatcont@gmail.com
-
-
-
-
-&lt;$wc100&gt; words
-
-
-
-
-
-
-
-
-
-
-&lt;$projecttitle&gt;
-
-by &lt;$fullname&gt;</Text>
-            <Notes>This is the title page of the manuscript. Note that its “Section Type” is automatically set to “Front Matter” in the Metadata pane of the Inspector, allowing the title page to be formatted differently from body text during Compile.
-
-The &lt;$PROJECTTITLE&gt; and &lt;$fullname&gt; tags get replaced with metadata information you can set when compiling. Other information is taken from Contacts when the project is created.
-
-The &lt;$wc100&gt; words tag will be replaced with the word count rounded to the nearest 100 during Compile (this and other tags can be inserted from the Insert menu).
-
-Feel free to edit the text of the title page as required.</Notes>
-        </Document>
-        <Document ID="A097A466-32FF-491F-8E6B-6DCD12185DE1">
-            <Title>Foreword</Title>
-        </Document>
-        <Document ID="336CC680-521E-4AD4-8381-DDB4D0FFD175">
-            <Title>Constitutional Court of Thailand.</Title>
-        </Document>
         <Document ID="60D37027-5A0F-4CA1-BA8F-0F527FC7BB6D">
             <Title>Contents</Title>
-            <Text>1932 (2475) Khanarassadorn	&lt;$p&gt;
+            <Text>Foreword	&lt;$p&gt;
+Acknowledgement	&lt;$p&gt;
+The 1932 Revolution as a Critical Juncture	&lt;$p&gt;
 Constitutional Court	&lt;$p&gt;
 A Specialized Judicial Body	&lt;$p&gt;
 Key Function and Purposes	&lt;$p&gt;
@@ -375,60 +383,35 @@ Constitutional Court of Thailand.	&lt;$p&gt;
 Constitutional Court of Thailand	&lt;$p&gt;
 2017 Constitution	&lt;$p&gt;</Text>
         </Document>
-        <Document ID="833DF1C1-C636-4034-9053-01C6641E9578">
-            <Title>Contents</Title>
+        <Document ID="606E2F6A-318D-44EA-A9BC-81093A72CD2F">
+            <Title>Constitutional Court</Title>
+            <Text>Constitutional Court
+A specialized judicial body with the exclusive power to interpret the constitution, review the constitutionality of laws and government actions, and safeguard the rights and liberties of citizens.
+Unlike courts of general jurisdiction, a constitutional court’s primary role is to ensure that all legislative acts, royal decrees, and administrative actions comply with the supreme constitutional law of the land.</Text>
         </Document>
-        <Document ID="E17E8BB7-8E12-4469-AFEE-ACD12A954D33">
-            <Title>Paperback</Title>
+        <Document ID="96776348-B035-46DA-A5A5-210E99B93774">
+            <Title>Front Matter</Title>
+            <Notes>Note that in the “Metadata” pane of the Inspector, under “Section Type”, the “Default Subdocument Type” is set to “Front Matter”. This setting causes all subdocuments of this folder to use the “Front Matter” section type by default (that is, when “Structure-Based” is selected as the section type).
+
+This saves us from having to manually assign the “Front Matter” section type for each document we place into this folder.
+
+During Compile, documents assigned the “Front Matter” section type will be laid out differently from documents in the main body of the manuscript.</Notes>
         </Document>
-        <Document ID="0778B444-3F1F-4924-83BA-B2AB7028AC3E">
-            <Title>Back Matter</Title>
+        <Document ID="07B0D7C6-57CE-4D6F-8AD9-11F06A261A5F">
+            <Title>Notes</Title>
         </Document>
-        <Document ID="0EB16FF9-6C9D-4FA9-B47D-F8902B6AD165">
-            <Title>Sample MS</Title>
-            <Text>Amy Nonomusse
-Your manuscript should have your address
-and contact details
-on the first page only.
-If you have an agent, your agent’s address can be included beneath.
-900 words
-Non-Fiction Standard Manuscript Format by A. Nonomusse
-Contents
-Foreword 1 Chapter One - Folder Names Become Subtitles 2 Chapter Two - Another Chapter Folder 4
-Foreword
-Non-fiction works often feature a foreword or preface. This usually comes after the table of contents, but not always—sometimes the foreword precedes the table of contents. If you need your foreword to come before the table of contents, place the “Contents” document after “Foreword” in the Manuscript folder. You can also rename “Foreword” to "Preface" or "Introduction", or delete it entirely, depending on your requirements.
-The table of contents is generated using Scrivener's Edit &gt; Copy Special &gt; Copy Documents as ToC feature. Simply select the documents in the binder that you want to include in your table of contents, select "Copy Documents as ToC" from the Edit &gt; Copy Special menu, and then hit Edit &gt; Paste (cmd-V) in the "Contents" document. The results won't look much in Scrivener's editor—a bunch of linked text with "&lt;$p&gt;" page number tags after it—but when compiled this will become a proper table of contents using the correct chapter titles. Remember to update your table of contents if you move, add, delete or rename any chapters.
-Nonomusse / NON-FICTION MS / 1
-Chapter One
-Folder Names Become Subtitles
-Standard manuscript format is often required for novels so that work can easily be read by editors. It allows editors to estimate word count and determine roughly how many pages will be required to produce a book using the page size, style and font used by their house.1 This PDF file was generated using Scrivener's Compile feature and was created using the “General Non-Fiction” project template.
-Manuscripts for full-length novels require a separate title page. The author's name, address, telephone number and e-mail address should be shown in the upper-left corner of the title page, single-spaced. The title of the work should appear about half-way down the page. The author's name follows the title on the by-line as the author wants it to appear when published. A real name or pseudonym may be used and may include initials, actual given name or professional designation.
-A table of contents and foreword, preface or introduction may follow the title page, preceding the main text.
-All text should be double-spaced and left-justified with a ragged right margin.
-Nonomusse / NON-FICTION MS / 2
-Paragraphs should be indented by about five spaces (half an inch) and not separated by an additional blank line. (It used to be traditional to separate each sentence with two spaces, but in these days of word processors this is now less common.) A 12-point font such as Courier, Times New Roman or Arial should be used throughout. In Scrivener, however, you can write using any font and formatting you choose —the Compile options can be used to change the formatting in the final document. In the “General Non-Fiction” project template, the Compile settings will deal with changing the font and formatting to those required for standard manuscript format.
-Top, bottom, left and right margins should all be approximately one inch, not allowing for the page header. Each page except for the title page should include a header comprising the author's real surname, the title of the work (or a key word from the title) in capitals, and the page number. In Scrivener, all of this is handled by the Compile settings.
-#
-Section breaks are indicated with the hash character. Do not simply add an extra line space as this can be missed by the typesetter. In general, this will be handled by Compile in Scrivener,
-however, so that you can either leave empty lines in the text (and Scrivener will insert the hash character during Compile) or use different documents for different sections (and Scrivener will add the hash between them).
-Some editors and publishers prefer emphasis to be indicated by underlining rather than italics. In Scrivener, this conversion can be handled by Compile. The “General Non- Fiction (Courier)” Compile format will convert italics to underlines, whereas the “General Non-Fiction (Times)” format will not.
-Nonomusse / NON-FICTION MS / 3
-Chapter Two Another Chapter Folder
-Begin each new chapter on a new page like this with the chapter number about a third of the way down the page. In Scrivener, all of this is handled automatically by the “General Non- Fiction” compile formats.
-Although it is often said that writers should not use the word-count features of their computers to determine the number of words in a manuscript, most publishers and editors will happily accept a word processor word count these days. In Scrivener, you can insert a word count of your manuscript by using Edit &gt; Insert &gt; Draft Word Count (for a manuscript, you may wish to have the word count rounded to the nearest 100, in which case select Edit &gt; Insert &gt; Draft Word Count &gt; Rounded To Nearest 100—this feature is used on the title page of this manuscript, in fact). Note that the actual word count will not be inserted, but a tag that will be substituted for the word count upon export.
-#
-Footnotes should generally be numbered sequentially throughout the manuscript and appear
-as endnotes at the very end.2 However, different editors and publishers have different
-Nonomusse / NON-FICTION MS / 4
-requirements when it comes to footnotes, so you should always check the submission guidelines.3
-In reality, the formatting of a manuscript is often only really crucial when submitting directly to a publisher—first time authors will usually submit to an agent first, and agents are often less picky about format and will point you in the right direction before submitting your work to a publisher.
-Nonomusse / NON-FICTION MS / 5
-Endnotes
-1. Much of the information contained in this document is based on a description of novel manuscript format by Matt Carless for the BBC Writers' Room website (http:// www.bbc.co.uk/writersroom), along with various web resources describing non-fiction manuscript format (the basics of standard manuscript format is commonly used for both fiction and non-fiction).
-2. Useful information about non-fiction manuscript formatting was also taken from this web page: http://calemccaskey.blogspot.com/2011/05/how-to-prepare-non-fiction- manuscript.html
-3. Note that if you require more advanced footnote and endnote layout, or if you require indexes, you should compile to RTF or Word format and open the generated file in your word processor of choice for a final pass.
-Nonomusse / NON-FICTION MS / 6
-</Text>
+        <Document ID="B5BAD6CD-B8F5-469F-9D65-288D1D5001DD">
+            <Title>Dedication</Title>
+            <Text>
+
+
+
+
+Your dedication here.</Text>
+            <Notes>Feel free to delete this document if you don’t need it.</Notes>
+        </Document>
+        <Document ID="6C3BDCCC-F6C3-4AF9-B7CD-475616712EAE">
+            <Title>Acknowledgement</Title>
         </Document>
     </Documents>
 </SearchIndexes>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="1F65485C-3E80-43CB-8128-C229115877C2" Version="2.0" Creator="SCRMAC-3.4-16639" Device="Chalongrajs-MacBook-Air" Author="" Modified="2025-09-02 15:29:08 +0700" ModID="4F0316D4-937B-4607-B7D6-0F4CB5D0E667">
+<ScrivenerProject Identifier="1F65485C-3E80-43CB-8128-C229115877C2" Version="2.0" Creator="SCRMAC-3.4-16639" Device="Punnawats-MacBook-Pro" Author="Punnawat Lerdkijrachapong" Modified="2025-09-07 00:04:59 +0700" ModID="1234F402-5E35-430E-BE10-B07FDB1A352B">
     <Binder>
         <BinderItem UUID="9FFBA333-8432-41C1-91F5-1302DFE283CA" Type="Text" Created="2025-08-25 23:44:57 +0700" Modified="2025-08-25 23:44:57 +0700">
             <Title>Non-Fiction Format</Title>
@@ -52,7 +52,7 @@
                                 <IncludeInCompile>Yes</IncludeInCompile>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>131,0</TextSelection>
+                                <TextSelection>225,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                         <BinderItem UUID="606E2F6A-318D-44EA-A9BC-81093A72CD2F" Type="Text" Created="2025-08-25 23:44:57 +0700" Modified="2025-08-25 23:57:09 +0700">
@@ -430,15 +430,15 @@
     </StatusSettings>
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="Yes" Deadline="2011-04-12 19:24:39 +0700" IgnoreDeadline="Yes">0</DraftTarget>
-        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" NextResetDate="2025-09-03 00:00:00 +0700" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="0" Characters="4" Date="2025-09-02 14:57:40 +0700"/>
+        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="No" NextResetDate="2025-09-08 00:00:00 +0700" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
+        <PreviousSession Words="0" Characters="0" Date="2025-09-07 00:04:54 +0700"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2025-09-02 00:00:00 +0700">
+    <RecentWritingHistory Date="2025-09-07 00:00:00 +0700">
         <DraftWordCount>0</DraftWordCount>
-        <DraftCharCount>-1</DraftCharCount>
+        <DraftCharCount>0</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
     <BookmarksFolderUUID>07B0D7C6-57CE-4D6F-8AD9-11F06A261A5F</BookmarksFolderUUID>
-    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"/>
+    <PrintSettings PaperSize="595.275567,841.889771" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"/>
 </ScrivenerProject>
